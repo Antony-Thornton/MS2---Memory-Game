@@ -1,0 +1,55 @@
+    * {
+    font-family: Helvetica, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+    
+/* ************ Header Format ************ */
+
+#header_format {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(170, 170, 170);
+    color: white;
+}
+
+#header_title {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(170, 170, 170);
+}
+
+#header_title h1 {
+    color: black;
+}
+
+.hero_format {
+    width: 100%;
+    position: absolute;
+
+}
+
+.logo_format {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* ************ Main Section Format ************ */
+
+/*
+.container {
+    width: 100%;
+}
+
+.col {
+    width: 24%;
+    height: 350px;
+    background-color: #D91A32;
+    text-align: center;
+    display: inline-flex;
+}
+*/
