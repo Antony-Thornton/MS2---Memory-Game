@@ -122,7 +122,7 @@
 .col {
     width: 150px;
     height: 150px;
-    background-color: rgb(170, 170, 170);
+    background-color: white;
     text-align: center;
     display: inline-flex;
 }
@@ -130,12 +130,14 @@
 
 
 .front {
-    background: url(..assets/images/bmw_logo.jpg) no-repeat center center /contain;
+    width: 150px;
+    height: 150px;
+    background: url(../images/bmw_logo.jpg) no-repeat center center /contain;
 }
 
 .back {
     width: 150px;
     height: 150px;
-    background: url(..assets/images/bmw_logo.jpg) no-repeat center center /contain;
+    background: url(../images/bmw_test.jpg) no-repeat center center /contain;
+    visibility: hidden;
 }
-

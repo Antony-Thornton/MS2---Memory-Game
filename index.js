@@ -19,7 +19,7 @@ function test() {
 }
 
 
-function hide_hero() {
+function start() {
     var hero = document.getElementById("header_format");
     hero.style.display = "none";
     var x = document.getElementById("hide_unhide");
@@ -33,3 +33,5 @@ function show_hero() {
       var x = document.getElementById("hide_unhide");
       x.style.display = "none";
 }
+
+
