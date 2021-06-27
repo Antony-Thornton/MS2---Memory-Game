@@ -16,3 +16,7 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fddc1.s3.us-east-1.am
 
 Gradience
 https://www.w3schools.com/css/css3_gradients.asp - learned about gradience
+
+
+Hide_unhide elements
+https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp

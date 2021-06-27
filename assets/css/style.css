@@ -40,20 +40,69 @@
     height: 100px;
 }
 
-.how_to_div {
+#how_to_div {
     width: 100%;
     height: 500px;
     background-image: linear-gradient(white, rgb(170,170,170), white);
     text-align: center;
     border: medium dashed Black;
     height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.how_to_div h2{
+#how_to_div h2{
     text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
 
+#how_to_div button {
+    height: 50px;
+    width: 100px;
+    background-color: gold;
+    border-radius: 25px;
+}
+
+#how_to_div h4{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#how_to_div h5{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.game_controls {
+    height: auto;
+    width: 100%;
+    margin: 30px;
+}
+
+#start {
+    height: 50px;
+    width: 100px;
+    background-color: green;
+    border-radius: 25px;
+}
+
+#reset {
+    height: 50px;
+    width: 100px;
+    background-color: red;
+    border-radius: 25px;
+}
+
+#submit {
+    height: 50px;
+    width: 100px;
+    background-color: orange;
+    border-radius: 25px;
+}
 
 /* ************ Main Section Format ************ */
+
+
 
 
 .container {

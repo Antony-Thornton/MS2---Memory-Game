@@ -15,12 +15,24 @@
                 <img class="logo_format" src="assets/images/bmw_logo.png" alt="">
                 <h1>BMW Car Models</h1>
                 <h2>A Memory Game</h2>
-                <h3>Thank you for visitng this website. 
-                    In order to celebrate everything BMW we have created a fun mini game that will test your knowledge of BMW cars.</h3>
+                <h4>Thank you for visitng this website. 
+                    In order to celebrate everything BMW we have created a fun mini game that will test your knowledge of BMW cars.</h4>
             </div>
-            <div class="how_to_div">
-                <h2>How to play?</h2>
-
+            <div id="how_to_div">
+                <button type="button" onclick = "hide_unhide()">How to play?</button>                
+                <div id="hide_unhide">
+                    <h4>When you are ready.</h4>
+                    <h5>Step 1 - Press the start button.</h5>
+                    <h5>Step 2 - Click on a tile and then another.</h5>
+                    <h5>Step 3 - Remember the tile pictures and try to match all of them as quickly as you can.</h5>
+                    <h5>Step 4 - If you want to log your score please use the submit.</h5>
+                    <h5>If you want to start again please press the reset button.</h5>
+                </div>    
+            </div>
+            <div class="game_controls">
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+                <button id="submit">Submit Score</button>
             </div>
         </header>
     <section>
@@ -35,5 +47,6 @@
       </div>
     </div>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
