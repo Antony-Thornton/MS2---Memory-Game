@@ -9,3 +9,24 @@ function hide_unhide() {
     x.style.display = "none";
   }
 }
+
+
+function test() {
+    var columns = document.getElementsByClassName("col");
+    columns.style.backgroundColor = "#00FF00";
+}
+
+function hide_hero() {
+    var hero = document.getElementById("header_format");
+    hero.style.display = "none";
+    var x = document.getElementById("hide_unhide");
+    x.style.display = "none";
+}
+
+function show_hero() {
+    var hero = document.getElementById("header_format");
+    hero.style.display = "block";
+    alert("Successfully submitted");
+      var x = document.getElementById("hide_unhide");
+      x.style.display = "none";
+}

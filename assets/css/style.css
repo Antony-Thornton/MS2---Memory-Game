@@ -45,7 +45,6 @@
     height: 500px;
     background-image: linear-gradient(white, rgb(170,170,170), white);
     text-align: center;
-    border: medium dashed Black;
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -59,8 +58,9 @@
 #how_to_div button {
     height: 50px;
     width: 100px;
-    background-color: gold;
+    background-color: black;
     border-radius: 25px;
+    color: white;
 }
 
 #how_to_div h4{
@@ -107,12 +107,16 @@
 
 .container {
     width: 100%;
+    padding-bottom: 100px;
+    height: auto;
 }
 
 .col {
-    width: 24%;
-    height: 350px;
+    width: 5%;
+    height: 15px;
     background-color: rgb(170, 170, 170);
     text-align: center;
     display: inline-flex;
+    padding-bottom: 5%; /* 16:9 ratio = 9 / 16 = 0.5625 */
+  
 }
