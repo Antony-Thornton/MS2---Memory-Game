@@ -1,8 +1,9 @@
     * {
     font-family: Helvetica, sans-serif;
-    color: white;
+    color: Black;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
     
@@ -10,26 +11,28 @@
 
 #header_format {
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: rgb(170, 170, 170);
     color: white;
 }
 
 #header_title {
-    height: 50px;
+    height: auto;
     width: 100%;
     text-align: center;
-    background-color: rgb(170, 170, 170);
+    /* https://www.w3schools.com/css/css3_gradients.asp - learned about gradience*/
+     background-image: linear-gradient(rgb(170, 170, 170), white);
+     padding-bottom: 10px;
+    
 }
 
 #header_title h1 {
     color: black;
+    text-decoration-line: underline;
 }
 
 .hero_format {
     width: 100%;
-    position: absolute;
-
 }
 
 .logo_format {
@@ -37,10 +40,22 @@
     height: 100px;
 }
 
+.how_to_div {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(white, rgb(170,170,170), white);
+    text-align: center;
+    border: medium dashed Black;
+    height: auto;
+}
+.how_to_div h2{
+    text-align: center;
+}
+
 
 /* ************ Main Section Format ************ */
 
-/*
+
 .container {
     width: 100%;
 }
@@ -48,8 +63,7 @@
 .col {
     width: 24%;
     height: 350px;
-    background-color: #D91A32;
+    background-color: rgb(170, 170, 170);
     text-align: center;
     display: inline-flex;
 }
-*/
