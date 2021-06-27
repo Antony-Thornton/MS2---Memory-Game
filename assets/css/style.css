@@ -76,7 +76,7 @@
 .game_controls {
     height: auto;
     width: 100%;
-    margin: 30px;
+    margin: 10px;
 }
 
 #start {
@@ -112,11 +112,14 @@
 }
 
 .col {
-    width: 5%;
-    height: 15px;
+    width: 150px;
+    height: 150px;
     background-color: rgb(170, 170, 170);
     text-align: center;
     display: inline-flex;
-    padding-bottom: 5%; /* 16:9 ratio = 9 / 16 = 0.5625 */
-  
+}
+
+.col_pic {
+    width: 150px;
+    height: 150px;
 }

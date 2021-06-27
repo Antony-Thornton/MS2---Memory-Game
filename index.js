@@ -10,11 +10,14 @@ function hide_unhide() {
   }
 }
 
-
+/* Helped with my test. I wanted to change the "col" format. I didnt have the For (var). - https://stackoverflow.com/questions/14307163/changing-background-color-of-all-elements-with-the-same-class */
 function test() {
-    var columns = document.getElementsByClassName("col");
-    columns.style.backgroundColor = "#00FF00";
+    elements = document.getElementsByClassName("col");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundColor="blue";
+    }
 }
+
 
 function hide_hero() {
     var hero = document.getElementById("header_format");
