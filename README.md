@@ -20,3 +20,7 @@ https://www.w3schools.com/css/css3_gradients.asp - learned about gradience
 
 Hide_unhide elements
 https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+
+
+Lessons learned
+if applying changes to more than one element you must use for the same why you would in VBA.

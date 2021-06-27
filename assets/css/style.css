@@ -36,8 +36,8 @@
 }
 
 .logo_format {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 #how_to_div {
@@ -57,10 +57,12 @@
 
 #how_to_div button {
     height: 50px;
-    width: 100px;
-    background-color: black;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.95);
     border-radius: 25px;
     color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 #how_to_div h4{
@@ -81,23 +83,29 @@
 
 #start {
     height: 50px;
-    width: 100px;
-    background-color: green;
+    width: 110px;
+    background-color: rgba(0, 128, 0, 0.8);
     border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 #reset {
     height: 50px;
-    width: 100px;
-    background-color: red;
+    width: 110px;
+    background-color: rgba(255, 0, 0, 0.8);
     border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 #submit {
     height: 50px;
-    width: 100px;
-    background-color: orange;
+    width: 110px;
+    background-color: rgba(255, 166, 0, 0.8);
     border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 /* ************ Main Section Format ************ */
@@ -119,7 +127,15 @@
     display: inline-flex;
 }
 
-.col_pic {
+
+
+.front {
+    background: url(..assets/images/bmw_logo.jpg) no-repeat center center /contain;
+}
+
+.back {
     width: 150px;
     height: 150px;
+    background: url(..assets/images/bmw_logo.jpg) no-repeat center center /contain;
 }
+
