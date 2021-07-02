@@ -24,6 +24,27 @@ function start() {
     hero.style.display = "none";
     var x = document.getElementById("hide_unhide");
     x.style.display = "none";
+
+    
+    
+
+    var currentdate = new Date(); 
+    var start_time = currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+    console.log(start_time)
+
+
+
+    var currentdate = new Date(); 
+    var end_time = currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+    console.log(end_time)
+
+    var total_time = end_time - start_time
+
+    console.log(total_time)
 }
 
 function show_hero() {
@@ -35,4 +56,47 @@ function show_hero() {
 }
 
 
+function changeClass() {
 
+  /* https://www.bitdegree.org/learn/javascript-classname */
+  var sampleElem = document.getElementById("front");
+  if (sampleElem.className === "front") {
+    sampleElem.className = "back";
+  } else {
+    sampleElem.className = "front";
+  }
+
+  
+}
+
+function changeClass1() {
+
+  /* https://www.bitdegree.org/learn/javascript-classname */
+  var sampleElem = document.getElementById("front1");
+  if (sampleElem.className === "front") {
+    sampleElem.className = "back";
+  } else {
+    sampleElem.className = "front";
+  }
+
+  
+}
+
+
+function changeClassIf(e) {
+
+  /* https://www.bitdegree.org/learn/javascript-classname */
+  var sampleElem = e.id;
+  console.log(e.id);
+  if (sampleElem.className === "front") {
+    sampleElem.className = "back";
+  } else {
+  if (sampleElem.className === "front1")  {
+    sampleElem.className = "back";
+  } else {
+    sampleElem.className = "front";
+  }
+
+  }
+
+}
