@@ -10,15 +10,6 @@ function hide_unhide() {
   }
 }
 
-/* Helped with my test. I wanted to change the "col" format. I didnt have the For (var). - https://stackoverflow.com/questions/14307163/changing-background-color-of-all-elements-with-the-same-class */
-function test() {
-    elements = document.getElementsByClassName("col");
-    for (var i = 0; i < elements.length; i++) {
-        elements[i].style.backgroundColor="blue";
-    }
-}
-
-
 function start() {
     var hero = document.getElementById("header_format");
     hero.style.display = "none";
@@ -56,47 +47,55 @@ function show_hero() {
 }
 
 
+
+function changeClassIf(e) {
+
+  var selectedElement = e;
+  console.log(selectedElement) /* Logs the word "front" */
+
+  if (selectedElement.className === "front") {
+    selectedElement.className = "back";
+    console.log("front");
+  } else {
+    if(selectedElement.className === "front1") {
+      selectedElement.className = "back";
+    }
+    else {
+      selectedElement.className = "front";
+    }
+    selectedElement.className = "front";
+  }
+}
+
+
+
+
+
+/* ***** Useful code that helped with learning concepts ******
+
+
+
+/* Helped with my test. I wanted to change the "col" format. I didnt have the For (var). - https://stackoverflow.com/questions/14307163/changing-background-color-of-all-elements-with-the-same-class
+function test() {
+    elements = document.getElementsByClassName("col");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundColor="blue";
+    }
+}
+
+ 
+
+
 function changeClass() {
 
-  /* https://www.bitdegree.org/learn/javascript-classname */
+  *******https://www.bitdegree.org/learn/javascript-classname*******
+
+
   var sampleElem = document.getElementById("front");
   if (sampleElem.className === "front") {
     sampleElem.className = "back";
   } else {
     sampleElem.className = "front";
   }
-
-  
 }
-
-function changeClass1() {
-
-  /* https://www.bitdegree.org/learn/javascript-classname */
-  var sampleElem = document.getElementById("front1");
-  if (sampleElem.className === "front") {
-    sampleElem.className = "back";
-  } else {
-    sampleElem.className = "front";
-  }
-
-  
-}
-
-
-function changeClassIf(e) {
-
-  /* https://www.bitdegree.org/learn/javascript-classname */
-  var sampleElem = e.id;
-  console.log(e.id);
-  if (sampleElem.className === "front") {
-    sampleElem.className = "back";
-  } else {
-  if (sampleElem.className === "front1")  {
-    sampleElem.className = "back";
-  } else {
-    sampleElem.className = "front";
-  }
-
-  }
-
-}
+*/
