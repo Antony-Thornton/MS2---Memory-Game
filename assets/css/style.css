@@ -125,6 +125,7 @@
     background-color: white;
     text-align: center;
     display: inline-flex;
+    border-radius: 25px;
 }
 
 
@@ -134,19 +135,6 @@
     height: 150px;
     background: url(../images/bmw_logo.jpg) no-repeat center center /contain;
 }
-
-.front1 {
-    width: 150px;
-    height: 150px;
-    background: url(../images/bmw_logo.jpg) no-repeat center center /contain;
-}
-
-.front2 {
-    width: 150px;
-    height: 150px;
-    background: url(../images/bmw_logo.jpg) no-repeat center center /contain;
-}
-
 
 .back {
     width: 150px;
@@ -159,22 +147,26 @@
     width: 150px;
     height: 150px;
     background: url(../images/bmw_test.jpg) no-repeat center center /contain;
+    border-radius: 25px;
 }
 
 .back2 {
     width: 150px;
     height: 150px;
    background-color: red;
+   border-radius: 25px;
 }
 
 .back3 {
     width: 150px;
     height: 150px;
     background-color: blue;
+    border-radius: 25px;
 }
 
 .back4 {
     width: 150px;
     height: 150px;
     background-color: chartreuse;
+    border-radius: 25px;
 }

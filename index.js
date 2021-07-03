@@ -53,18 +53,13 @@ function changeClassIf(e) {
   var selectedElement = e;
   console.log(e.id) /* Logs the word "front" */
 
-
   /* Help with lengths - https://www.w3schools.com/howto/howto_js_string_length.asp */
 
   var len = e.id.length;
   var lenNum = e.id.substr(5, len);
   
-
-  
-
   if (selectedElement.className === "front") {
     selectedElement.className = "back" + lenNum;
-    console.log("back1")
   } else {
     selectedElement.className = "front";
   }
