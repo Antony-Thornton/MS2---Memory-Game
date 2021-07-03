@@ -135,8 +135,46 @@
     background: url(../images/bmw_logo.jpg) no-repeat center center /contain;
 }
 
+.front1 {
+    width: 150px;
+    height: 150px;
+    background: url(../images/bmw_logo.jpg) no-repeat center center /contain;
+}
+
+.front2 {
+    width: 150px;
+    height: 150px;
+    background: url(../images/bmw_logo.jpg) no-repeat center center /contain;
+}
+
+
 .back {
     width: 150px;
     height: 150px;
     background: url(../images/bmw_test.jpg) no-repeat center center /contain;
+}
+
+
+.back1 {
+    width: 150px;
+    height: 150px;
+    background: url(../images/bmw_test.jpg) no-repeat center center /contain;
+}
+
+.back2 {
+    width: 150px;
+    height: 150px;
+   background-color: red;
+}
+
+.back3 {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+
+.back4 {
+    width: 150px;
+    height: 150px;
+    background-color: chartreuse;
 }
