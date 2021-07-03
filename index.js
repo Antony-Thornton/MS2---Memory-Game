@@ -55,27 +55,17 @@ function changeClassIf(e) {
 
 
   /* Help with lengths - https://www.w3schools.com/howto/howto_js_string_length.asp */
+
   var len = e.id.length;
- 
   var lenNum = e.id.substr(5, len);
   
-  console.log(len)
-  console.log(lenNum)
-  
+
   
 
-  if (selectedElement.className === "front" && selectedElement.id === "front1") {
-    selectedElement.className = "back1";
+  if (selectedElement.className === "front") {
+    selectedElement.className = "back" + lenNum;
     console.log("back1")
   } else {
-    if (selectedElement.className === "front" && selectedElement.id === "front2") {
-      selectedElement.className = "back2";
-      console.log("back2")
-    }
-    else {
-      selectedElement.className = "back2";
-      console.log("back3")
-    }
     selectedElement.className = "front";
   }
 }
