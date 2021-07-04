@@ -177,6 +177,14 @@ Hero image link - https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdd
 ## Acknowledgements
 This project was inspired by Code Institute as part of my Second Milestone Project (MS2). 
 
+
+
+
+Gradience - https://www.w3schools.com/css/css3_gradients.asp - Helped me learn about css colour gradience.
+
+
+Hide_unhide elements - https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp - Referenced in code to show/hid objects.
+
 Thank you to:
 https://www.gitpod.io/blog/gitpodify/ 
 for references to using gitpod. Specifically opening a preview.
@@ -193,22 +201,8 @@ Where possible acknowledgements will be noted in the code.
 
 ## 7.2 Future study points
 
+
+
+
+
 README written by Antony Thornton, 2021
-
-
-Design influence
-
-
-
-
-
-Gradience
-https://www.w3schools.com/css/css3_gradients.asp - learned about gradience
-
-
-Hide_unhide elements
-https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
-
-
-Lessons learned
-if applying changes to more than one element you must use for the same why you would in VBA.

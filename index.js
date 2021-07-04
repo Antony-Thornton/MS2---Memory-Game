@@ -1,6 +1,5 @@
 
 /* Helped with the hide_unide element function. Worked as is so no changes needed - https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp */
-
 /* Hide/Unhide the instructions */
 function hide_unhide() {
   var x = document.getElementById("hide_unhide");
@@ -10,8 +9,6 @@ function hide_unhide() {
     x.style.display = "none";
   }
 }
-
-
 
 function start() {
     var hero = document.getElementById("header_format");
