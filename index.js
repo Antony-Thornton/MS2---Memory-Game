@@ -88,13 +88,6 @@ function change_class(e) {
 
 
 function reset_tiles() {
-  let elements = document.body.getElementsByTagName('div');
-  let element_id = elements.substr(1,4)
-
-  console.log(element_id)
-  for (var i = 0; i < elements.length; i++) {
-      element_id[i].className = "back";
-  }​
 
 }
 
@@ -102,21 +95,6 @@ function reset_tiles() {
 
 
 
-/*
-document.addEventListener("click", function(changeClassIf){ 
-
-  if (typeof selection_one === 'undefined') {
-    changeClassIf.call()
-    
-    console.log ("True")
-  } else {
-    console.log ("False")
-  }
-
-
-});
-
-*/
 
 
 
