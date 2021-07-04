@@ -70,7 +70,10 @@ The overall story would be as follows:
 
 General
 
+The general color theme of the game tries to mirror the theme ion the below links. It uses a mostly white theme with elements of grey.
+
 https://www.bmw.com/en/automotive-life/bmw-logo-meaning-history1.html
+
 https://www.bmw.co.uk/en/index.html
 
 
