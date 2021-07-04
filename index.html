@@ -8,6 +8,9 @@
 </head>
 <body>
     <header>
+        <div id="navigation_bar">
+            Test
+        </div>
         <div id="header_format">
             <img class="hero_format" src="assets/images/bmw_hero_image.jpg" alt="BMW Autumn Advert Cars On A Hill" no-repeat center center>
         </div>
@@ -31,26 +34,32 @@
             </div>
             <div class="game_controls">
                 <button type="button" id="start" onclick="start()">Start</button>
-                <button type="button" id="reset" onclick="test()">Reset</button>
+                <button type="button" id="reset" onclick="reset_tiles()">Reset</button>
                 <button type="button" id="submit" onclick="show_hero()">Submit Score</button>
             </div>
         </header>
     <section>
     <div class="container">
         <div class="col">
-            <div id="front1" class="front" onclick="changeClassIf(this)"></div>
+            <div id="front1" class="front" onclick="change_class(this)"></div>
         </div>
         <div class="col">
-            <div id="front2" class="front" onclick="changeClassIf(this)"></div>
+            <div id="front2" class="front" onclick="change_class(this)"></div>
         </div>
         <div class="col">
-            <div id="front3" class="front" onclick="changeClassIf(this)"></div>
+            <div id="front3" class="front" onclick="change_class(this)"></div>
         </div>
         <div class="col">
-            <div id="front4" class="front" onclick="changeClassIf(this)"></div>
+            <div id="front4" class="front" onclick="change_class(this)"></div>
         </div>
     </div>
     </section>
+    <footer>
+        <div id="footer_div">
+
+        </div>
+
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>

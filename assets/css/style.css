@@ -9,6 +9,13 @@
     
 /* ************ Header Format ************ */
 
+#navigation_bar {
+    width: 100%;
+    height: 1000px;
+    background-color: red;
+
+}
+
 #header_format {
     width: 100%;
     height: auto;
@@ -169,4 +176,14 @@
     height: 150px;
     background-color: chartreuse;
     border-radius: 25px;
+}
+
+
+/* ******* Footer Formatting ******* */
+
+#footer_div {
+    width: 100%;
+    height: 1000px;
+    background-color: red;
+
 }
