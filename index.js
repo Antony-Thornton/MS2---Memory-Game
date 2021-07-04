@@ -71,6 +71,7 @@ function changeClassIf(e) {
 }
 
 
+/*
 document.addEventListener("click", function(changeClassIf){ 
 
   if (typeof selectionOne === 'undefined') {
@@ -84,7 +85,7 @@ document.addEventListener("click", function(changeClassIf){
 
 });
 
-
+*/
 
 
 
