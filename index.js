@@ -83,11 +83,18 @@ function change_class(e) {
 
 
 
+
+
+
+
 function reset_tiles() {
-    tiles = document.getElementsByClassName("col");
-    for (var i = 0; i < tiles.length; i++) {
-        tiles.className = "front"
-    }
+  let elements = document.body.getElementsByTagName('div');
+  let element_id = elements.substr(1,4)
+
+  console.log(element_id)
+  for (var i = 0; i < elements.length; i++) {
+      element_id[i].className = "back";
+  }​
 
 }
 
