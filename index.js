@@ -55,19 +55,20 @@ function show_hero() {
 function change_class(e) {
 
   /* *******https://www.bitdegree.org/learn/javascript-classname******* */
-  console.log(typeof(selection_one))
     if (selection_one === "") {
 
         var selectedElement = e;
-        console.log(e.id) /* Logs the word "front" */
+        /* console.log(e.id)  Logs the word "front" */
 
         /* Help with lengths - https://www.w3schools.com/howto/howto_js_string_length.asp */
 
-        var len = e.id.length;
-        var lenNum = e.id.substr(5, len);
+        let len = e.id.length;
+        let len_num = e.id.substr(7, len);
+        console.log(len)
+        console.log(len_num)
 
         if (selectedElement.className === "front") {
-            selectedElement.className = "back" + lenNum;
+            selectedElement.className = "back" + len_num;
 
             let selection_one = e.id;
             console.log(selection_one)
@@ -84,11 +85,15 @@ function change_class(e) {
 
 
 
-
-
-
 function reset_tiles() {
-
+  var divs = document.getElementsByTagName("div");
+  for(var i = 0; i < divs.length; i++){
+    let div_class_name = divs.className.substr(1,4);
+    if (div_class_name == "back") {
+      console.log("true")
+      divs[i].className = "front";
+     }
+  }
 }
 
 
