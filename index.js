@@ -60,10 +60,44 @@ function changeClassIf(e) {
   
   if (selectedElement.className === "front") {
     selectedElement.className = "back" + lenNum;
+
+    let selectionOne = e.id;
   } else {
-    selectedElement.className = "front";
   }
 }
+
+
+function gameCheck() {
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
