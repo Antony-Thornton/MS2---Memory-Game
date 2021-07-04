@@ -11,7 +11,7 @@
 
 #navigation_bar {
     width: 100%;
-    height: 1000px;
+    height: auto;
     background-color: red;
 
 }
@@ -183,7 +183,7 @@
 
 #footer_div {
     width: 100%;
-    height: 1000px;
+    height: auto;
     background-color: red;
 
 }
