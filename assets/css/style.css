@@ -12,9 +12,21 @@
 #navigation_bar {
     width: 100%;
     height: auto;
-    background-color: red;
+    background-image: linear-gradient(rgb(170, 170, 170), white)
 
 }
+
+.nav_div {
+    width: auto;
+    height: 50px;
+    display: inline-flex;
+    padding:5px 40px;
+    background-image: linear-gradient(rgb(170, 170, 170), white);
+    font-size: 1rem;
+    text-decoration: underline;
+
+}
+
 
 #header_format {
     width: 100%;
@@ -117,6 +129,10 @@
 
 /* ************ Main Section Format ************ */
 
+.main_section {
+    height: 200px;
+    background-color: red;
+}
 
 
 
@@ -180,10 +196,43 @@
 
 
 /* ******* Footer Formatting ******* */
+.footer_div {
+    padding-top: 20px;;
+    text-align: center; 
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0); 
+}
 
-#footer_div {
-    width: 100%;
-    height: auto;
-    background-color: red;
+.footer_p_format {
+    text-align: center; 
+    font-size: 1.0rem;
+    text-transform: none;
+}
 
+footer {
+    background-color: rgb(0, 0, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer div h1 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+
+/* Social networks code below borrowed from Code Institute Love running project */
+.social_networks{
+    text-align: center;
+}
+
+.social_networks li {
+    display:inline;
+}
+
+.social_networks i {
+    font-size: 3rem;
+    padding: 1%;
+    color:white;
 }
