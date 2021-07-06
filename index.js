@@ -53,18 +53,18 @@ function show_hero() {
 
 
 function change_class(e) {
+var selectedElement = e;
+if (selection_one !== selectedElement) {
 
   /* *******https://www.bitdegree.org/learn/javascript-classname******* */
     if (selection_one === "") {
 
-        var selectedElement = e;
-        /* console.log(e.id)  Logs the word "front" */
+        
 
         /* Help with lengths - https://www.w3schools.com/howto/howto_js_string_length.asp */
 
         let len = e.id.length;
         let len_num = e.id.substr(7, len);
-        console.log(len)
         console.log(len_num)
 
         if (selectedElement.className === "front") {
@@ -77,8 +77,25 @@ function change_class(e) {
         }
         selection_one = e.id
     } else {
-      console.log(selection_one + "jkndfdksdjfhn")
+
+      /* add IF here for matching tiles error */
+        let len = e.id.length;
+        let len_num = e.id.substr(7, len);
+        console.log(len_num)
+        
+        if (selectedElement.className === "front") {
+          selectedElement.className = "back" + len_num;
+
+          let selection_two = e.id;
+          console.log(selection_two)
+      } else {
+          selectedElement.className = "front";
+      }
+      selection_two = e.id
+
     }
+  console.log("matched tile")
+}
 }
 
 
@@ -98,6 +115,17 @@ function reset_tiles() {
 
 
 
+
+function if_mapping() {
+  if (score === 20) {
+      if (selection_one !== selectedElement) {
+          /* insert code to handle tile flips */
+      } else {
+          /* insert code to handle matched tiles i.e. do nothing*/
+
+      }
+  }
+}
 
 
 
