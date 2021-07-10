@@ -134,6 +134,24 @@
     font-weight: bolder;
 }
 
+.score {
+    height: auto;
+    width: 100%;
+}
+
+#correct_text {
+    color: green;
+}
+
+
+#incorrect_text {
+    color: red;
+}
+
+
+
+
+
 /* ************ Main Section Format ************ */
 
 .main_section {

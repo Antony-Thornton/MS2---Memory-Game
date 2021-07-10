@@ -106,7 +106,7 @@ function reset_tiles() {
   var divs = document.getElementsByTagName("div");
   for(var i = 0; i < divs.length; i++){
     let div_class_name = divs.className.substr(1,4);
-    if (div_class_name == "back") {
+    if (div_class_name = "back") {
       console.log("true")
       divs[i].className = "front";
      }
@@ -118,11 +118,36 @@ function reset_tiles() {
 
 function if_mapping() {
   if (score === 20) {
-      if (selection_one !== selectedElement) {
-          /* insert code to handle tile flips */
+      /* 
+      Exit script - Game Complete 
+      Show Popup message
+      */
+  } else {
+      if (selection_one === "") {
+          /*
+          Add code to flip tile
+          update selection_one value
+          Exit Script
+          */
       } else {
-          /* insert code to handle matched tiles i.e. do nothing*/
-
+          if (selection_one !== selectedElement) {
+              /* 
+              If selection_one  does not equal selected Element insert code to handle tile flips 
+              Update score class with +1
+              Change both tiles to Locked              
+              */
+          }
+          if (score === 20) {
+              /* 
+              Exit script - Game Complete 
+              Show Popup message
+              */
+          } else {
+              /* insert code to handle matched tiles
+              Update Incorrect clsss with + 1
+              Flip both tiles back to back            
+              */
+          }
       }
   }
 }
