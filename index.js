@@ -62,6 +62,7 @@ function show_hero() {
 
 function reset_tiles() {
   var divs = document.getElementsByTagName("div");
+  console.log(divs)
   for(var i = 0; i < divs.length; i++){
     let div_class_name = divs.className.substr(1,4);
     if (div_class_name = "back") {
@@ -158,9 +159,9 @@ function if_mapping(e) {
                 if (selection_one !== selection_two && first_id !== second_id)
                 selectedElement.className = "back" + second_id;
                 
-
-
-                  selectedElement.className = "back13";
+                setTimeout(function() {
+                  selectedElement.className = "front"
+                }, 5000);
 
                   /* add call reset tile function */
               }
