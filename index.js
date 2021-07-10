@@ -97,6 +97,9 @@ function if_mapping(e) {
           selection_one = e.id;
           first_id = e.id.slice(-2);
           console.log("Selection one = nothing so selection_one becomes e.id")
+          selectedElement.className = "back" + first_id;
+
+
           /*
           Add code to flip tile
           update selection_one value
@@ -109,6 +112,8 @@ function if_mapping(e) {
               old_score = parseInt(document.getElementById("incorrect_score").innerText);
               document.getElementById("incorrect_score").innerText = ++old_score;
               
+              selectedElement.className = "front";
+
               selection_one = "";
               selection_two = "";
               first_id = "";
@@ -125,6 +130,8 @@ function if_mapping(e) {
                   /* below scoring adapted from the code instutute course */
                   old_score = parseInt(document.getElementById("correct_score").innerText);
                   document.getElementById("correct_score").innerText = ++old_score;
+
+                  selectedElement.className = "back" + first_id + " locked";
                   /* 
                   If selection_one  does not equal selected Element insert code to handle tile flips 
                   Update score class with +1
