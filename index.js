@@ -116,7 +116,7 @@ function reset_tiles() {
 
 
 
-function if_mapping_template() {
+function if_mapping_template(e) {
   if (score === 20) {
       /* 
       Exit script - Game Complete 
@@ -155,7 +155,8 @@ function if_mapping_template() {
 
 
 
-function if_mapping() {
+function if_mapping(e) {
+let selectedElement = e;
 let score = document.getElementById("correct_score");
 let score_check = score.innerHTML;
 let score_int = parseInt(score_check);
@@ -170,6 +171,8 @@ let max_score = 20;
       */
   } else {
       if (selection_one === "") {
+        console.log("Selec one = nothing")
+        selection_one = e.id;
           /*
           Add code to flip tile
           update selection_one value
@@ -177,6 +180,7 @@ let max_score = 20;
           */
       } else {
           if (selection_one !== selectedElement) {
+            console.log("Selec One = Selec two")
               /* 
               If selection_one  does not equal selected Element insert code to handle tile flips 
               Update score class with +1
