@@ -154,6 +154,12 @@ function if_mapping(e) {
                       */
                   } 
 
+              } else {
+                if (selection_one !== selection_two && first_id !== second_id)
+                selectedElement.className = "back" + second_id;
+                
+                setTimeout(() => { console.log("5 second delay"); }, 5000);
+                  /* add call reset tile function */
               }
           }
       }
@@ -161,6 +167,11 @@ function if_mapping(e) {
 }
 
 
+
+
+
+
+/*
 function incrementScore() {
 
 	// Gets the current score from the DOM and increments it
