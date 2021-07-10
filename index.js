@@ -158,7 +158,10 @@ function if_mapping(e) {
                 if (selection_one !== selection_two && first_id !== second_id)
                 selectedElement.className = "back" + second_id;
                 
-                setTimeout(() => { console.log("5 second delay"); }, 5000);
+
+
+                  selectedElement.className = "back13";
+
                   /* add call reset tile function */
               }
           }
