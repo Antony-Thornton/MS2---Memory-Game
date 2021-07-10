@@ -2,7 +2,7 @@ let selection_one = "";
 let selection_two = "";
 let start_time = "";
 let end_time = "";
-
+let score = "";
 
 
 
@@ -116,7 +116,7 @@ function reset_tiles() {
 
 
 
-function if_mapping() {
+function if_mapping_template() {
   if (score === 20) {
       /* 
       Exit script - Game Complete 
@@ -153,6 +153,50 @@ function if_mapping() {
 }
 
 
+
+
+function if_mapping() {
+let score = document.getElementById("correct_score");
+let score_check = score.innerHTML;
+let score_int = parseInt(score_check);
+let max_score = 20;
+
+   
+  if (score_int === max_score) {
+    console.log("Game Complete")
+    /* 
+      Exit script - Game Complete 
+      Show Popup message
+      */
+  } else {
+      if (selection_one === "") {
+          /*
+          Add code to flip tile
+          update selection_one value
+          Exit Script
+          */
+      } else {
+          if (selection_one !== selectedElement) {
+              /* 
+              If selection_one  does not equal selected Element insert code to handle tile flips 
+              Update score class with +1
+              Change both tiles to Locked              
+              */
+          }
+          if (score === 20) {
+              /* 
+              Exit script - Game Complete 
+              Show Popup message
+              */
+          } else {
+              /* insert code to handle matched tiles
+              Update Incorrect clsss with + 1
+              Flip both tiles back to back            
+              */
+          }
+      }
+  }
+}
 
 
 
