@@ -5,6 +5,7 @@ let end_time = "";
 let score = "";
 let first_id = "";
 let second_id = "";
+let old_score = "";
 
 
 
@@ -104,6 +105,10 @@ function if_mapping(e) {
         } else {
             if (selection_one === selection_two) {
                 console.log("Same tile selected")
+                /* below scoring adapted from the code instutute course */
+                oldScore = parseInt(document.getElementById("incorrect_score").innerText);
+                document.getElementById("incorrect_score").innerText = ++oldScore;
+                
                 selection_one = "";
                 selection_two = "";
                 first_id = "";
@@ -123,6 +128,9 @@ function if_mapping(e) {
                 if (selection_one !== selection_two && first_id === second_id) {
                   
                     console.log("Selection one and two DO NOT match")
+                    /* below scoring adapted from the code instutute course */
+                    old_score = parseInt(document.getElementById("correct_score").innerText);
+                    document.getElementById("correct_score").innerText = ++old_score;
                     /* 
                     If selection_one  does not equal selected Element insert code to handle tile flips 
                     Update score class with +1
@@ -145,10 +153,20 @@ function incrementScore() {
 
 	// Gets the current score from the DOM and increments it
 
-	let oldScore = parseInt(document.getElementById("score").innerText);
-	document.getElementById("score").innerText = ++oldScore;
+	oldScore = parseInt(document.getElementById("correct_score").innerText);
+	document.getElementById("correct_score").innerText = ++oldScore;
 
 }
+
+function incrementWrongAnswer() {
+
+	// Gets the current tally of incorrect answers from the DOM and increments it
+
+	oldScore = parseInt(document.getElementById("incorrect_score").innerText);
+	document.getElementById("incorrect_score").innerText = ++oldScore;
+
+}
+
 
 
 /* ***** Useful code that helped with learning concepts ******
