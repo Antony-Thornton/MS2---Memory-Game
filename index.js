@@ -3,6 +3,8 @@ let selection_two = "";
 let start_time = "";
 let end_time = "";
 let score = "";
+let first_id = "";
+let second_id = "";
 
 
 
@@ -81,8 +83,6 @@ function if_mapping(e) {
     let score_check = score.innerHTML;
     let score_int = parseInt(score_check);
     let max_score = 20;
-    let first_id = "front1";
-    let second_id = "front1";
 
 
     if (score_int === max_score) {
@@ -94,7 +94,8 @@ function if_mapping(e) {
     } else {
         if (selection_one === "") {
             selection_one = e.id;
-            console.log("Selection one = nothing selection_one updated")
+            first_id = e.id.slice(-2);
+            console.log("Selection one = nothing so selection_one becomes e.id")
             /*
             Add code to flip tile
             update selection_one value
@@ -102,9 +103,11 @@ function if_mapping(e) {
             */
         } else {
             if (selection_one === selection_two) {
-                console.log("matched tiles")
+                console.log("Same tile selected")
                 selection_one = "";
                 selection_two = "";
+                first_id = "";
+                second_id = "";
                 /* insert code to handle matched tiles
                 Update Incorrect clsss with + 1
                 Flip both tiles back to back            
@@ -116,10 +119,10 @@ function if_mapping(e) {
                 Show Popup message
                 */
             } else {
-
+              second_id = e.id.slice(-2);
                 if (selection_one !== selection_two && first_id === second_id) {
+                  
                     console.log("Selection one and two DO NOT match")
-
                     /* 
                     If selection_one  does not equal selected Element insert code to handle tile flips 
                     Update score class with +1
@@ -127,13 +130,24 @@ function if_mapping(e) {
                     */
                     selection_one = "";
                     selection_two = "";
-
+                    first_id = "";
+                    second_id = "";
 
 
                 }
             }
         }
    }
+}
+
+
+function incrementScore() {
+
+	// Gets the current score from the DOM and increments it
+
+	let oldScore = parseInt(document.getElementById("score").innerText);
+	document.getElementById("score").innerText = ++oldScore;
+
 }
 
 
