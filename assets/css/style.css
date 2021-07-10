@@ -137,6 +137,11 @@
 .score {
     height: auto;
     width: 100%;
+    display: inline;
+}
+.score_div {
+    display: inline-flex;
+    width: 25%;
 }
 
 #correct_text {
