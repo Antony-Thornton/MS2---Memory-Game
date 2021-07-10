@@ -78,74 +78,79 @@ function reset_tiles() {
 
 
 function if_mapping(e) {
-    let selectedElement = e;
-    let selection_two = selectedElement.id;
-    let score = document.getElementById("correct_score");
-    let score_check = score.innerHTML;
-    let score_int = parseInt(score_check);
-    let max_score = 20;
+  let selectedElement = e;
+  let selection_two = selectedElement.id;
+  let score = document.getElementById("correct_score");
+  let score_check = score.innerHTML;
+  let score_int = parseInt(score_check);
+  let max_score = 20;
 
 
-    if (score_int === max_score) {
-        console.log("Game Complete")
-        /* 
-          Exit script - Game Complete 
-          Show Popup message
+  if (score_int === max_score) {
+      console.log("Game Complete")
+      /* 
+        Exit script - Game Complete 
+        Show Popup message
+        */
+  } else {
+      if (selection_one === "") {
+          selection_one = e.id;
+          first_id = e.id.slice(-2);
+          console.log("Selection one = nothing so selection_one becomes e.id")
+          /*
+          Add code to flip tile
+          update selection_one value
+          Exit Script
           */
-    } else {
-        if (selection_one === "") {
-            selection_one = e.id;
-            first_id = e.id.slice(-2);
-            console.log("Selection one = nothing so selection_one becomes e.id")
-            /*
-            Add code to flip tile
-            update selection_one value
-            Exit Script
-            */
-        } else {
-            if (selection_one === selection_two) {
-                console.log("Same tile selected")
-                /* below scoring adapted from the code instutute course */
-                oldScore = parseInt(document.getElementById("incorrect_score").innerText);
-                document.getElementById("incorrect_score").innerText = ++oldScore;
-                
-                selection_one = "";
-                selection_two = "";
-                first_id = "";
-                second_id = "";
-                /* insert code to handle matched tiles
-                Update Incorrect clsss with + 1
-                Flip both tiles back to back            
-                */
-            }
-            if (score === 20) {
-                /* 
-                Exit script - Game Complete 
-                Show Popup message
-                */
-            } else {
-              second_id = e.id.slice(-2);
-                if (selection_one !== selection_two && first_id === second_id) {
-                  
-                    console.log("Selection one and two DO NOT match")
-                    /* below scoring adapted from the code instutute course */
-                    old_score = parseInt(document.getElementById("correct_score").innerText);
-                    document.getElementById("correct_score").innerText = ++old_score;
-                    /* 
-                    If selection_one  does not equal selected Element insert code to handle tile flips 
-                    Update score class with +1
-                    Change both tiles to Locked              
-                    */
-                    selection_one = "";
-                    selection_two = "";
-                    first_id = "";
-                    second_id = "";
+      } else {
+          if (selection_one === selection_two) {
+              console.log("Same tile selected")
+              /* below scoring adapted from the code instutute course */
+              old_score = parseInt(document.getElementById("incorrect_score").innerText);
+              document.getElementById("incorrect_score").innerText = ++old_score;
+              
+              selection_one = "";
+              selection_two = "";
+              first_id = "";
+              second_id = "";
+              /* insert code to handle matched tiles
+              Update Incorrect clsss with + 1
+              Flip both tiles back to back            
+              */
+          } else {
+            second_id = e.id.slice(-2);
+              if (selection_one !== selection_two && first_id === second_id) {
 
+                  console.log("Selection one and two DO NOT match")
+                  /* below scoring adapted from the code instutute course */
+                  old_score = parseInt(document.getElementById("correct_score").innerText);
+                  document.getElementById("correct_score").innerText = ++old_score;
+                  /* 
+                  If selection_one  does not equal selected Element insert code to handle tile flips 
+                  Update score class with +1
+                  Change both tiles to Locked              
+                  */
+                  selection_one = "";
+                  selection_two = "";
+                  first_id = "";
+                  second_id = "";
 
-                }
-            }
-        }
-   }
+                  score = document.getElementById("correct_score");
+                  score_check = score.innerHTML;
+                  score_int = parseInt(score_check);
+                  console.log(score_int)
+                  if (score_int === max_score) {
+                    console.log("Max score but mid function")
+                      /* 
+                      Exit script - Game Complete 
+                      Show Popup message
+                      */
+                  } 
+
+              }
+          }
+      }
+ }
 }
 
 
