@@ -59,13 +59,15 @@ function show_hero() {
 
 
 
-
+/* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_tiles() {
   var divs = document.getElementsByTagName("div");
   console.log(divs)
   for(var i = 0; i < divs.length; i++){
-    let div_class_name = divs.className.substr(1,4);
-    if (div_class_name = "back") {
+    /* Added Divs[i] to make it work. Also need === in the if */
+    let div_class_name = divs[i].className.substr(0,4);
+    console.log(div_class_name)
+    if (div_class_name === "back") {
       console.log("true")
       divs[i].className = "front";
      }
