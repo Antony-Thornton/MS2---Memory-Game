@@ -137,7 +137,8 @@ function if_mapping(e) {
                   /* below scoring adapted from the code instutute course */
                   old_score = parseInt(document.getElementById("correct_score").innerText);
                   document.getElementById("correct_score").innerText = ++old_score;
-
+                  /* End */
+                  
                   selectedElement.className = "locked" + first_id;
                   console.log(selection_one.className)
                   let first_selection = document.getElementById(selection_one);
