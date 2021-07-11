@@ -203,6 +203,13 @@
     border-radius: 25px;
 }
 
+.locked10 {
+    width: 150px;
+    height: 150px;
+    background: url(../images/bmw_test.jpg) no-repeat center center /contain;
+    border-radius: 25px;
+}
+
 .back11 {
     width: 150px;
     height: 150px;

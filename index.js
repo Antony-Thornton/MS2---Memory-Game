@@ -103,6 +103,7 @@ function if_mapping(e) {
           selectedElement.className = "back" + first_id;
 
 
+
           /*
           Add code to flip tile
           update selection_one value
@@ -134,7 +135,10 @@ function if_mapping(e) {
                   old_score = parseInt(document.getElementById("correct_score").innerText);
                   document.getElementById("correct_score").innerText = ++old_score;
 
-                  selectedElement.className = "back" + first_id + " locked";
+                  selectedElement.className = "locked" + first_id;
+                  console.log(selection_one.className)
+                  let first_selection = document.getElementById(selection_one);
+                  first_selection.className = "locked" + first_id;
                   /* 
                   If selection_one  does not equal selected Element insert code to handle tile flips 
                   Update score class with +1
