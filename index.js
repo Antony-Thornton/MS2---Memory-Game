@@ -87,7 +87,10 @@ function if_mapping(e) {
   let score_check = score.innerHTML;
   let score_int = parseInt(score_check);
   let max_score = 20;
+  let locked_check = e.className.substr(0,6)
+  console.log(locked_check)
 
+  if (locked_check = "locked"){
 
   if (score_int === max_score) {
       console.log("Game Complete")
@@ -176,7 +179,7 @@ function if_mapping(e) {
       }
  }
 }
-
+}
 
 
 
