@@ -66,7 +66,8 @@ function reset_tiles() {
   for(var i = 0; i < divs.length; i++){
     /* Added Divs[i] to make it work. Also need === in the if */
     let div_class_name = divs[i].className.substr(0,4);
-    console.log(div_class_name)
+    let div_class_name_locked = divs[i].className.substr(0, 6)
+    console.log(div_class_name_locked)
     if (div_class_name === "back") {
       console.log("true")
       divs[i].className = "front";
@@ -74,6 +75,31 @@ function reset_tiles() {
   }
 }
 
+
+/* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
+function reset_game() {
+    var divs = document.getElementsByTagName("div");
+    console.log(divs)
+    for(var i = 0; i < divs.length; i++){
+      /* Added Divs[i] to make it work. Also need === in the if */
+      let div_class_name = divs[i].className.substr(0,4);
+      let div_class_name_locked = divs[i].className.substr(0, 6)
+      console.log(div_class_name_locked)
+      if (div_class_name === "back" || div_class_name_locked === "locked") {
+        console.log("true")
+        divs[i].className = "front";
+         /* below scoring adapted from the code instutute course */
+          old_score = parseInt(document.getElementById("correct_score").innerText);
+          document.getElementById("correct_score").innerText = 0;
+          /* End */
+  
+          old_score = parseInt(document.getElementById("incorrect_score").innerText);
+          document.getElementById("incorrect_score").innerText = 0;
+          /* End */
+       }
+    }
+  }
+  
 
 
 
@@ -151,7 +177,10 @@ function if_mapping(e) {
                   } else {
                       if (selection_one !== selection_two && first_id !== second_id)
                           selectedElement.className = "back" + second_id;
-
+                          /* below scoring adapted from the code instutute course */
+                          old_score = parseInt(document.getElementById("incorrect_score").innerText);
+                          document.getElementById("incorrect_score").innerText = ++old_score;
+                          /* End */
                       setTimeout(function() {
                           selectedElement.className = "front"
                           selection_one = "";
