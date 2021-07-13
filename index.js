@@ -154,6 +154,10 @@ function if_mapping(e) {
 
                       setTimeout(function() {
                           selectedElement.className = "front"
+                          selection_one = "";
+                          selection_two = "";
+                          first_id = "";
+                          second_id = "";
                           reset_tiles()
                       }, 1000);
                   }
