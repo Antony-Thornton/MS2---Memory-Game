@@ -21,30 +21,6 @@ function hide_unhide() {
     }
 }
 
-function start() {
-    var hero = document.getElementById("header_format");
-    hero.style.display = "none";
-    var x = document.getElementById("hide_unhide");
-    x.style.display = "none";
-
-
-
-    var currentdate = new Date();
-    start_time = currentdate.getHours() + ":" +
-        currentdate.getMinutes() + ":" +
-        currentdate.getSeconds();
-      console.log(start_time)
-
-}
-
-function end() {
-        var currentdate = new Date(); 
-        var end_time = currentdate.getHours() + ":"  
-                    + currentdate.getMinutes() + ":" 
-                    + currentdate.getSeconds();
-        console.log(end_time)
-
-}
 
 function show_hero() {
     var hero = document.getElementById("header_format");
@@ -57,22 +33,20 @@ function show_hero() {
 
 
 
-
-
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_tiles() {
-  var divs = document.getElementsByTagName("div");
-  console.log(divs)
-  for(var i = 0; i < divs.length; i++){
-    /* Added Divs[i] to make it work. Also need === in the if */
-    let div_class_name = divs[i].className.substr(0,4);
-    let div_class_name_locked = divs[i].className.substr(0, 6)
-    console.log(div_class_name_locked)
-    if (div_class_name === "back") {
-      console.log("true")
-      divs[i].className = "front";
-     }
-  }
+    var divs = document.getElementsByTagName("div");
+    console.log(divs)
+    for (var i = 0; i < divs.length; i++) {
+        /* Added Divs[i] to make it work. Also need === in the if */
+        let div_class_name = divs[i].className.substr(0, 4);
+        let div_class_name_locked = divs[i].className.substr(0, 6)
+        console.log(div_class_name_locked)
+        if (div_class_name === "back") {
+            console.log("true")
+            divs[i].className = "front";
+        }
+    }
 }
 
 
@@ -80,126 +54,156 @@ function reset_tiles() {
 function reset_game() {
     var divs = document.getElementsByTagName("div");
     console.log(divs)
-    for(var i = 0; i < divs.length; i++){
-      /* Added Divs[i] to make it work. Also need === in the if */
-      let div_class_name = divs[i].className.substr(0,4);
-      let div_class_name_locked = divs[i].className.substr(0, 6)
-      console.log(div_class_name_locked)
-      if (div_class_name === "back" || div_class_name_locked === "locked") {
-        console.log("true")
-        divs[i].className = "front";
-         /* below scoring adapted from the code instutute course */
-          old_score = parseInt(document.getElementById("correct_score").innerText);
-          document.getElementById("correct_score").innerText = 0;
-          /* End */
-  
-          old_score = parseInt(document.getElementById("incorrect_score").innerText);
-          document.getElementById("incorrect_score").innerText = 0;
-          /* End */
-       }
-    }
-  }
-  
+    for (var i = 0; i < divs.length; i++) {
+        /* Added Divs[i] to make it work. Also need === in the if */
+        let div_class_name = divs[i].className.substr(0, 4);
+        let div_class_name_locked = divs[i].className.substr(0, 6)
+        console.log(div_class_name_locked)
+        if (div_class_name === "back" || div_class_name_locked === "locked") {
+            console.log("true")
+            divs[i].className = "front";
+            /* below scoring adapted from the code instutute course */
+            old_score = parseInt(document.getElementById("correct_score").innerText);
+            document.getElementById("correct_score").innerText = 0;
+            /* End */
 
+            old_score = parseInt(document.getElementById("incorrect_score").innerText);
+            document.getElementById("incorrect_score").innerText = 0;
+            /* End */
+            start_time = "";
+            end_time = "";
+        }
+    }
+}
 
 
 
 
 function if_mapping(e) {
-  let selectedElement = e;
-  let selection_two = selectedElement.id;
-  let score = document.getElementById("correct_score");
-  let score_check = score.innerHTML;
-  let score_int = parseInt(score_check);
-  let max_score = 20;
-  let locked_check = e.className.substr(0, 6)
-  console.log(locked_check)
+    let selectedElement = e;
+    let selection_two = selectedElement.id;
+    let score = document.getElementById("correct_score");
+    let score_check = score.innerHTML;
+    let score_int = parseInt(score_check);
+    let max_score = 3;
+    let locked_check = e.className.substr(0, 6)
 
-  if (locked_check = "locked") {
+    if (locked_check = "locked") {
 
-      if (score_int === max_score) {
-          console.log("Game Complete")
-          /* 
-            Exit script - Game Complete 
-            Show Popup message
-            */
-      } else {
-          if (selection_one === "") {
-              selection_one = e.id;
-              first_id = e.id.slice(-2);
-              console.log("Selection one = nothing so selection_one becomes e.id")
-              selectedElement.className = "back" + first_id;
+        if (score_int === max_score) {
+            console.log("Game Complete")
+            /* 
+              Exit script - Game Complete 
+              Show Popup message
+              */
+        } else {
+            if (selection_one === "") {
+                selection_one = e.id;
+                first_id = e.id.slice(-2);
+                console.log("Selection one = nothing so selection_one becomes e.id")
+                selectedElement.className = "back" + first_id;
 
-          } else {
-              if (selection_one === selection_two) {
-                  console.log("Same tile selected")
-                  /* below scoring adapted from the code instutute course */
-                  old_score = parseInt(document.getElementById("incorrect_score").innerText);
-                  document.getElementById("incorrect_score").innerText = ++old_score;
-                  /* End */
-                  selectedElement.className = "front";
+            } else {
+                if (selection_one === selection_two) {
+                    console.log("Same tile selected")
+                    /* below scoring adapted from the code instutute course */
+                    old_score = parseInt(document.getElementById("incorrect_score").innerText);
+                    document.getElementById("incorrect_score").innerText = ++old_score;
+                    /* End */
+                    selectedElement.className = "front";
 
-                  selection_one = "";
-                  selection_two = "";
-                  first_id = "";
-                  second_id = "";
-              } else {
-                  second_id = e.id.slice(-2);
-                  if (selection_one !== selection_two && first_id === second_id) {
+                    selection_one = "";
+                    selection_two = "";
+                    first_id = "";
+                    second_id = "";
+                } else {
+                    second_id = e.id.slice(-2);
+                    if (selection_one !== selection_two && first_id === second_id) {
 
-                      console.log("Selection one and two DO NOT match")
-                      /* below scoring adapted from the code instutute course */
-                      old_score = parseInt(document.getElementById("correct_score").innerText);
-                      document.getElementById("correct_score").innerText = ++old_score;
-                      /* End */
+                        console.log("Selection one and two DO NOT match")
+                        /* below scoring adapted from the code instutute course */
+                        old_score = parseInt(document.getElementById("correct_score").innerText);
+                        document.getElementById("correct_score").innerText = ++old_score;
+                        /* End */
 
-                      selectedElement.className = "locked" + first_id;
-                      console.log(selection_one.className)
-                      let first_selection = document.getElementById(selection_one);
-                      first_selection.className = "locked" + first_id;
+                        selectedElement.className = "locked" + first_id;
+                        console.log(selection_one.className)
+                        let first_selection = document.getElementById(selection_one);
+                        first_selection.className = "locked" + first_id;
 
-                      selection_one = "";
-                      selection_two = "";
-                      first_id = "";
-                      second_id = "";
+                        selection_one = "";
+                        selection_two = "";
+                        first_id = "";
+                        second_id = "";
 
-                      score = document.getElementById("correct_score");
-                      score_check = score.innerHTML;
-                      score_int = parseInt(score_check);
-                      console.log(score_int)
-                      if (score_int === max_score) {
-                          console.log("Max score but mid function")
-                          /* 
-                          Show Popup message
-                          */
-                      }
+                        score = document.getElementById("correct_score");
+                        score_check = score.innerHTML;
+                        score_int = parseInt(score_check);
+                        console.log(score_int)
+                        if (score_int === max_score) {
+                            console.log("Max score but mid function")
 
-                  } else {
-                      if (selection_one !== selection_two && first_id !== second_id)
-                          selectedElement.className = "back" + second_id;
-                          /* below scoring adapted from the code instutute course */
-                          old_score = parseInt(document.getElementById("incorrect_score").innerText);
-                          document.getElementById("incorrect_score").innerText = ++old_score;
-                          /* End */
-                      setTimeout(function() {
-                          selectedElement.className = "front"
-                          selection_one = "";
-                          selection_two = "";
-                          first_id = "";
-                          second_id = "";
-                          reset_tiles()
-                      }, 1000);
-                  }
-              }
-          }
-      }
-  }
+                            /* 
+                            Show Popup message
+                            */
+                        }
+
+                    } else {
+                        if (selection_one !== selection_two && first_id !== second_id)
+                            selectedElement.className = "back" + second_id;
+                        /* below scoring adapted from the code instutute course */
+                        old_score = parseInt(document.getElementById("incorrect_score").innerText);
+                        document.getElementById("incorrect_score").innerText = ++old_score;
+                        /* End */
+                        setTimeout(function() {
+                            selectedElement.className = "front"
+                            selection_one = "";
+                            selection_two = "";
+                            first_id = "";
+                            second_id = "";
+                            reset_tiles()
+                        }, 1000);
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 
 
 /*
+
+
+
+/*
+
+function start() {
+    var hero = document.getElementById("header_format");
+    hero.style.display = "none";
+    var x = document.getElementById("hide_unhide");
+    x.style.display = "none";
+
+
+
+    var currentdate = new Date();
+    start_time = currentdate.getHours() + ":" +
+        currentdate.getMinutes() + ":" +
+        currentdate.getSeconds();
+    console.log(start_time)
+
+}
+
+function end() {
+    var currentdate = new Date();
+    var end_time = currentdate.getHours() + ":" +
+        currentdate.getMinutes() + ":" +
+        currentdate.getSeconds();
+    console.log(end_time)
+
+}
+
 function incrementScore() {
 
 	// Gets the current score from the DOM and increments it
