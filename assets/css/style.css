@@ -229,9 +229,14 @@
 
 
 
-
-
 .back12 {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border-radius: 25px;
+}
+
+.locked12 {
     width: 150px;
     height: 150px;
     background-color: blue;

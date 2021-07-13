@@ -155,7 +155,7 @@ function if_mapping(e) {
                       setTimeout(function() {
                           selectedElement.className = "front"
                           reset_tiles()
-                      }, 5000);
+                      }, 1000);
                   }
               }
           }
