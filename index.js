@@ -85,7 +85,7 @@ function if_mapping(e) {
     let score = document.getElementById("correct_score");
     let score_check = score.innerHTML;
     let score_int = parseInt(score_check);
-    let max_score = 3;
+    let max_score = 7;
     let locked_check = e.className.substr(0, 6)
 
     if (locked_check = "locked") {

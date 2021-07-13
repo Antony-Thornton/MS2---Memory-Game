@@ -250,6 +250,57 @@
     border-radius: 25px;
 }
 
+.locked13 {
+    width: 150px;
+    height: 150px;
+    background-color: chartreuse;
+    border-radius: 25px;
+}
+
+
+.back14 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(229, 255, 0);
+    border-radius: 25px;
+}
+
+.locked14 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(229, 255, 0);
+    border-radius: 25px;
+}
+
+.back15 {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border-radius: 25px;
+}
+
+.locked15 {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border-radius: 25px;
+}
+
+
+.back16 {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    border-radius: 25px;
+}
+
+.locked16 {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    border-radius: 25px;
+}
+
 
 /* ******* Footer Formatting ******* */
 .footer_div {
