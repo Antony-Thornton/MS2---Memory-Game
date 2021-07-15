@@ -32,6 +32,23 @@ function show_hero() {
 
 
 
+/* 
+https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javascript/
+Helped with the divs[i].id array randomiser
+*/
+window.onload = function random_array() {
+    array.sort(() => 0.5 - Math.random());
+    var divs = document.getElementsByTagName("div");
+    for (var i = 0; i < divs.length; i++) {
+        let div_class_name = divs[i].className.substr(0, 5);
+        if (div_class_name === "front") {
+            divs[i].id = array[Math.floor(Math.random() * array.length)];
+        }
+    }
+}
+
+
+
 
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_tiles() {
