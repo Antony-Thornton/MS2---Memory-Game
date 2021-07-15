@@ -177,7 +177,7 @@ Hero image link - https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdd
 ## Acknowledgements
 This project was inspired by Code Institute as part of my Second Milestone Project (MS2). 
 
-
+Thank you to Sean Young from Code institute for helping me with a couple of Javascript queries. See Javascript file for details.
 
 
 Gradience - https://www.w3schools.com/css/css3_gradients.asp - Helped me learn about css colour gradience.

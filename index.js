@@ -6,7 +6,9 @@ let score = "";
 let first_id = "";
 let second_id = "";
 let old_score = "";
-let array = ["front1.10", "front2.10", "front1.11", "front1.11", "front1.12", "front1.12", "front1.13", "front2.13", "front1.14", "front2.14", "front1.15", "front2.15", "front1.16", "front2.16"];
+let array = ["front1.10", "front2.10", "front1.11", "front2.11", "front1.12", "front2.12", "front1.13", "front2.13", "front1.14", "front2.14", "front1.15", "front2.15", "front1.16", "front2.16"];
+
+
 
 
 /* Helped with the hide_unide element function. Worked as is so no changes needed
@@ -37,16 +39,31 @@ https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javas
 Helped with the divs[i].id array randomiser
 */
 window.onload = function random_array() {
-    array.sort(() => 0.5 - Math.random());
+    shuffleArray(array);
     var divs = document.getElementsByTagName("div");
     for (var i = 0; i < divs.length; i++) {
         let div_class_name = divs[i].className.substr(0, 5);
         if (div_class_name === "front") {
-            divs[i].id = array[Math.floor(Math.random() * array.length)];
+                divs[i].id = array[i];
+                new_array_value = divs[i].id;
+                console.log(array)
         }
     }
 }
 
+
+/* https://www.youtube.com/watch?v=5sNGqsMpW1E */
+const shuffleArray = array => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+
+    }
+
+    return array
+};
 
 
 
