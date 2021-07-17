@@ -226,11 +226,9 @@ function if_mapping(e) {
 
 
 
-/*
 
 
 
-/*
 
 function start() {
     var hero = document.getElementById("header_format");
@@ -247,7 +245,7 @@ function start() {
     console.log(start_time)
 
 }
-
+/*
 function end() {
     var currentdate = new Date();
     var end_time = currentdate.getHours() + ":" +
