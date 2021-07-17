@@ -45,8 +45,6 @@ window.onload = function random_array() {
         let div_class_name = divs[i].className.substr(0, 5);
         if (div_class_name === "front") {
                 divs[i].id = array[i];
-                new_array_value = divs[i].id;
-                console.log(array)
         }
     }
 }
