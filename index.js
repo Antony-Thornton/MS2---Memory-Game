@@ -50,7 +50,6 @@ window.onload = function random_array() {
            
             divs[i].id = array[j];
             j++
-            console.log(array)
         }
     }
     }
@@ -113,6 +112,20 @@ function reset_game() {
             start_time = "";
             end_time = "";
         }
+    }
+    shuffleArray(array);
+    var divs = document.getElementsByTagName("div");
+    for(var j = 0; j < array.length; j++) {
+    for (var i = 0; i < divs.length; i++) {
+        
+        
+        let div_class_name = divs[i].className.substr(0, 5);
+        if (div_class_name === "front") {
+           
+            divs[i].id = array[j];
+            j++
+        }
+    }
     }
 }
 
