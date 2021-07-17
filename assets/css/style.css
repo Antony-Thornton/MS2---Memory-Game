@@ -301,6 +301,37 @@
     border-radius: 25px;
 }
 
+.back17 {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.locked17 {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+
+.back18 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(54, 49, 80);
+    border-radius: 25px;
+}
+
+.locked18 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(54, 49, 80);
+    border-radius: 25px;
+}
+
+
+
 
 /* ******* Footer Formatting ******* */
 .footer_div {
