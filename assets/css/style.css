@@ -141,8 +141,14 @@
 }
 .score_div {
     display: inline-flex;
-    width: 25%;
+
 }
+
+.score_div {
+    display: inline-flex;
+
+}
+
 
 #correct_text {
     color: green;
@@ -342,7 +348,6 @@
     text-align: center; 
     font-size: 1.0rem;
     text-transform: uppercase;
-    background-image: linear-gradient(white, rgb(170,170,170));
 }
 
 .footer_p_format {
@@ -352,7 +357,6 @@
 }
 
 footer {
-    background-image: linear-gradient(white, rgb(170,170,170));
     padding-left: 20px;
     padding-right: 20px;
 
