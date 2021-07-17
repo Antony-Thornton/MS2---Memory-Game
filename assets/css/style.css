@@ -160,16 +160,19 @@
 /* ************ Main Section Format ************ */
 
 .main_section {
-    height: 200px;
+    height: auto;
     background-color: white;
 }
 
 
+.memory_section {
+    height: auto;
+
+}
 
 .container {
     width: 100%;
-    padding-bottom: 100px;
-    height: auto;
+
 }
 
 .col {
@@ -352,6 +355,7 @@ footer {
     background-image: linear-gradient(white, rgb(170,170,170));
     padding-left: 20px;
     padding-right: 20px;
+
 }
 
 footer div h1 {
