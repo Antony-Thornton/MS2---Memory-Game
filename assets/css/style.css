@@ -1,4 +1,4 @@
-    * {
+* {
     font-family: Helvetica, sans-serif;
     color: Black;
     margin: 0;
@@ -6,14 +6,13 @@
     text-align: center;
 }
 
-    
+
 /* ************ Header Format ************ */
 
 #navigation_bar {
     width: 100%;
     height: auto;
     background-image: linear-gradient(rgb(170, 170, 170), white)
-
 }
 
 .nav_div {
@@ -25,8 +24,8 @@
     text-decoration: underline;
 }
 
-.nav_div h3{
-    
+.nav_div h3 {
+
     text-decoration: none;
     letter-spacing: 1px;
     list-style-type: none;
@@ -45,9 +44,9 @@
     width: 100%;
     text-align: center;
     /* https://www.w3schools.com/css/css3_gradients.asp - learned about gradience*/
-     background-image: linear-gradient(rgb(170, 170, 170), white);
-     padding-bottom: 10px;
-    
+    background-image: linear-gradient(rgb(170, 170, 170), white);
+    padding-bottom: 10px;
+
 }
 
 #header_title h1 {
@@ -67,13 +66,14 @@
 #how_to_div {
     width: 100%;
     height: 500px;
-    background-image: linear-gradient(white, rgb(170,170,170), white);
+    background-image: linear-gradient(white, rgb(170, 170, 170), white);
     text-align: center;
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-#how_to_div h2{
+
+#how_to_div h2 {
     text-align: center;
     padding-top: 5px;
     padding-bottom: 15px;
@@ -89,12 +89,12 @@
     font-weight: bolder;
 }
 
-#how_to_div h4{
+#how_to_div h4 {
     text-align: center;
     padding-bottom: 10px;
 }
 
-#how_to_div h5{
+#how_to_div h5 {
     text-align: center;
     padding-bottom: 10px;
 }
@@ -137,6 +137,7 @@
     width: 100%;
     display: inline;
 }
+
 .score_div {
     display: inline-flex;
 
@@ -171,7 +172,7 @@
 .contact_form {
     height: auto;
     width: 100%;
-    background-image: linear-gradient(rgb(170,170,170), white);
+    background-image: linear-gradient(rgb(170, 170, 170), white);
     padding: 1px 0px;
     text-align: center;
 
@@ -183,7 +184,7 @@
     color: #fff;
     width: 100%;
     border-radius: 25px;
-    
+
 }
 
 .form h4 {
@@ -224,7 +225,7 @@ option::selection {
     color: black;
     width: 40%;
     text-align: left;
-    
+
 
 }
 
@@ -249,7 +250,7 @@ option::selection {
 
 }
 
-#email:hover  {
+#email:hover {
     background-color: black;
     color: white;
 }
@@ -259,6 +260,7 @@ option::selection {
     background-color: black;
     color: white;
 }
+
 #secondname:hover {
     background-color: black;
     color: white;
@@ -270,21 +272,23 @@ option::selection {
 }
 
 .button {
- background-color: black; /* Green */
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 1px 1px white;
+    background-color: black;
+    /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 1px 1px white;
 }
 
 .button:hover {
- background-color: white; /* Green */
-  color: Black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 1px 1px black;
+    background-color: white;
+    /* Green */
+    color: Black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 1px 1px black;
 }
 
 
@@ -347,18 +351,16 @@ option::selection {
 .back11 {
     width: 150px;
     height: 150px;
-   background-color: red;
-   border-radius: 25px;
+    background-color: red;
+    border-radius: 25px;
 }
 
 .locked11 {
     width: 150px;
     height: 150px;
-   background-color: red;
-   border-radius: 25px;
+    background-color: red;
+    border-radius: 25px;
 }
-
-
 
 
 
@@ -469,14 +471,15 @@ option::selection {
 
 /* ******* Footer Formatting ******* */
 .footer_div {
-    padding-top: 20px;;
-    text-align: center; 
+    padding-top: 20px;
+    ;
+    text-align: center;
     font-size: 1.0rem;
     text-transform: uppercase;
 }
 
 .footer_p_format {
-    text-align: center; 
+    text-align: center;
     font-size: 1.0rem;
     text-transform: none;
 }
@@ -494,16 +497,16 @@ footer div h1 {
 
 
 /* Social networks code below borrowed from Code Institute Love running project */
-.social_networks{
+.social_networks {
     text-align: center;
 }
 
 .social_networks li {
-    display:inline;
+    display: inline;
 }
 
 .social_networks i {
     font-size: 3rem;
     padding: 1%;
-    color:black;
+    color: black;
 }
