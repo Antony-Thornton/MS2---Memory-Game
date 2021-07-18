@@ -21,7 +21,6 @@
     height: 50px;
     display: inline-flex;
     padding: 5px 40px 0px 40px;
-    background-image: linear-gradient(rgb(170, 170, 170), white);
     font-size: 1rem;
     text-decoration: underline;
 }
@@ -38,8 +37,7 @@
 #header_format {
     width: 100%;
     height: auto;
-    background-color: rgb(170, 170, 170);
-    color: white;
+    background-image: linear-gradient(rgb(170, 170, 170), white, rgb(170, 170, 170));
 }
 
 #header_title {

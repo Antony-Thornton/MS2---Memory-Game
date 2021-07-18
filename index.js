@@ -41,17 +41,17 @@ Helped with the divs[i].id array randomiser
 window.onload = function random_array() {
     shuffleArray(array);
     var divs = document.getElementsByTagName("div");
-    for(var j = 0; j < array.length; j++) {
-    for (var i = 0; i < divs.length; i++) {
-        
-        
-        let div_class_name = divs[i].className.substr(0, 5);
-        if (div_class_name === "front") {
-           
-            divs[i].id = array[j];
-            j++
+    for (var j = 0; j < array.length; j++) {
+        for (var i = 0; i < divs.length; i++) {
+
+
+            let div_class_name = divs[i].className.substr(0, 5);
+            if (div_class_name === "front") {
+
+                divs[i].id = array[j];
+                j++
+            }
         }
-    }
     }
 }
 
@@ -115,17 +115,17 @@ function reset_game() {
     }
     shuffleArray(array);
     var divs = document.getElementsByTagName("div");
-    for(var j = 0; j < array.length; j++) {
-    for (var i = 0; i < divs.length; i++) {
-        
-        
-        let div_class_name = divs[i].className.substr(0, 5);
-        if (div_class_name === "front") {
-           
-            divs[i].id = array[j];
-            j++
+    for (var j = 0; j < array.length; j++) {
+        for (var i = 0; i < divs.length; i++) {
+
+
+            let div_class_name = divs[i].className.substr(0, 5);
+            if (div_class_name === "front") {
+
+                divs[i].id = array[j];
+                j++
+            }
         }
-    }
     }
 }
 
@@ -222,10 +222,6 @@ function if_mapping(e) {
         }
     }
 }
-
-
-
-
 
 
 
