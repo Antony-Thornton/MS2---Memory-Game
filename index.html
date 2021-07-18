@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div id="navigation_bar">
             <div class="nav_div">
-                <h3> 
+                <h3>
                     <a href="index.html">Memory Game</a>
                 </h3>
             </div>
@@ -29,30 +31,30 @@
         <div id="header_format">
             <img class="hero_format" src="assets/images/bmw_hero_image.jpg" alt="BMW Autumn Advert Cars On A Hill" no-repeat center center>
         </div>
-            <div id="header_title">
-                <img class="logo_format" src="assets/images/bmw_logo.jpg" alt="BMW Logo">
-                <h1>BMW Car Models</h1>
-                <h2>A Memory Game</h2>
-                <h4>Thank you for visitng this website. 
-                    In order to celebrate everything BMW we have created a fun mini game that will test your memory skills. This game is best enjoyed on a desktop.</h4>
+        <div id="header_title">
+            <img class="logo_format" src="assets/images/bmw_logo.jpg" alt="BMW Logo">
+            <h1>BMW Car Models</h1>
+            <h2>A Memory Game</h2>
+            <h4>Thank you for visitng this website.
+                In order to celebrate everything BMW we have created a fun mini game that will test your memory skills. This game is best enjoyed on a desktop.</h4>
+        </div>
+        <div id="how_to_div">
+            <button type="button" onclick="hide_unhide()">How to play?</button>
+            <div id="hide_unhide">
+                <h4>When you are ready.</h4>
+                <h5>Step 1 - Press the start button. This will hide the header image.</h5>
+                <h5>Step 2 - Click on a tile and then another.</h5>
+                <h5>Step 3 - Remember the tile pictures and try to match all of them as quickly as you can.</h5>
+                <h5>Step 4 - If you want to log your score please use the submit.</h5>
+                <h5>If you want to start again please press the reset button.</h5>
             </div>
-            <div id="how_to_div">
-                <button type="button" onclick = "hide_unhide()">How to play?</button>                
-                <div id="hide_unhide">
-                    <h4>When you are ready.</h4>
-                    <h5>Step 1 - Press the start button. This will hide the header image.</h5>
-                    <h5>Step 2 - Click on a tile and then another.</h5>
-                    <h5>Step 3 - Remember the tile pictures and try to match all of them as quickly as you can.</h5>
-                    <h5>Step 4 - If you want to log your score please use the submit.</h5>
-                    <h5>If you want to start again please press the reset button.</h5>
-                </div>    
-            </div>
-            <div class="game_controls">
-                <button type="button" id="start" onclick="start()">Start</button>
-                <button type="button" id="reset" onclick="reset_game()">Reset</button>
-                <button type="button" id="submit" onclick="incrementWrongAnswer()">Submit Score</button>
-            </div>
-        </header>
+        </div>
+        <div class="game_controls">
+            <button type="button" id="start" onclick="start()">Start</button>
+            <button type="button" id="reset" onclick="reset_game()">Reset</button>
+            <button type="button" id="submit" onclick="incrementWrongAnswer()">Submit Score</button>
+        </div>
+    </header>
     <section class="main_section">
         <div class="score">
             <div>
@@ -63,69 +65,69 @@
             </div>
             <div>
                 <h1 id="incorrect_text">Incorrect</h1>
-            </div>  
+            </div>
             <div>
                 <h1 id="incorrect_score">0</h1>
             </div>
         </div>
-        </section>
-        <section class="memory_section">
-    <div class="container">
-        <div class="col">
-            <div id="front1.10" class="front" onclick="if_mapping(this)"></div>
+    </section>
+    <section class="memory_section">
+        <div class="container">
+            <div class="col">
+                <div id="front1.10" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front2.10" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front1.11" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front2.11" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front1.12" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front2.12" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front1.13" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front2.13" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front1.14" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front2.14" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front1.15" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front2.15" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front1.16" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front2.16" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front1.17" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front2.17" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front1.18" class="front" onclick="if_mapping(this)"></div>
+            </div>
+            <div class="col">
+                <div id="front2.18" class="front" onclick="if_mapping(this)"></div>
+            </div>
         </div>
-        <div class="col">
-            <div id="front2.10" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front1.11" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front2.11" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front1.12" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front2.12" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front1.13" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front2.13" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front1.14" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front2.14" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front1.15" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front2.15" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front1.16" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front2.16" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front1.17" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front2.17" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front1.18" class="front" onclick="if_mapping(this)"></div>
-        </div>
-        <div class="col">
-            <div id="front2.18" class="front" onclick="if_mapping(this)"></div>
-        </div>
-    </div>
     </section>
     <footer>
         <div class="footer_div">
@@ -133,44 +135,45 @@
             <p class="footer_p_format">
                 This is a fan made website created as a graded assessment, part of a software development course. It is not official and does not represent the views of Fitness First.
                 <br>
-                The information provided is for entertainment purposes only. 
+                The information provided is for entertainment purposes only.
                 <br>
                 <br>
             </p>
         </div>
         <div class="footer_div">
             <h1>Official Information</h1>
-                <p class="footer_p_format">
+            <p class="footer_p_format">
                 If you would like to get more information on BMW and its products, please visit the following social media accounts provided below.
                 <br>
             </p>
         </div>
         <div class="footer_div">
-           <!--UL taken from the love running project provided by Code Institute-->
-           <ul class="social_networks">
-            <li>
-                <a style="text-decoration: none;" href="https://www.facebook.com/bmwuk" target="_blank" title="Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a> 
-            </li>
-            <li>
-                <a style="text-decoration: none;" href="https://twitter.com/bmw" target="_blank">
-                    <i class="fab fa-twitter-square" title="Twitter"></i>
-                </a> 
-            </li>
-            <li>
-                <a style="text-decoration: none;" href="https://www.youtube.com/user/BMW" target="_blank" title="Youtube">
-                    <i class="fab fa-youtube-square"></i>
-                </a>
-            </li>
-            <li>
-                <a style="text-decoration: none;" href="https://www.bmw.co.uk/en/index.html" target="_blank">
-                    <i class="fas fa-globe" title="Fitness First Official Website"></i>
-                </a>
-            </li>
-        </ul>
+            <!--UL taken from the love running project provided by Code Institute-->
+            <ul class="social_networks">
+                <li>
+                    <a style="text-decoration: none;" href="https://www.facebook.com/bmwuk" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a style="text-decoration: none;" href="https://twitter.com/bmw" target="_blank">
+                        <i class="fab fa-twitter-square" title="Twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a style="text-decoration: none;" href="https://www.youtube.com/user/BMW" target="_blank" title="Youtube">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a style="text-decoration: none;" href="https://www.bmw.co.uk/en/index.html" target="_blank">
+                        <i class="fas fa-globe" title="Fitness First Official Website"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
     <script src="index.js"></script>
 </body>
+
 </html>
