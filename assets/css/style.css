@@ -158,16 +158,25 @@
     color: red;
 }
 
+/* ************ More From BMW Page ************ */
+
+.more_main_section {
+    padding: 0 10%;
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(rgb(170, 170, 170), white);
+
+}
+
+.more_main_section div {
+    padding: 10px 10%;
+    width: auto;
+    height: auto;
+}
+
 
 /* ************ Contact us page ************ */
 
-
-.inline_test {
-    width: 100%;
-    height: 100px;
-    background-color: red;
-    display: inline-flex;
-}
 
 .contact_form {
     height: auto;
