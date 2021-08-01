@@ -487,7 +487,47 @@ option::selection {
     border-radius: 25px;
 }
 
+.back19 {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(228, 6, 228, 0.651);
+    border-radius: 25px;
+}
 
+.locked19 {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(228, 6, 228, 0.651);
+    border-radius: 25px;
+}
+
+.back20 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(4, 217, 255);
+    border-radius: 25px;
+}
+
+.locked20 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(4, 217, 255);
+    border-radius: 25px;
+}
+
+.back21 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 102, 0);
+    border-radius: 25px;
+}
+
+.locked21 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 102, 0);
+    border-radius: 25px;
+}
 
 
 /* ******* Footer Formatting ******* */
