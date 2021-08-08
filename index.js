@@ -95,15 +95,25 @@ function reset_tiles() {
 
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_game() {
+
+    var answer = window.confirm("Reset numbers?")
+    
+    if (answer) {
+
     var divs = document.getElementsByTagName("div");
     
         for (var i = 0; i < divs.length; i++) {
 
 
             let div_class_name = divs[i].className.substr(0, 13);
+            let div_class_name_hidden = divs[i].className.substr(0, 14);
 
                 if (div_class_name === "front_number") {
                     divs[i].className = "front";
+                } else {
+                    if (div_class_name_hidden  === "number_visible") {
+                        divs[i].className = "number_hidden";
+                    }
                 }
 
         }
@@ -147,6 +157,67 @@ function reset_game() {
         }
         
     }
+
+} else {
+    var divs = document.getElementsByTagName("div");
+    
+    for (var i = 0; i < divs.length; i++) {
+
+
+        let div_class_name = divs[i].className.substr(0, 13);
+        let div_class_name_hidden = divs[i].className.substr(0, 14);
+
+            if (div_class_name === "front_number") {
+                divs[i].className = "front";
+            } else {
+                if (div_class_name_hidden  === "number_visible") {
+                    divs[i].className = "number_visible_black";
+                }
+            }
+
+    }
+
+var divs = document.getElementsByTagName("div");
+console.log(divs)
+for (var i = 0; i < divs.length; i++) {
+    /* Added Divs[i] to make it work. Also need === in the if */
+    let div_class_name = divs[i].className.substr(0, 4);
+    let div_class_name_locked = divs[i].className.substr(0, 6)
+    console.log(div_class_name_locked)
+    if (div_class_name === "back" || div_class_name_locked === "locked") {
+        console.log("true")
+        divs[i].className = "front";
+        /* below scoring adapted from the code instutute course */
+        old_score = parseInt(document.getElementById("correct_score").innerText);
+        document.getElementById("correct_score").innerText = 0;
+        /* End */
+
+        old_score = parseInt(document.getElementById("incorrect_score").innerText);
+        document.getElementById("incorrect_score").innerText = 0;
+        /* End */
+
+
+
+
+    }
+}
+shuffleArray(array);
+var divs = document.getElementsByTagName("div");
+for (var j = 0; j < array.length; j++) {
+    for (var i = 0; i < divs.length; i++) {
+
+
+        let div_class_name = divs[i].className.substr(0, 5);
+        if (div_class_name === "front") {
+
+            divs[i].id = array[j];
+            j++
+        }
+    }
+    
+}
+
+}
 
 }
 

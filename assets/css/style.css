@@ -553,6 +553,13 @@ option::selection {
     line-height: 150px;
 }
 
+.number_visible_black {
+    visibility: visible;
+    color: Black;
+    font-size: 2rem;
+    line-height: 150px;
+}
+
 .front_number {
     width: 150px;
     height: 150px;
