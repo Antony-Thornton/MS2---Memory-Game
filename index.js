@@ -93,6 +93,19 @@ function reset_tiles() {
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_game() {
     var divs = document.getElementsByTagName("div");
+    
+        for (var i = 0; i < divs.length; i++) {
+
+
+            let div_class_name = divs[i].className.substr(0, 13);
+
+                if (div_class_name === "front_number") {
+                    divs[i].className = "front";
+                }
+
+        }
+
+    var divs = document.getElementsByTagName("div");
     console.log(divs)
     for (var i = 0; i < divs.length; i++) {
         /* Added Divs[i] to make it work. Also need === in the if */
@@ -112,6 +125,9 @@ function reset_game() {
             /* End */
             start_time = "";
             end_time = "";
+
+
+
         }
     }
     shuffleArray(array);
@@ -127,7 +143,9 @@ function reset_game() {
                 j++
             }
         }
+        
     }
+
 }
 
 
@@ -275,3 +293,34 @@ function disappearParent(e) {
     section.style.filter = "blur(0px)"
   }
 }
+
+
+
+function numbers_only() {
+    var divs = document.getElementsByTagName("div");
+    
+    for (var i = 0; i < divs.length; i++) {
+
+
+        let div_class_name = divs[i].className.substr(0, 6);
+
+            if (div_class_name === "front") {
+                divs[i].className = "front_number";
+            }
+
+    }
+
+
+}
+/*
+
+        let div_class_name = divs[i].className.substr(0, 4);
+        let div_class_name_locked = divs[i].className.substr(0, 6)
+        console.log(div_class_name_locked)
+        if (div_class_name === "back" || div_class_name_locked === "locked") {
+            console.log("true")
+            divs[i].className = "front";
+            /* below scoring adapted from the code instutute course
+            old_score = parseInt(document.getElementById("correct_score").innerText);
+            document.getElementById("correct_score").innerText = 0;
+            /* End */
