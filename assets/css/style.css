@@ -542,7 +542,9 @@ option::selection {
 
 
 
-
+.number_hidden {
+    visibility: hidden;
+}
 
 
 .front_number {
