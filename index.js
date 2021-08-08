@@ -7,9 +7,7 @@ let first_id = "";
 let second_id = "";
 let old_score = "";
 let array = ["front1.10", "front2.10", "front1.11", "front2.11", "front1.12", "front2.12", "front1.13", "front2.13", "front1.14", "front2.14", "front1.15", "front2.15", "front1.16", "front2.16", "front1.17", "front2.17", "front1.18", "front2.18", "front1.19", "front2.19", "front1.20", "front2.20", "front1.21", "front2.21"];
-let parent = document.querySelector(".modal-parent"),
-    X = document.querySelector(".X"),
-    section = document.querySelector("section");
+
 
 
 
