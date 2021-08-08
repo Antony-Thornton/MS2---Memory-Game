@@ -176,6 +176,12 @@ BMW Stock Images - https://www.pexels.com/
 
 Pexel indivual credits can be seen in the description of the picture itself. i.e. pexels-maria-geller.
 
+For help with the popup message/Modal see credits below.
+
+https://github.com/redouand/Pop-Up-Window-modal-
+
+https://www.youtube.com/watch?v=APG7e7CE5O8
+
 ## Acknowledgements
 This project was inspired by Code Institute as part of my Second Milestone Project (MS2). 
 
