@@ -388,6 +388,7 @@ function numbers_only() {
 
         let div_class_name = divs[i].className.substr(0, 6);
         let div_class_name_hidden = divs[i].className.substr(0, 13);
+        let div_class_name_black = divs[i].className
 
             if (div_class_name === "front") {
                 divs[i].className = "front_number";
@@ -395,6 +396,11 @@ function numbers_only() {
 
         if (div_class_name_hidden === "number_hidden") {
             divs[i].className = "number_visible";
+        } else {
+            if(div_class_name_black === "number_visible_black") {
+                divs[i].className = "number_visible";
+            }
+
         }
     }
 
