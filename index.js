@@ -159,7 +159,7 @@ function if_mapping(e) {
     let score = document.getElementById("correct_score");
     let score_check = score.innerHTML;
     let score_int = parseInt(score_check);
-    let max_score = 2;
+    let max_score = 12;
     let locked_check = e.className.substr(0, 6);
     let numbers_only_check = e.className;
 
