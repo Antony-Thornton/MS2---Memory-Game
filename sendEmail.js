@@ -1,9 +1,10 @@
 function sendMail(contactForm) {
-email.js.send("gmail_account", "memory_game", {
-    "first_name": contactForm.firstname.value,
-    "last_name": contactForm.surname.value,
-    "message": contactForm.message.value,
-    "email": contactForm.email.value
+emailjs.send("gmail_account","memory_game",{
+    
+    first_name: contactForm.firstname.value,
+    last_name: contactForm.surname.value,
+    message: contactForm.message.value,
+    email: contactForm.email.value
 })
 .then(
     function(response) {
@@ -15,3 +16,4 @@ email.js.send("gmail_account", "memory_game", {
 
     return false; // To block from loading a new page
 }
+
