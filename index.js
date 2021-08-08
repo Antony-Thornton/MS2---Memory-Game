@@ -139,7 +139,7 @@ function if_mapping(e) {
     let score = document.getElementById("correct_score");
     let score_check = score.innerHTML;
     let score_int = parseInt(score_check);
-    let max_score = 12;
+    let max_score = 2;
     let locked_check = e.className.substr(0, 6)
 
     if (locked_check = "locked") {
@@ -199,7 +199,7 @@ function if_mapping(e) {
 
 
       /* add pop up message here */
-      alert("Game Complete");
+      appear();
                        }
 
                     } else {
