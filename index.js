@@ -123,8 +123,7 @@ function reset_game() {
             old_score = parseInt(document.getElementById("incorrect_score").innerText);
             document.getElementById("incorrect_score").innerText = 0;
             /* End */
-            start_time = "";
-            end_time = "";
+
 
 
 
@@ -158,7 +157,8 @@ function if_mapping(e) {
     let score_check = score.innerHTML;
     let score_int = parseInt(score_check);
     let max_score = 2;
-    let locked_check = e.className.substr(0, 6)
+    let locked_check = e.className.substr(0, 6);
+    let numbers_only_check = e.className;
 
     if (locked_check = "locked") {
 
@@ -182,7 +182,12 @@ function if_mapping(e) {
                     old_score = parseInt(document.getElementById("incorrect_score").innerText);
                     document.getElementById("incorrect_score").innerText = ++old_score;
                     /* End */
+                    if (numbers_only_check === "front") {
                     selectedElement.className = "front";
+
+                } else {
+                    selectedElement.className = "front_number";
+                }
 
                     selection_one = "";
                     selection_two = "";
@@ -312,15 +317,3 @@ function numbers_only() {
 
 
 }
-/*
-
-        let div_class_name = divs[i].className.substr(0, 4);
-        let div_class_name_locked = divs[i].className.substr(0, 6)
-        console.log(div_class_name_locked)
-        if (div_class_name === "back" || div_class_name_locked === "locked") {
-            console.log("true")
-            divs[i].className = "front";
-            /* below scoring adapted from the code instutute course
-            old_score = parseInt(document.getElementById("correct_score").innerText);
-            document.getElementById("correct_score").innerText = 0;
-            /* End */
