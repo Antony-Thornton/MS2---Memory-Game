@@ -315,10 +315,16 @@ function numbers_only() {
 
 
         let div_class_name = divs[i].className.substr(0, 6);
+        let div_class_name_hidden = divs[i].className.substr(0, 13);
 
             if (div_class_name === "front") {
                 divs[i].className = "front_number";
-            }
+            } else {
+
+        if (div_class_name_hidden === "number_hidden") {
+            divs[i].className = "number_visible";
+        }
+    }
 
     }
 

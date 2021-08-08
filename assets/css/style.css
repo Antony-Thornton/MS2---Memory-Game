@@ -546,6 +546,12 @@ option::selection {
     visibility: hidden;
 }
 
+.number_visible {
+    visibility: visible;
+    color: white;
+    font-size: 2rem;
+    line-height: 150px;
+}
 
 .front_number {
     width: 150px;
