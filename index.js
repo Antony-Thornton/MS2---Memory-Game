@@ -221,8 +221,7 @@ function if_mapping(e) {
                             console.log("Max score but mid function")
 
 
-      /* add pop up message here */
-      appear();
+                        appear();
                        }
 
                     } else {
