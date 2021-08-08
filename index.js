@@ -255,8 +255,14 @@ btn.addEventListener("click", appear);
 function appear() {
   parent.style.display = "block";
   section.style.filter = "blur(10px)"
+  let final_correct_score = document.getElementById("correct_score").innerHTML
+  let final_incorrect_score = document.getElementById("incorrect_score").innerHTML
+  document.getElementById("congrats_correct").innerHTML = final_correct_score;
+  document.getElementById("congrats_incorrect").innerHTML = final_incorrect_score;
 }
+
 X.addEventListener("click", disappearX);
+
 function disappearX() {
   parent.style.display = "none";
   section.style.filter = "blur(0px)"
