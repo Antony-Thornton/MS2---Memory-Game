@@ -100,6 +100,8 @@ function reset_game() {
     
     if (answer) {
 
+        document.getElementById("numbers_true").innerHTML = "false";
+
     var divs = document.getElementsByTagName("div");
     
         for (var i = 0; i < divs.length; i++) {
@@ -160,7 +162,7 @@ function reset_game() {
 
 } else {
     var divs = document.getElementsByTagName("div");
-    
+    document.getElementById("numbers_true").innerHTML = "false";
     for (var i = 0; i < divs.length; i++) {
 
 
