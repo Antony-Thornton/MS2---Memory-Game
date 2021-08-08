@@ -75,13 +75,19 @@ const shuffleArray = array => {
 
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_tiles() {
+    let numbers_true_check = document.getElementById("numbers_true").innerHTML;
     var divs = document.getElementsByTagName("div");
     for (var i = 0; i < divs.length; i++) {
         /* Added Divs[i] to make it work. Also need === in the if */
         let div_class_name = divs[i].className.substr(0, 4);
         let div_class_name_locked = divs[i].className.substr(0, 6)
         if (div_class_name === "back") {
-            divs[i].className = "front";
+            
+            if (numbers_true_check === "true") {
+                divs[i].className = "front_number";
+            } else {
+                divs[i].className = "front";
+            }
         }
     }
 }
@@ -229,7 +235,12 @@ function if_mapping(e) {
                         document.getElementById("incorrect_score").innerText = ++old_score;
                         /* End */
                         setTimeout(function() {
-                            selectedElement.className = "front"
+                            if (numbers_only_check === "front") {
+                                selectedElement.className = "front";
+            
+                            } else {
+                                selectedElement.className = "front_number";
+                            }
                             selection_one = "";
                             selection_two = "";
                             first_id = "";
@@ -311,5 +322,6 @@ function numbers_only() {
 
     }
 
+    document.getElementById("numbers_true").innerHTML = "true";
 
 }

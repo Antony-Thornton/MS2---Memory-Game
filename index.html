@@ -53,7 +53,7 @@
         <div class="game_controls">
             <button type="button" id="start" onclick="start()">Start</button>
             <button type="button" id="reset" onclick="reset_game()">Reset</button>
-            <button type="button" id="numbers" onclick="numbers_only()">Numbers</button>
+            <button type="button" id="numbers" class="" onclick="numbers_only()">Numbers</button>
 <!-- Removed the submit button for the moment. May add functionality back in later if time permits.
             <button type="button" id="submit" onclick="incrementWrongAnswer()">Submit Score</button>
 -->
@@ -167,6 +167,9 @@
                 </p>
               <span class="X" draggable="true">&times;</span>
             </div>
+          </div>
+          <div id="numbers_true" style="visibility: hidden;">
+              false
           </div>
     </section>
     <footer>
