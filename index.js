@@ -280,7 +280,6 @@ var parent = document.querySelector(".modal-parent"),
     X = document.querySelector(".X"),
     section = document.querySelector("section");
 
-btn.addEventListener("click", appear);
 
 function appear() {
   parent.style.display = "block";
