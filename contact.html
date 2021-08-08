@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init("user_du7erDgPkhpQyBU7JPiUH");
+      emailjs.send("gmail_account", "memory_game",{name: "Antony", notes: "The Project that I want is...."});
+   })();
+    </script>
 </head>
 
 <body>
@@ -34,7 +43,7 @@
     </header>
     <section class="main_section">
         <div class="contact_form">
-            <form method="post" action="https://formdump.codeinstitute.net/" class="form">
+            <form onsubmit="return sendMail(this);">
                 <h4 style="text-align: left;">If you would like to get more information on the content of this site or would like to reach out to the developer please complete the form below.</h4>
 
                 <!--https://www.bmw.co.uk/en/topics/discover/forms/oli_fs_change.html-->
@@ -124,6 +133,7 @@
             </ul>
         </div>
     </footer>
+    <script src="sendEmail.js"></script>
     <script src="index.js"></script>
 </body>
 
