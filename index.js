@@ -257,6 +257,7 @@ function appear() {
   section.style.filter = "blur(10px)"
   let final_correct_score = document.getElementById("correct_score").innerHTML
   let final_incorrect_score = document.getElementById("incorrect_score").innerHTML
+  /* Leaving it as get element id in case more or less tiles are added. This means only the max score needs changing */
   document.getElementById("congrats_correct").innerHTML = final_correct_score;
   document.getElementById("congrats_incorrect").innerHTML = final_incorrect_score;
 }
