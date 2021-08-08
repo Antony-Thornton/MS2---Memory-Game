@@ -141,7 +141,7 @@ function if_mapping(e) {
     let score = document.getElementById("correct_score");
     let score_check = score.innerHTML;
     let score_int = parseInt(score_check);
-    let max_score = 21;
+    let max_score = 12;
     let locked_check = e.className.substr(0, 6)
 
     if (locked_check = "locked") {
@@ -200,12 +200,8 @@ function if_mapping(e) {
                             console.log("Max score but mid function")
 
 
-                        
-                        
-                    
-                          parent.style.display = "block";
-                          section.style.filter = "blur(10px)"
-
+      /* add pop up message here */
+      alert("Game Complete");
                        }
 
                     } else {
@@ -250,26 +246,3 @@ function start() {
 }
 
 
-
-
-var parent = document.querySelector(".modal-parent"),
-    X = document.querySelector(".X"),
-    section = document.querySelector("section");
-
-
-function appear() {
-  parent.style.display = "block";
-  section.style.filter = "blur(10px)"
-}
-X.addEventListener("click", disappearX);
-function disappearX() {
-  parent.style.display = "none";
-  section.style.filter = "blur(0px)"
-}
-parent.addEventListener("click", disappearParent)
-function disappearParent(e) {
-  if (e.target.className == "modal-parent") {
-    parent.style.display = "none";
-    section.style.filter = "blur(0px)"
-  }
-}
