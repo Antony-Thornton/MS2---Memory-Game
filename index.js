@@ -76,14 +76,11 @@ const shuffleArray = array => {
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_tiles() {
     var divs = document.getElementsByTagName("div");
-    console.log(divs)
     for (var i = 0; i < divs.length; i++) {
         /* Added Divs[i] to make it work. Also need === in the if */
         let div_class_name = divs[i].className.substr(0, 4);
         let div_class_name_locked = divs[i].className.substr(0, 6)
-        console.log(div_class_name_locked)
         if (div_class_name === "back") {
-            console.log("true")
             divs[i].className = "front";
         }
     }
