@@ -187,6 +187,17 @@
     color: white;
 }
 
+.video {
+    width: 80%;
+    padding: 10px 10%;
+}
+
+.video_style {
+    width: 100%;
+    height: 560px;
+    padding: 0;
+}
+
 /* ************ Contact us page ************ */
 
 
