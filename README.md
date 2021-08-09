@@ -70,7 +70,7 @@ The overall story would be as follows:
 
 General
 
-The general color theme of the game tries to mirror the theme ion the below links. It uses a mostly white theme with elements of grey.
+The general color theme of the game tries to mirror the theme in the below links. It uses a mostly white theme with elements of grey.
 
 https://www.bmw.com/en/automotive-life/bmw-logo-meaning-history1.html
 
@@ -80,14 +80,22 @@ https://www.bmw.co.uk/en/index.html
 
 # 3. Features
 
+* The website will have a memory game
+* It will have a button that will show and hide game instructions
+* It will have a start button to hide content that isnt needed during the game
+* It will have a reset game button with the option to remove numbers if they were selected and reset the game tiles
+* It will have a numbers button which will replace the BMW Logo with black circles with white numbers. This should make it easier for the user in the mobile version
+* The website will have a contact page with a form that will send an email to my account
+* The website will have links to official BMW pages and content
+* The more page will have embedded videos from BMW YouTube.
 
 
 ## 3.1 Existing Features
-
+n/a
 
 
 ## 3.2 Features Left to Implement
-Testing flagged that there is slight overlap of elements on the join page below 375px. 
+n/a
 
 
 ## 3.3 Technologies Used
@@ -99,6 +107,7 @@ Javascript - https://www.javascript.com/
 
 Balsamiq Wireframes - https://balsamiq.com/wireframes/
 
+JavaScript code beutifier - https://beautifier.io/ - Corrects javascript code with correct spacing/lines etc.
 
 # 4. Testing
 ## 4.1 Informal Development Testing
@@ -127,6 +136,8 @@ https://validator.w3.org/ - HTML validator. Looks specifically for errors in my 
 
 https://jigsaw.w3.org/css-validator/ - CSS validator. Looks specifically for errors in my CSS code.
 
+
+
 ### 4.2.1.1 Testing Results
 tbc
 
@@ -145,7 +156,9 @@ I have included a specific section for spelling. My dyslexia can make this part 
 tbc
 
 ## 4.3 Bugs
-tbc
+
+* When the numbers JS was added a bug when a certain combination of buttons pressed would result in black circles with no numbers
+* 
 
 # 5. Deployment
 The website will be deployed using GitHubs built in pages' manager.
@@ -182,6 +195,7 @@ https://github.com/redouand/Pop-Up-Window-modal-
 
 https://www.youtube.com/watch?v=APG7e7CE5O8
 
+
 ## Acknowledgements
 This project was inspired by Code Institute as part of my Second Milestone Project (MS2). 
 
@@ -206,13 +220,17 @@ Where possible acknowledgements will be noted in the code.
 # 7. Lessons learnt
 ## 7.1 Lessons
 
+Popup window is a very useful tool. It makes the page much more immersive.
+
+How to send emails directly to my personal account. This will be useful for future projects.
+
 
 ## 7.2 Future study points
 
 
 
 
-https://beautifier.io/
+
 
 
 README written by Antony Thornton, 2021
