@@ -35,10 +35,13 @@
 
 
 # 1. Project Status
-Deadline: 5th August 2021
+Deadline: 22nd August 2021
 
-The project is currently underway. The first mentor meeting is booked on the 04/07/2021.
+The project is currently underway. 
 
+The first mentor meeting is booked on the 04/07/2021.
+
+The second mentor meeting is booke on the 12/08/2021.
 
 # 2. User Story
 ## 2.1 The business case (Project Goals):
@@ -48,7 +51,8 @@ The overall story would be as follows:
 * The user will navigate to the website
 * The user will be able to view the instructions and understand how the game works
 * The user will be able to play the game
-* The user will be able to submit their score
+* The user will be able to find out more about BMW, its products, history and offerings
+* Most importantly the user should have fun
 
 ## 2.2 Wireframes
 
@@ -57,6 +61,8 @@ The overall story would be as follows:
 
 
 ### Mobile Wireframes
+
+### Computer Wireframes
 
 
 
@@ -124,8 +130,7 @@ The informal process of testing is as follows:
 * If outcome is successful then wider checks on other code are conducted. For example, what impact does it have on other elements.
 * If outcome is unsuccessful then the line/lines of code written will be checked and informal testing repeated.
 
-Further testing including sending the website link to my partner who navigated the website on both her phone and tablet. This was useful as it flagged an
-issue where pictures were not appearing on the home page.
+Further testing including sending the website link to my partner who navigated the website on both her phone and tablet.
 
 ## 4.2 Formal Deployment Testing
 ### 4.2.1 External website testing
@@ -136,7 +141,7 @@ https://validator.w3.org/ - HTML validator. Looks specifically for errors in my 
 
 https://jigsaw.w3.org/css-validator/ - CSS validator. Looks specifically for errors in my CSS code.
 
-
+https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies in the code and suggests solutions.
 
 ### 4.2.1.1 Testing Results
 tbc
@@ -157,8 +162,16 @@ tbc
 
 ## 4.3 Bugs
 
+* General IF structure issues with JS. To resolve I manually mapped the IF/ELSE statements with comments without coding
+* Issue with start and end time. Removed functionality due to issues comparing times of mobile vs desktop completion rates
 * When the numbers JS was added a bug when a certain combination of buttons pressed would result in black circles with no numbers
-* 
+* Issue with emails being sent on contact page being loaded
+* Issue with JS script and === or =. Resolved by adding removing = until it worked. See lessons for more information.
+* Issue with formatting not applying to "number" JS code changing html classes. Resolved by modifying CSS.
+* Issue with my JS code not being able to recognise html elements. Had to add a DIV into the home page and change the innerhtml to true/false when needed.
+* Issue with timeout JS code. See JS file for more details and credits for Sean Young's fix.
+* Issue with EmailJS sending me blank email templates. I had used "first_name" when I didn't need the ".
+* General CSS format issues such as, objects not displaying in line correctly, not being able to overide body format etc.
 
 # 5. Deployment
 The website will be deployed using GitHubs built in pages' manager.
@@ -227,7 +240,7 @@ How to send emails directly to my personal account. This will be useful for futu
 
 ## 7.2 Future study points
 
-
+Learn the difference between ===, == and =. Had an issue where the JS code didnt work as expected due to not having the right amount of =.
 
 
 
