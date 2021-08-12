@@ -64,6 +64,9 @@ The overall story would be as follows:
 
 ### Computer Wireframes
 
+![index web](documentation-assets/wireframe-images/Home Page - Computer.jpg)
+
+
 
 
 ## 2.3 Website Objectives:
