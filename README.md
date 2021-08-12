@@ -64,7 +64,7 @@ The overall story would be as follows:
 
 ### Computer Wireframes
 
-![index web](documentation-assets/wireframe-images/Home Page - Computer.jpg)
+![index web] (documentation-assets/wireframe-images/Home_Page_Computer.jpg)
 
 
 
