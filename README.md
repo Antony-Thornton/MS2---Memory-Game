@@ -84,6 +84,7 @@ The overall story would be as follows:
 * The user must have fun
 * The BMW brand should be well represented
 * The user should learn more about the vehicles available to them
+* The website should scroll in a way that allows mobile and computer players to play
 
 
 ## 2.4 Design Inspiration
