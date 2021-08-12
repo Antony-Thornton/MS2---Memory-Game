@@ -58,13 +58,24 @@ The overall story would be as follows:
 
 ### Sitemap
 
-
+![index web](documentation-assets/wireframe-images/site_map.jpg)
 
 ### Mobile Wireframes
 
+![index web](documentation-assets/wireframe-images/home_page_mobile.jpg)
+
+![index web](documentation-assets/wireframe-images/contact_page_mobile.jpg)
+
+![index web](documentation-assets/wireframe-images/more_from_bmw_page_mobile.jpg)
+
+
 ### Computer Wireframes
 
-![index web] (documentation-assets/wireframe-images/Home_Page_Computer.jpg)
+![index web](documentation-assets/wireframe-images/home_page_computer.jpg)
+
+![index web](documentation-assets/wireframe-images/contact_page_computer.jpg)
+
+![index web](documentation-assets/wireframe-images/more_from_bmw_page_computer.jpg)
 
 
 
