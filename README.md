@@ -251,6 +251,9 @@ Popup window is a very useful tool. It makes the page much more immersive.
 
 How to send emails directly to my personal account. This will be useful for future projects.
 
+I must remember to save the documentation assets in the correct structure i.e. using _ and no spaces.
+
+I learned that you can export PNG files of your balsamiq wireframes. This avoids having to screenshot then snip them together.
 
 ## 7.2 Future study points
 
