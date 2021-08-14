@@ -215,13 +215,17 @@ text-decoration: none;
 
 .contact_form {
     height: auto;
-    width: 100%;
     background-image: linear-gradient(rgb(170, 170, 170), white);
     padding: 1px 0px;
     text-align: center;
-
+    padding: 0 5%;
 }
 
+.contact_form_inner {
+    border-style: solid;
+    padding: 2% 2%;
+
+}
 
 
 .form {
@@ -245,6 +249,17 @@ text-decoration: none;
     padding-left: 1%;
     padding-top: 10px;
     text-align: left;
+
+}
+
+.form_button input {
+    height: 50px;
+    width: 110px;
+    background-color: rgba(43,136,183,255);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
 
 }
 
@@ -294,26 +309,6 @@ option::selection {
 
 }
 
-#email:hover {
-    background-color: black;
-    color: white;
-}
-
-
-#firstname:hover {
-    background-color: black;
-    color: white;
-}
-
-#secondname:hover {
-    background-color: black;
-    color: white;
-}
-
-#message:hover {
-    background-color: black;
-    color: white;
-}
 
 .button {
     background-color: black;
@@ -326,9 +321,8 @@ option::selection {
 }
 
 .button:hover {
-    background-color: white;
-    /* Green */
-    color: Black;
+    background-color: black;
+    color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
