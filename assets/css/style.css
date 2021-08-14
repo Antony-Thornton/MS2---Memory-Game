@@ -17,21 +17,23 @@
 
 .nav_div {
     width: auto;
-    height: 50px;
+    height: 40px;
     display: inline-flex;
     padding: 5px 40px 0px 40px;
     font-size: 1rem;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .nav_div h3 {
-
+    padding-top: 3%;
     text-decoration: none;
     letter-spacing: 1px;
     list-style-type: none;
 }
 
-
+.nav_div h3 a{
+text-decoration: none;
+}
 
 #header_format {
     width: 100%;
