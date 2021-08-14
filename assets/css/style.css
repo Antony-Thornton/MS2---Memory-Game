@@ -65,13 +65,11 @@ text-decoration: none;
 }
 
 #how_to_div {
-    width: 100%;
     height: 500px;
     background-image: linear-gradient(white, rgb(170, 170, 170), white);
     text-align: center;
     height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 10px;
 }
 
 #how_to_div h2 {
@@ -98,6 +96,20 @@ text-decoration: none;
 #how_to_div h5 {
     text-align: center;
     padding-bottom: 10px;
+}
+
+#hide_unhide {
+    border-style: solid;
+    border-radius: 25px;
+
+}
+
+#hide_unhide h4 {
+    padding: 10px 5%;
+}
+
+#hide_unhide h5 {
+    padding: 10px 5%;
 }
 
 .game_controls {
