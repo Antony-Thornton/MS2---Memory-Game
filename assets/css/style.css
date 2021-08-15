@@ -190,13 +190,12 @@ text-decoration: none;
  padding: 10px 0;
 }
 
-.BMW_links:hover {
-    transform: scale(2);
-}
+
 
 .BMW_links a:hover {
     background-color: black;
     color: white;
+
 }
 
 .video {
