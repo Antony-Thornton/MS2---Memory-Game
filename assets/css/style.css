@@ -224,6 +224,7 @@ text-decoration: none;
 .contact_form_inner {
     border-style: solid;
     padding: 2% 2%;
+    box-shadow: 5px 10px rgba(43,136,183,255);
 
 }
 
