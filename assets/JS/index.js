@@ -96,8 +96,10 @@ function reset_tiles() {
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_game() {
 
+    number_appear();
+/*
     var answer = window.confirm("Reset numbers?")
-    
+*/
     if (answer) {
 
         document.getElementById("numbers_true").innerHTML = "false";
@@ -408,4 +410,30 @@ function numbers_only() {
 
     document.getElementById("numbers_true").innerHTML = "true";
 
+}
+
+
+var number_parent = document.querySelector(".number-parent"),
+    number_btn = document.querySelector("button"),
+    X = document.querySelector(".X"),
+    number_section = document.querySelector("section");
+
+
+function number_appear() {
+  number_parent.style.display = "block";
+  number_section.style.filter = "blur(10px)"
+  }
+
+  X.addEventListener("click", number_disappearX);
+
+function number_disappearX() {
+    number_parent.style.display = "none";
+    number_section.style.filter = "blur(0px)"
+}
+number_parent.addEventListener("click", number_disappearParent)
+function number_disappearParent(e) {
+  if (e.target.className == "number-parent") {
+    number_parent.style.display = "none";
+    number_section.style.filter = "blur(0px)"
+  }
 }
