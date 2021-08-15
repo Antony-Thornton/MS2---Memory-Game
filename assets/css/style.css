@@ -600,6 +600,7 @@ footer {
 footer div h1 {
     font-size: 1.25rem;
     text-transform: uppercase;
+    color: rgba(43,136,183,255);
 }
 
 /* ****** Popup/Modal - See Readme for source ****** */
