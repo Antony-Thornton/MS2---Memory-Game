@@ -159,14 +159,11 @@ while (number_check = "open") {
         }
 
     var divs = document.getElementsByTagName("div");
-    console.log(divs)
     for (var i = 0; i < divs.length; i++) {
         /* Added Divs[i] to make it work. Also need === in the if */
         let div_class_name = divs[i].className.substr(0, 4);
         let div_class_name_locked = divs[i].className.substr(0, 6)
-        console.log(div_class_name_locked)
         if (div_class_name === "back" || div_class_name_locked === "locked") {
-            console.log("true")
             divs[i].className = "front";
             /* below scoring adapted from the code instutute course */
             old_score = parseInt(document.getElementById("correct_score").innerText);
@@ -218,14 +215,14 @@ while (number_check = "open") {
     }
 
 var divs = document.getElementsByTagName("div");
-console.log(divs)
+
 for (var i = 0; i < divs.length; i++) {
     /* Added Divs[i] to make it work. Also need === in the if */
     let div_class_name = divs[i].className.substr(0, 4);
     let div_class_name_locked = divs[i].className.substr(0, 6)
-    console.log(div_class_name_locked)
+
     if (div_class_name === "back" || div_class_name_locked === "locked") {
-        console.log("true")
+
         divs[i].className = "front";
         /* below scoring adapted from the code instutute course */
         old_score = parseInt(document.getElementById("correct_score").innerText);
@@ -317,7 +314,6 @@ function if_mapping(e) {
                         /* End */
 
                         selectedElement.className = "locked" + first_id;
-                        console.log(selection_one.className)
                         let first_selection = document.getElementById(selection_one);
                         first_selection.className = "locked" + first_id;
 
@@ -329,7 +325,6 @@ function if_mapping(e) {
                         score = document.getElementById("correct_score");
                         score_check = score.innerHTML;
                         score_int = parseInt(score_check);
-                        console.log(score_int)
                         if (score_int === max_score) {
                             console.log("Max score but mid function")
 
