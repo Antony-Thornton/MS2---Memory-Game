@@ -124,7 +124,7 @@ function reset_game() {
 
  /*   number_appear();
 */
-    var answer = window.confirm("Reset numbers?")
+    var answer = window.confirm("Reset numbers? Ok to remove, cancel to keep.")
 
 /*
 number_check = document.getElementById("reset_number_check").innerText;
