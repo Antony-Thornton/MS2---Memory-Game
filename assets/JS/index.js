@@ -7,9 +7,34 @@ let first_id = "";
 let second_id = "";
 let old_score = "";
 let array = ["front1.10", "front2.10", "front1.11", "front2.11", "front1.12", "front2.12", "front1.13", "front2.13", "front1.14", "front2.14", "front1.15", "front2.15", "front1.16", "front2.16", "front1.17", "front2.17", "front1.18", "front2.18", "front1.19", "front2.19", "front1.20", "front2.20", "front1.21", "front2.21"];
-let reset_number_check = "";
 
 
+
+var number_parent = document.querySelector(".number-parent"),
+btn = document.querySelector("button"),
+X = document.querySelector(".X"),
+number_section = document.querySelector("section");
+
+
+function number_appear() {
+  number_parent.style.display = "block";
+  number_section.style.filter = "blur(10px)";
+  document.getElementById("reset_number_check").innerHTML = "open";
+}
+
+function number_yes() {
+    number_parent.style.display = "none";
+    number_section.style.filter = "blur(0px)";
+    document.getElementById("numbers_true").innerHTML = "true";
+    reset_number_check = "closed";
+}
+
+function number_no() {
+    number_parent.style.display = "none";
+    number_section.style.filter = "blur(0px)";
+    document.getElementById("numbers_true").innerHTML = "false";
+    reset_number_check = "closed";
+  }
 
 /* Helped with the hide_unide element function. Worked as is so no changes needed
 https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp */
@@ -93,14 +118,27 @@ function reset_tiles() {
 }
 
 
+
+
+
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_game() {
 
-    number_appear();
-/*
-    var answer = window.confirm("Reset numbers?")
+ /*   number_appear();
 */
-    if (reset_number_check =="no") {
+    var answer = window.confirm("Reset numbers?")
+
+/*
+number_check = document.getElementById("reset_number_check").innerText;
+while (number_check = "open") {
+    number_appear();
+}
+
+    let numbers_true_check = document.getElementById("numbers_true").innerHTML;
+    console.log(numbers_true_check);
+*/
+  
+    if (answer) {
 
         document.getElementById("numbers_true").innerHTML = "false";
 
@@ -221,12 +259,19 @@ for (var j = 0; j < array.length; j++) {
     
 }
 
+ }
+} 
+
+
+
+function checkFlag() {
+    if(reset_number_check == "open") {
+       window.setTimeout(checkFlag, 100); /* this checks the flag every 100 milliseconds */
+       console.log("+1 millisecond");
+    } else {
+      /* do something - Not needed atm */
+    }
 }
-
-}
-
-
-
 
 function if_mapping(e) {
     let selectedElement = e;
@@ -413,27 +458,3 @@ function numbers_only() {
 }
 
 
-var number_parent = document.querySelector(".number-parent"),
-btn = document.querySelector("button"),
-X = document.querySelector(".X"),
-number_section = document.querySelector("section");
-
-
-function number_appear() {
-  number_parent.style.display = "block";
-  number_section.style.filter = "blur(10px)"
-}
-
-function number_yes() {
-    number_parent.style.display = "none";
-    number_section.style.filter = "blur(0px)";
-    reset_number_check = "yes";
-    console.log("Please reset")
-}
-
-function number_no() {
-    number_parent.style.display = "none";
-    number_section.style.filter = "blur(0px)";
-    reset_number_check = "no";
-    console.log("Do Not Reset")
-  }
