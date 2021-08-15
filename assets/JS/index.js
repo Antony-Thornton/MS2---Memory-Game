@@ -262,14 +262,6 @@ for (var j = 0; j < array.length; j++) {
 
 
 
-function checkFlag() {
-    if(reset_number_check == "open") {
-       window.setTimeout(checkFlag, 100); /* this checks the flag every 100 milliseconds */
-       console.log("+1 millisecond");
-    } else {
-      /* do something - Not needed atm */
-    }
-}
 
 function if_mapping(e) {
     let selectedElement = e;
