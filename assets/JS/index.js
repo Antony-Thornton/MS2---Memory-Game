@@ -33,24 +33,26 @@ function number_appear() {
 }
 
 function number_yes() {
+/*
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
+*/
     document.getElementById("popup").className = "user_input_confirmed_yes";
-    clearTimeout();
+    document.getElementById("selection").innerText = "Number's will not show."
 }
 
 function number_no() {
+/*
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
+*/
     document.getElementById("popup").className = "user_input_confirmed_no";
-    clearTimeout();
+    document.getElementById("selection").innerText = "Number's will show."
   }
 
   function number_close() {
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
-    document.getElementById("popup").className = "user_input_confirmed";
-    clearTimeout();
 }
 
 /* Helped with the hide_unide element function. Worked as is so no changes needed
@@ -321,9 +323,6 @@ function numbers_only() {
 }
 
 
-  
-
-
 
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_game() {
@@ -331,19 +330,23 @@ function reset_game() {
     number_appear();
     
     
-    setTimeout(function()
+    const timer = setTimeout(function()
     {
     
 
     
     let check_open = document.getElementById("popup");
     console.log (check_open.className);
-    if (check_open == "open") {
+    if (check_open = "open") {
         console.log("No user input. Popup closed.")
         number_close();
+
+      
+        window.alert("Popup timed out. Please try again.")
         return
-        
-    }else {
+     
+
+    } else {
     
     
     /*
@@ -351,7 +354,7 @@ function reset_game() {
     var answer = window.confirm("Reset tiles to display no numbers? Ok to remove, cancel to keep.")
     */
 
-    
+    number_close();
     check_open = document.getElementById("popup");
       
         if (check_open.className == "user_input_confirmed_yes") {
