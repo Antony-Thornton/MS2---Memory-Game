@@ -16,8 +16,10 @@ timeout_section = document.querySelector("section");
 
 
 function timeout_appear() {
+    
     timeout_parent.style.display = "block";
     timeout_section.style.filter = "blur(10px)";
+
 }
 
 
@@ -36,12 +38,14 @@ function number_appear() {
     var downloadTimer = setInterval(function(){
       if(timeleft <= 0){
         clearInterval(downloadTimer);
-        document.getElementById("countdown").innerHTML = "Finished";
+        document.getElementById("countdown").innerHTML = "";
       } else {
         document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
       }
       timeleft -= 1;
     }, 1000);
+
+    
 }
 
 function number_yes() {
@@ -60,11 +64,20 @@ function number_no() {
 */
     document.getElementById("popup").className = "user_input_confirmed_no";
     document.getElementById("selection").innerText = "Number's will show."
+    
   }
 
   function number_close() {
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
+    document.getElementById("selection").innerText = ""
+}
+
+
+function timeout_ok() {
+    timeout_parent.style.display = "none";
+    timeout_section.style.filter = "blur(0px)";
+document.getElementById("popup").className = "closed";
 }
 
 /* Helped with the hide_unide element function. Worked as is so no changes needed
@@ -349,10 +362,11 @@ function reset_game() {
     
     let check_open = document.getElementById("popup");
     console.log (check_open.className);
-    if (check_open = "open") {
+    if (check_open == "open") {
         console.log("No user input. Popup closed.")
         number_close();
         timeout_appear();
+        
       /*
         window.alert("Popup timed out. Please try again.")
         return
@@ -368,8 +382,8 @@ function reset_game() {
 
     number_close();
     check_open = document.getElementById("popup");
-      
-        if (check_open.className == "user_input_confirmed_yes") {
+      check_open
+        if (check_open.className = "user_input_confirmed_yes") {
     
             document.getElementById("numbers_true").innerHTML = "false";
     
