@@ -35,19 +35,22 @@ function number_appear() {
 function number_yes() {
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
-    document.getElementById("popup").className = "closed";
+    document.getElementById("popup").className = "user_input_confirmed_yes";
+    clearTimeout();
 }
 
 function number_no() {
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
-    document.getElementById("popup").className = "closed";
+    document.getElementById("popup").className = "user_input_confirmed_no";
+    clearTimeout();
   }
 
   function number_close() {
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
-    document.getElementById("popup").className = "closed";
+    document.getElementById("popup").className = "user_input_confirmed";
+    clearTimeout();
 }
 
 /* Helped with the hide_unide element function. Worked as is so no changes needed
@@ -318,6 +321,8 @@ function numbers_only() {
 }
 
 
+  
+
 
 
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
@@ -345,9 +350,11 @@ function reset_game() {
     Keeping in case popup doesnt work. Change next if to if (answer).
     var answer = window.confirm("Reset tiles to display no numbers? Ok to remove, cancel to keep.")
     */
+
     
+    check_open = document.getElementById("popup");
       
-        if (check_open == "closed") {
+        if (check_open.className == "user_input_confirmed_yes") {
     
             document.getElementById("numbers_true").innerHTML = "false";
     
