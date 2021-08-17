@@ -41,7 +41,7 @@ function number_appear() {
     var downloadTimer = setInterval(function(){
       if(timeleft <= 0){
         clearInterval(downloadTimer);
-        document.getElementById("countdown").innerHTML = "";
+        document.getElementById("countdown").innerHTML = "10 seconds left";
       } else {
         document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
       }
