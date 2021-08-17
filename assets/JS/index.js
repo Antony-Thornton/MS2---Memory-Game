@@ -7,7 +7,6 @@ let first_id = "";
 let second_id = "";
 let old_score = "";
 let array = ["front1.10", "front2.10", "front1.11", "front2.11", "front1.12", "front2.12", "front1.13", "front2.13", "front1.14", "front2.14", "front1.15", "front2.15", "front1.16", "front2.16", "front1.17", "front2.17", "front1.18", "front2.18", "front1.19", "front2.19", "front1.20", "front2.20", "front1.21", "front2.21"];
-let reset_number_check = "";
 
 
 var number_parent = document.querySelector(".number-parent"),
@@ -17,21 +16,23 @@ number_section = document.querySelector("section");
 
 
 function number_appear() {
-  number_parent.style.display = "block";
-  number_section.style.filter = "blur(10px)";
-    reset_number_check = "open";
+    number_parent.style.display = "block";
+    number_section.style.filter = "blur(10px)";
+    document.getElementById("popup").innerText = "open";
+    
+
 }
 
 function number_yes() {
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
-    reset_number_check = "closed";
+    document.getElementById("popup").innerText = "closed";
 }
 
 function number_no() {
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
-    reset_number_check = "closed";
+    document.getElementById("popup").innerText = "closed";
   }
 
 /* Helped with the hide_unide element function. Worked as is so no changes needed
@@ -117,14 +118,29 @@ function reset_tiles() {
 
 
 
-
-
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_game() {
 
- /*   number_appear();
-*/
-    var answer = window.confirm("Reset tiles to display no numbers? Ok to remove, cancel to keep.")
+number_appear();
+
+
+setTimeout(function()
+{
+    console.log("test")
+
+
+
+let check_open = document.getElementById("popup").innerText;
+console.log (check_open)
+if (check_open = "open") {
+    console.log("No user input. Popup closed.")
+    return
+    
+}else {
+
+
+/*
+var answer = window.confirm("Reset tiles to display no numbers? Ok to remove, cancel to keep.")
 
 /*
 number_check = document.getElementById("reset_number_check").innerText;
@@ -250,12 +266,14 @@ for (var j = 0; j < array.length; j++) {
             divs[i].id = array[j];
             j++
         }
+    
     }
     
 }
 
  }
 } 
+}, 10000);
 
 
 
@@ -358,7 +376,7 @@ function if_mapping(e) {
         }
     }
 }
-
+}
 
 
 
