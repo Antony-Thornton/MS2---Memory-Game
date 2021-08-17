@@ -370,7 +370,7 @@ function reset_game() {
     
     let check_open = document.getElementById("popup");
     console.log ("open");
-    if (check_open == "open") {
+    if (check_open.className == "open") {
         console.log("No user input. Popup closed.")
         number_close();
         timeout_appear();
