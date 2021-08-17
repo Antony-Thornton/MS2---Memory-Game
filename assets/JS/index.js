@@ -19,6 +19,7 @@ function timeout_appear() {
     
     timeout_parent.style.display = "block";
     timeout_section.style.filter = "blur(10px)";
+    document.getElementById("popup").className = "closed";
 
 }
 
@@ -30,9 +31,11 @@ number_section = document.querySelector("section");
 
 
 function number_appear() {
+    document.getElementById("popup").className = "open";
     number_parent.style.display = "block";
     number_section.style.filter = "blur(10px)";
-    document.getElementById("popup").className = "open";
+
+    
     
     var timeleft = 10;
     var downloadTimer = setInterval(function(){
@@ -55,6 +58,8 @@ function number_yes() {
 */
     document.getElementById("popup").className = "user_input_confirmed_yes";
     document.getElementById("selection").innerText = "Number's will not show."
+    document.getElementById("number_yes").style = "visibility: hidden;"
+    document.getElementById("number_no").style = "visibility: hidden;"
 }
 
 function number_no() {
@@ -64,13 +69,16 @@ function number_no() {
 */
     document.getElementById("popup").className = "user_input_confirmed_no";
     document.getElementById("selection").innerText = "Number's will show."
-    
+    document.getElementById("number_yes").style = "visibility: hidden;"
+    document.getElementById("number_no").style = "visibility: hidden;"
   }
 
   function number_close() {
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
     document.getElementById("selection").innerText = ""
+    document.getElementById("number_yes").style = "visibility: visible;"
+    document.getElementById("number_no").style = "visibility: visible;"
 }
 
 
@@ -361,7 +369,7 @@ function reset_game() {
 
     
     let check_open = document.getElementById("popup");
-    console.log (check_open.className);
+    console.log ("open");
     if (check_open == "open") {
         console.log("No user input. Popup closed.")
         number_close();
@@ -382,8 +390,8 @@ function reset_game() {
 
     number_close();
     check_open = document.getElementById("popup");
-      check_open
-        if (check_open.className = "user_input_confirmed_yes") {
+      console.log(check_open.className);
+        if (check_open.className == "user_input_confirmed_yes") {
     
             document.getElementById("numbers_true").innerHTML = "false";
     
