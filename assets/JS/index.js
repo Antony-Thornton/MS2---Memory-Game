@@ -309,7 +309,10 @@ function appear() {
   document.getElementById("congrats_incorrect").innerHTML = final_incorrect_score;
 }
 
+if (X != null) {
 X.addEventListener("click", disappearX);
+
+}
 
 function disappearX() {
   parent.style.display = "none";
