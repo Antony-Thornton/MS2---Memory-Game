@@ -13,6 +13,8 @@ emailjs.send("gmail_account","memory_game",{
         document.getElementById("secondname").value = "";
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
+        document.getElementById("confirmed_sent").innerText = "Thank you for completing the form. Someone will get back to you as soon as possible.";
+        
     },
     function(error) {
         console.log("FAILED", error);
