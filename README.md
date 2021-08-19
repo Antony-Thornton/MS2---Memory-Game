@@ -131,6 +131,8 @@ Balsamiq Wireframes - https://balsamiq.com/wireframes/
 
 JavaScript code beutifier - https://beautifier.io/ - Corrects javascript code with correct spacing/lines etc.
 
+Am I responsive - http://ami.responsivedesign.is/
+
 # 4. Testing
 ## 4.1 Informal Development Testing
 Informal testing is and was conducted throughout the build. 
