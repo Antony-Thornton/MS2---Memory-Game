@@ -371,6 +371,11 @@ option::selection {
     margin-right: auto;
 }
 
+.confirmed_sent {
+    padding: 20px 0px;
+    font-size: x-large;
+}
+
 .col {
     width: 150px;
     height: 150px;
