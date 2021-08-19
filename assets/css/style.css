@@ -366,7 +366,9 @@ option::selection {
 
 .container {
     width: 100%;
-
+    max-width: 1550px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .col {
