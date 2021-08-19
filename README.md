@@ -25,6 +25,7 @@
     - 4.2.4 Spelling and Grammar
 * 4.3 Bugs
 ## 5. Deployment
+* 5.1 Local Deployment
 ## 6. Credits
 * 6.1 Content
 * 6.2 Media
@@ -203,6 +204,11 @@ A link should appear above the source dropdown and look something like this
 
 Your site is ready to be published at https://antony-thornton.github.io/MS2---Memory-Game/
 
+
+## 5.1 Local Deployment
+
+For information on how to clone your files on your desktop. You may need to download GitHub Desktop.
+https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository
 
 # 6. Credits
 ## Content
