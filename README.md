@@ -26,7 +26,8 @@
     - 4.2.2 Functionality Testing
     - 4.2.3 Device Testing
     - 4.2.4 Spelling and Grammar
-* 4.3 Bugs
+* 4.3 Build In Progress Bugs
+* 4.4 Testing Bugs
 ## 5. Deployment
 * 5.1 Local Deployment
 ## 6. Credits
@@ -181,7 +182,7 @@ I have included a specific section for spelling. My dyslexia can make this part 
 ### 4.2.5 User testing and feedback
 tbc
 
-## 4.3 Bugs
+## 4.3 Build in Progress Bugs
 
 * General IF structure issues with JS. To resolve I manually mapped the IF/ELSE statements with comments without coding
 * Issue with start and end time. Removed functionality due to issues comparing times of mobile vs desktop completion rates
@@ -193,6 +194,8 @@ tbc
 * Issue with timeout JS code. See JS file for more details and credits for Sean Young's fix.
 * Issue with EmailJS sending me blank email templates. I had used "first_name" when I didn't need the ".
 * General CSS format issues such as, objects not displaying in line correctly, not being able to overide body format etc.
+
+## 4.4 Testing Bugs
 
 # 5. Deployment
 The website will be deployed using GitHubs built in pages' manager.
