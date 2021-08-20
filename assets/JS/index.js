@@ -1,3 +1,6 @@
+
+
+
 let selection_one = "";
 let selection_two = "";
 let start_time = "";
@@ -12,11 +15,11 @@ let array = ["front1.10", "front2.10", "front1.11", "front2.11", "front1.12", "f
 
 
 var timeout_parent = document.querySelector(".timeout-parent"),
-timeout_section = document.querySelector("section");
+    timeout_section = document.querySelector("section");
 
 
 function timeout_appear() {
-    
+
     timeout_parent.style.display = "block";
     timeout_section.style.filter = "blur(10px)";
     document.getElementById("popup").className = "closed";
@@ -25,9 +28,9 @@ function timeout_appear() {
 
 
 var number_parent = document.querySelector(".number-parent"),
-btn = document.querySelector("button"),
-X = document.querySelector(".X"),
-number_section = document.querySelector("section");
+    btn = document.querySelector("button"),
+    X = document.querySelector(".X"),
+    number_section = document.querySelector("section");
 
 
 function number_appear() {
@@ -35,27 +38,25 @@ function number_appear() {
     number_parent.style.display = "block";
     number_section.style.filter = "blur(10px)";
 
-    
+
     /* http://stackoverflow.com/questions/31106189/ddg#31106229 - Timer. Also includes progress bar*/
     var timeleft = 10;
-    var downloadTimer = setInterval(function(){
-      if(timeleft <= 0){
-        clearInterval(downloadTimer);
-        document.getElementById("countdown").innerHTML = "10 seconds left";
-      } else {
-        document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
-      }
-      timeleft -= 1;
+    var downloadTimer = setInterval(function() {
+        if (timeleft <= 0) {
+            clearInterval(downloadTimer);
+            document.getElementById("countdown").innerHTML = "10 seconds left";
+        } else {
+            document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+        }
+        timeleft -= 1;
     }, 1000);
-
-    
 }
 
 function number_yes() {
-/*
-    number_parent.style.display = "none";
-    number_section.style.filter = "blur(0px)";
-*/
+    /*
+        number_parent.style.display = "none";
+        number_section.style.filter = "blur(0px)";
+    */
     document.getElementById("popup").className = "user_input_confirmed_yes";
     document.getElementById("selection").innerText = "Number's will not show."
     document.getElementById("number_yes").style = "visibility: hidden;"
@@ -63,17 +64,17 @@ function number_yes() {
 }
 
 function number_no() {
-/*
-    number_parent.style.display = "none";
-    number_section.style.filter = "blur(0px)";
-*/
+    /*
+        number_parent.style.display = "none";
+        number_section.style.filter = "blur(0px)";
+    */
     document.getElementById("popup").className = "user_input_confirmed_no";
     document.getElementById("selection").innerText = "Number's will show."
     document.getElementById("number_yes").style = "visibility: hidden;"
     document.getElementById("number_no").style = "visibility: hidden;"
-  }
+}
 
-  function number_close() {
+function number_close() {
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
     document.getElementById("selection").innerText = ""
@@ -85,7 +86,7 @@ function number_no() {
 function timeout_ok() {
     timeout_parent.style.display = "none";
     timeout_section.style.filter = "blur(0px)";
-document.getElementById("popup").className = "closed";
+    document.getElementById("popup").className = "closed";
 }
 
 /* Helped with the hide_unide element function. Worked as is so no changes needed
@@ -99,7 +100,6 @@ function hide_unhide() {
         x.style.display = "none";
     }
 }
-
 
 function show_hero() {
     var hero = document.getElementById("header_format");
@@ -134,7 +134,6 @@ window.onload = function random_array() {
 }
 
 
-
 /* https://www.youtube.com/watch?v=5sNGqsMpW1E */
 const shuffleArray = array => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -149,7 +148,6 @@ const shuffleArray = array => {
 };
 
 
-
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_tiles() {
     let numbers_true_check = document.getElementById("numbers_true").innerHTML;
@@ -159,7 +157,7 @@ function reset_tiles() {
         let div_class_name = divs[i].className.substr(0, 4);
         let div_class_name_locked = divs[i].className.substr(0, 6)
         if (div_class_name === "back") {
-            
+
             if (numbers_true_check === "true") {
                 divs[i].className = "front_number";
             } else {
@@ -169,11 +167,16 @@ function reset_tiles() {
     }
 }
 
-
-
-
-
-
+/* 
+    Main Game function. The If statement below interacts with the tiles on the memory page. The general logic is as follows.
+    If tile is locked do nothing else
+    If score is equal to the max score show the game complete message else
+    if selection one equals nothing then define selection one and turn over tile else
+    if selection one equals selection two then the same tile has been selected so increase incorrect score and reset tiles else
+    If the Id's from selection one and selection two do not match then turn over the tiles and update the score and do a score check
+    If the score check is true then show game complete message else
+    If selection one id and selection two id do not match then incorrect score plus 1 and reset tiles
+*/
 function if_mapping(e) {
     let selectedElement = e;
     let selection_two = selectedElement.id;
@@ -207,11 +210,11 @@ function if_mapping(e) {
                     document.getElementById("incorrect_score").innerText = ++old_score;
                     /* End */
                     if (numbers_only_check === "front") {
-                    selectedElement.className = "front";
+                        selectedElement.className = "front";
 
-                } else {
-                    selectedElement.className = "front_number";
-                }
+                    } else {
+                        selectedElement.className = "front_number";
+                    }
 
                     selection_one = "";
                     selection_two = "";
@@ -242,9 +245,8 @@ function if_mapping(e) {
                         if (score_int === max_score) {
                             console.log("Max score but mid function")
 
-
-                        appear();
-                       }
+                            appear();
+                        }
 
                     } else {
                         if (selection_one !== selection_two && first_id !== second_id)
@@ -256,7 +258,7 @@ function if_mapping(e) {
                         setTimeout(function() {
                             if (numbers_only_check === "front") {
                                 selectedElement.className = "front";
-            
+
                             } else {
                                 selectedElement.className = "front_number";
                             }
@@ -273,25 +275,22 @@ function if_mapping(e) {
     }
 }
 
-
-
+/* ******* Start button for game ******* */
 function start() {
     var hero = document.getElementById("header_format");
     hero.style.display = "none";
     var x = document.getElementById("hide_unhide");
     x.style.display = "none";
 
-
-
     var currentdate = new Date();
     start_time = currentdate.getHours() + ":" +
         currentdate.getMinutes() + ":" +
         currentdate.getSeconds();
     console.log(start_time)
-
 }
 
 
+/* ******* Pop up message for game complete ******* */
 
 var parent = document.querySelector(".modal-parent"),
     btn = document.querySelector("button"),
@@ -300,58 +299,58 @@ var parent = document.querySelector(".modal-parent"),
 
 
 function appear() {
-  parent.style.display = "block";
-  section.style.filter = "blur(10px)"
-  let final_correct_score = document.getElementById("correct_score").innerHTML
-  let final_incorrect_score = document.getElementById("incorrect_score").innerHTML
-  /* Leaving it as get element id in case more or less tiles are added. This means only the max score needs changing */
-  document.getElementById("congrats_correct").innerHTML = final_correct_score;
-  document.getElementById("congrats_incorrect").innerHTML = final_incorrect_score;
+    parent.style.display = "block";
+    section.style.filter = "blur(10px)"
+    let final_correct_score = document.getElementById("correct_score").innerHTML
+    let final_incorrect_score = document.getElementById("incorrect_score").innerHTML
+    /* Leaving it as get element id in case more or less tiles are added. This means only the max score needs changing */
+    document.getElementById("congrats_correct").innerHTML = final_correct_score;
+    document.getElementById("congrats_incorrect").innerHTML = final_incorrect_score;
 }
 
 if (X != null) {
-X.addEventListener("click", disappearX);
+    X.addEventListener("click", disappearX);
 
 }
 
 function disappearX() {
-  parent.style.display = "none";
-  section.style.filter = "blur(0px)"
-}
-parent.addEventListener("click", disappearParent)
-function disappearParent(e) {
-  if (e.target.className == "modal-parent") {
     parent.style.display = "none";
     section.style.filter = "blur(0px)"
-  }
+}
+parent.addEventListener("click", disappearParent)
+
+function disappearParent(e) {
+    if (e.target.className == "modal-parent") {
+        parent.style.display = "none";
+        section.style.filter = "blur(0px)"
+    }
 }
 
 
+/* ******* Change tiles to black tiles with white numbers ******* */
 
 function numbers_only() {
-    var divs = document.getElementsByTagName("div");
-    
-    for (var i = 0; i < divs.length; i++) {
 
+    var divs = document.getElementsByTagName("div");
+
+    for (var i = 0; i < divs.length; i++) {
 
         let div_class_name = divs[i].className.substr(0, 6);
         let div_class_name_hidden = divs[i].className.substr(0, 13);
         let div_class_name_black = divs[i].className
 
-            if (div_class_name === "front") {
-                divs[i].className = "front_number";
-            } else {
-
-        if (div_class_name_hidden === "number_hidden") {
-            divs[i].className = "number_visible";
+        if (div_class_name === "front") {
+            divs[i].className = "front_number";
         } else {
-            if(div_class_name_black === "number_visible_black") {
+
+            if (div_class_name_hidden === "number_hidden") {
                 divs[i].className = "number_visible";
+            } else {
+                if (div_class_name_black === "number_visible_black") {
+                    divs[i].className = "number_visible";
+                }
             }
-
         }
-    }
-
     }
 
     document.getElementById("numbers_true").innerHTML = "true";
@@ -359,161 +358,212 @@ function numbers_only() {
 }
 
 
+/* ******* Reset Game function. Allows the user to reset the game and decide whether to keep numbers or not. 
+
 
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_game() {
 
-    number_appear();
-    
-    
-    const timer = setTimeout(function()
-    {
-    
+let numbers_check = document.getElementById("numbers_true").innerText;
 
-    
-    let check_open = document.getElementById("popup");
-    console.log ("open");
-    if (check_open.className == "open") {
-        console.log("No user input. Popup closed.")
-        number_close();
-        timeout_appear();
-        
-      /*
-        window.alert("Popup timed out. Please try again.")
-        return
-     */
-
-    } else {
-    
-    
-    /*
-    Keeping in case popup doesnt work. Change next if to if (answer).
-    var answer = window.confirm("Reset tiles to display no numbers? Ok to remove, cancel to keep.")
-    */
-
-    number_close();
-    check_open = document.getElementById("popup");
-      console.log(check_open.className);
-        if (check_open.className == "user_input_confirmed_yes") {
-    
-            document.getElementById("numbers_true").innerHTML = "false";
-    
-        var divs = document.getElementsByTagName("div");
-        
-            for (var i = 0; i < divs.length; i++) {
-    
-    
-                let div_class_name = divs[i].className.substr(0, 13);
-                let div_class_name_hidden = divs[i].className.substr(0, 14);
-    
-                    if (div_class_name === "front_number") {
-                        divs[i].className = "front";
-                    } else {
-                        if (div_class_name_hidden  === "number_visible") {
-                            divs[i].className = "number_hidden";
-                        }
-                    }
-    
-            }
-    
-        var divs = document.getElementsByTagName("div");
-        for (var i = 0; i < divs.length; i++) {
-            /* Added Divs[i] to make it work. Also need === in the if */
-            let div_class_name = divs[i].className.substr(0, 4);
-            let div_class_name_locked = divs[i].className.substr(0, 6)
-            if (div_class_name === "back" || div_class_name_locked === "locked") {
-                divs[i].className = "front";
-                /* below scoring adapted from the code instutute course */
-                old_score = parseInt(document.getElementById("correct_score").innerText);
-                document.getElementById("correct_score").innerText = 0;
-                /* End */
-    
-                old_score = parseInt(document.getElementById("incorrect_score").innerText);
-                document.getElementById("incorrect_score").innerText = 0;
-                /* End */
-    
-    
-    
-    
-            }
-        }
-        shuffleArray(array);
-        var divs = document.getElementsByTagName("div");
-        for (var j = 0; j < array.length; j++) {
-            for (var i = 0; i < divs.length; i++) {
-    
-    
-                let div_class_name = divs[i].className.substr(0, 5);
-                if (div_class_name === "front") {
-    
-                    divs[i].id = array[j];
-                    j++
-                }
-            }
-            
-        }
-    
-    } else {
-        var divs = document.getElementsByTagName("div");
-        document.getElementById("numbers_true").innerHTML = "false";
-        for (var i = 0; i < divs.length; i++) {
-    
-    
-            let div_class_name = divs[i].className.substr(0, 13);
-            let div_class_name_hidden = divs[i].className.substr(0, 14);
-    
-                if (div_class_name === "front_number") {
-                    divs[i].className = "front";
-                } else {
-                    if (div_class_name_hidden  === "number_visible") {
-                        divs[i].className = "number_visible_black";
-                    }
-                }
-    
-        }
-    
+if (numbers_check = "false") {
     var divs = document.getElementsByTagName("div");
-    
+
+    for (var i = 0; i < divs.length; i++) {
+
+        let div_class_name = divs[i].className.substr(0, 13);
+        let div_class_name_hidden = divs[i].className.substr(0, 14);
+
+        if (div_class_name === "front_number") {
+            divs[i].className = "front";
+        } else {
+            if (div_class_name_hidden === "number_visible") {
+                divs[i].className = "number_hidden";
+            }
+        }
+    }
+
+    var divs = document.getElementsByTagName("div");
     for (var i = 0; i < divs.length; i++) {
         /* Added Divs[i] to make it work. Also need === in the if */
         let div_class_name = divs[i].className.substr(0, 4);
         let div_class_name_locked = divs[i].className.substr(0, 6)
-    
         if (div_class_name === "back" || div_class_name_locked === "locked") {
-    
             divs[i].className = "front";
             /* below scoring adapted from the code instutute course */
             old_score = parseInt(document.getElementById("correct_score").innerText);
             document.getElementById("correct_score").innerText = 0;
-            /* End */
-    
+
             old_score = parseInt(document.getElementById("incorrect_score").innerText);
             document.getElementById("incorrect_score").innerText = 0;
             /* End */
-    
-    
-    
-    
+
         }
     }
     shuffleArray(array);
     var divs = document.getElementsByTagName("div");
     for (var j = 0; j < array.length; j++) {
         for (var i = 0; i < divs.length; i++) {
-    
-    
+
+
             let div_class_name = divs[i].className.substr(0, 5);
             if (div_class_name === "front") {
-    
+
                 divs[i].id = array[j];
                 j++
             }
-        
         }
-        
+
     }
-    
-     }
-    } 
+
+
+} else {
+
+    number_appear();
+
+    const timer = setTimeout(function() {
+
+        let check_open = document.getElementById("popup");
+
+        if (check_open.className == "open") {
+
+            number_close();
+            timeout_appear();
+
+            /*
+            window.alert("Popup timed out. Please try again.")
+            return
+             */
+
+        } else {
+
+            /*
+            Keeping in case popup doesnt work. Change next if to if (answer).
+            var answer = window.confirm("Reset tiles to display no numbers? Ok to remove, cancel to keep.")
+            */
+
+            number_close();
+            check_open = document.getElementById("popup");
+
+            /*
+            if (answer) {
+            */
+
+            if (check_open.className == "user_input_confirmed_yes") {
+
+                document.getElementById("numbers_true").innerHTML = "false";
+
+                var divs = document.getElementsByTagName("div");
+
+                for (var i = 0; i < divs.length; i++) {
+
+                    let div_class_name = divs[i].className.substr(0, 13);
+                    let div_class_name_hidden = divs[i].className.substr(0, 14);
+
+                    if (div_class_name === "front_number") {
+                        divs[i].className = "front";
+                    } else {
+                        if (div_class_name_hidden === "number_visible") {
+                            divs[i].className = "number_hidden";
+                        }
+                    }
+                }
+
+                var divs = document.getElementsByTagName("div");
+                for (var i = 0; i < divs.length; i++) {
+                    /* Added Divs[i] to make it work. Also need === in the if */
+                    let div_class_name = divs[i].className.substr(0, 4);
+                    let div_class_name_locked = divs[i].className.substr(0, 6)
+                    if (div_class_name === "back" || div_class_name_locked === "locked") {
+                        divs[i].className = "front";
+                        /* below scoring adapted from the code instutute course */
+                        old_score = parseInt(document.getElementById("correct_score").innerText);
+                        document.getElementById("correct_score").innerText = 0;
+
+                        old_score = parseInt(document.getElementById("incorrect_score").innerText);
+                        document.getElementById("incorrect_score").innerText = 0;
+                        /* End */
+
+                    }
+                }
+                shuffleArray(array);
+                var divs = document.getElementsByTagName("div");
+                for (var j = 0; j < array.length; j++) {
+                    for (var i = 0; i < divs.length; i++) {
+
+
+                        let div_class_name = divs[i].className.substr(0, 5);
+                        if (div_class_name === "front") {
+
+                            divs[i].id = array[j];
+                            j++
+                        }
+                    }
+
+                }
+
+            } else {
+                var divs = document.getElementsByTagName("div");
+                document.getElementById("numbers_true").innerHTML = "false";
+                for (var i = 0; i < divs.length; i++) {
+
+
+                    let div_class_name = divs[i].className.substr(0, 13);
+                    let div_class_name_hidden = divs[i].className.substr(0, 14);
+
+                    if (div_class_name === "front_number") {
+                        divs[i].className = "front";
+                    } else {
+                        if (div_class_name_hidden === "number_visible") {
+                            divs[i].className = "number_visible_black";
+                        }
+                    }
+
+                }
+
+                var divs = document.getElementsByTagName("div");
+
+                for (var i = 0; i < divs.length; i++) {
+                    /* Added Divs[i] to make it work. Also need === in the if */
+                    let div_class_name = divs[i].className.substr(0, 4);
+                    let div_class_name_locked = divs[i].className.substr(0, 6)
+
+                    if (div_class_name === "back" || div_class_name_locked === "locked") {
+
+                        divs[i].className = "front";
+                        /* below scoring adapted from the code instutute course */
+                        old_score = parseInt(document.getElementById("correct_score").innerText);
+                        document.getElementById("correct_score").innerText = 0;
+                        /* End */
+
+                        old_score = parseInt(document.getElementById("incorrect_score").innerText);
+                        document.getElementById("incorrect_score").innerText = 0;
+                        /* End */
+
+                    }
+                }
+                shuffleArray(array);
+                var divs = document.getElementsByTagName("div");
+                for (var j = 0; j < array.length; j++) {
+                    for (var i = 0; i < divs.length; i++) {
+
+
+                        let div_class_name = divs[i].className.substr(0, 5);
+                        if (div_class_name === "front") {
+
+                            divs[i].id = array[j];
+                            j++
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+ 
     }, 11000);
 }
+}
+
+/* Code beutified 20/02/2021 12:23 */
