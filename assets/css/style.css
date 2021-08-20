@@ -303,7 +303,7 @@ option::selection {
 
 
 
-#name_div {
+.name_div {
     text-align: left;
     width: 95%;
     padding-left: 1%;
