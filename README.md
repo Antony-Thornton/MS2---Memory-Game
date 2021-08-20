@@ -241,22 +241,24 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Index Page | No Errors | 4 Errors 7 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.
 | Index Page | No Errors | 7 warnings | No Errors | n/a
 | Contact Page | No Errors | 12 Errors 2 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.
-| Contact Page | No Errors | 2 warnings | No Errors | Need to fix name_div Class not applying formats 
+| Contact Page | No Errors | 2 warnings | No Errors | Need to fix name_div Class not applying formats - Bug 6
 | More Page | No Errors | 3 Errors 12 warnings | frameborder element is obsolute message | Make required changes.
 | Contact Page | No Errors | 3 warnings | No Errors | n/a
 
 # CSS Validator Testing
 
-| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:
-| How to play button | The button should display the instuctions div with associated format | Expected result | n/a | n/a| Expected result | n/a | n/a
+| CSS Validation | Expected Result | Result | Errors | Fix | Fix Comments
+| ------------- |:-------------:| -----:| -----:| -----:| -----:|
+| Index Page | No Errors | No Errors found | n/a | n/a
+| Contact Page | No Errors | No Errors found | n/a | n/a
+| More Page | No Errors | No Errors found | n/a | n/a
 
 
 # JavaScript Validator Testing
 
-| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:
-| How to play button | The button should display the instuctions div with associated format | Expected result | n/a | n/a| Expected result | n/a | n/a
+| HTML Validation | Expected Result | Result | Errors | Fix | Fix Comments
+| ------------- |:-------------:| -----:| -----:| -----:| -----:|
+| Index Page | No Errors | 4 Errors 7 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.
 
 ### 4.2.3 Device Testing
 tbc
@@ -289,6 +291,7 @@ tbc
 * Bug 4 - On first click of reset game message to reset numbers would appear.  
     - Added number_check variable with If Statement in reset game
 * Bug 5 - Tile flips to black instead
+* Bug 6 - Changed Name_div from ID to class and formatting fell off even after css changes
 
 
 # 5. Deployment
