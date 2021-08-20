@@ -62,9 +62,9 @@ function number_yes() {
         number_section.style.filter = "blur(0px)";
     */
     document.getElementById("popup").className = "user_input_confirmed_yes";
-    document.getElementById("selection").innerText = "Number's will not show."
-    document.getElementById("number_yes").style = "visibility: hidden;"
-    document.getElementById("number_no").style = "visibility: hidden;"
+    document.getElementById("selection").innerText = "Number's will not show.";
+    document.getElementById("number_yes").style = "visibility: hidden;";
+    document.getElementById("number_no").style = "visibility: hidden;";
 }
 
 function number_no() {
@@ -73,17 +73,17 @@ function number_no() {
         number_section.style.filter = "blur(0px)";
     */
     document.getElementById("popup").className = "user_input_confirmed_no";
-    document.getElementById("selection").innerText = "Number's will show."
-    document.getElementById("number_yes").style = "visibility: hidden;"
-    document.getElementById("number_no").style = "visibility: hidden;"
+    document.getElementById("selection").innerText = "Number's will show.";
+    document.getElementById("number_yes").style = "visibility: hidden;";
+    document.getElementById("number_no").style = "visibility: hidden;";
 }
 
 function number_close() {
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
-    document.getElementById("selection").innerText = ""
-    document.getElementById("number_yes").style = "visibility: visible;"
-    document.getElementById("number_no").style = "visibility: visible;"
+    document.getElementById("selection").innerText = "";
+    document.getElementById("number_yes").style = "visibility: visible;";
+    document.getElementById("number_no").style = "visibility: visible;";
 }
 
 /* ****** Timeout function. Appears if user does not make a selection ******* */
@@ -138,11 +138,11 @@ window.onload = function random_array() {
             if (div_class_name === "front") {
 
                 divs[i].id = array[j];
-                j++
+                j++;
             }
         }
     }
-}
+};
 
 /* ****** Shuffle array function. Called by other functions. ******* */
 
@@ -157,7 +157,7 @@ const shuffleArray = array => {
 
     }
 
-    return array
+    return array;
 };
 
 /* ****** Reset tiles function called by reset Game function. Function will check if the tiles are "back" and reset them to "front x" ******* */
@@ -170,7 +170,7 @@ function reset_tiles() {
     for (var i = 0; i < divs.length; i++) {
         /* Added Divs[i] to make it work. Also need === in the if */
         let div_class_name = divs[i].className.substr(0, 4);
-        let div_class_name_locked = divs[i].className.substr(0, 6)
+        let div_class_name_locked = divs[i].className.substr(0, 6);
         if (div_class_name === "back") {
 
             if (numbers_true_check === "true") {
@@ -201,9 +201,8 @@ function if_mapping(e) {
     let max_score = 12;
     let locked_check = e.className.substr(0, 6);
     let numbers_only_check = e.className;
-    number_change = "changed"
+    number_change = "changed";
 
-    console.log(numbers_only_check)
 
     if (locked_check = "locked") {
 
@@ -218,7 +217,6 @@ function if_mapping(e) {
                 first_id = e.id.slice(-2);
                 selectedElement.className = "back" + first_id;
                 selection_one_numbers_check = numbers_only_check;
-                console.log(selection_one_numbers_check)
             } else {
                 if (selection_one === selection_two) {
 
@@ -283,7 +281,7 @@ function if_mapping(e) {
                             selection_two = "";
                             first_id = "";
                             second_id = "";
-                            reset_tiles()
+                            reset_tiles();
                         }, 1000);
                     }
                 }
@@ -317,9 +315,9 @@ var parent = document.querySelector(".modal-parent"),
 
 function appear() {
     parent.style.display = "block";
-    section.style.filter = "blur(10px)"
-    let final_correct_score = document.getElementById("correct_score").innerHTML
-    let final_incorrect_score = document.getElementById("incorrect_score").innerHTML
+    section.style.filter = "blur(10px)";
+    let final_correct_score = document.getElementById("correct_score").innerHTML;
+    let final_incorrect_score = document.getElementById("incorrect_score").innerHTML;
     /* Leaving it as get element id in case more or less tiles are added. This means only the max score needs changing */
     document.getElementById("congrats_correct").innerHTML = final_correct_score;
     document.getElementById("congrats_incorrect").innerHTML = final_incorrect_score;
@@ -332,14 +330,14 @@ if (X != null) {
 
 function disappearX() {
     parent.style.display = "none";
-    section.style.filter = "blur(0px)"
+    section.style.filter = "blur(0px)";
 }
-parent.addEventListener("click", disappearParent)
+parent.addEventListener("click", disappearParent);
 
 function disappearParent(e) {
     if (e.target.className == "modal-parent") {
         parent.style.display = "none";
-        section.style.filter = "blur(0px)"
+        section.style.filter = "blur(0px)";
     }
 }
 
@@ -354,7 +352,7 @@ function numbers_only() {
 
         let div_class_name = divs[i].className.substr(0, 6);
         let div_class_name_hidden = divs[i].className.substr(0, 13);
-        let div_class_name_black = divs[i].className
+        let div_class_name_black = divs[i].className;
 
         if (div_class_name === "front") {
             divs[i].className = "front_number";
@@ -371,7 +369,7 @@ function numbers_only() {
     }
 
     document.getElementById("numbers_true").innerHTML = "true";
-    number_change = "changed"
+    number_change = "changed";
 }
 
 
@@ -388,7 +386,7 @@ function reset_game() {
     let user_check = document.getElementById("popup").className;
 
 if(number_change === "") {
-    return
+    return;
 } else {
 
     
@@ -398,7 +396,7 @@ if (numbers_true_check === "false"  && number_change === "No Change") {
 
     for (var i = 0; i < divs.length; i++) {
 
-        let div_class_name = divs[i].className.substr(0, 13);
+
         let div_class_name_hidden = divs[i].className.substr(0, 14);
 
         if (div_class_name === "front_number") {
@@ -414,7 +412,7 @@ if (numbers_true_check === "false"  && number_change === "No Change") {
     for (var i = 0; i < divs.length; i++) {
         /* Added Divs[i] to make it work. Also need === in the if */
         let div_class_name = divs[i].className.substr(0, 4);
-        let div_class_name_locked = divs[i].className.substr(0, 6)
+        let div_class_name_locked = divs[i].className.substr(0, 6);
         if (div_class_name === "back" || div_class_name_locked === "locked") {
             divs[i].className = "front";
             /* below scoring adapted from the code instutute course */
@@ -437,12 +435,12 @@ if (numbers_true_check === "false"  && number_change === "No Change") {
             if (div_class_name === "front") {
 
                 divs[i].id = array[j];
-                j++
+                j++;
             }
         }
 
     }
-return
+return;
 
 } else {
 
@@ -595,5 +593,3 @@ return
 
 }
 }
-
-/* Code beutified 20/02/2021 12:23 */

@@ -256,9 +256,11 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 
 # JavaScript Validator Testing
 
-| HTML Validation | Expected Result | Result | Errors | Fix | Fix Comments
+| Javascript Validation | Expected Result | Result | Errors | Fix | Fix Comments
 | ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| Index Page | No Errors | 4 Errors 7 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.
+| sendEmail.js | No Errors | n/a | One undefined variable 2	emailjs One unused variable 1 sendMail | n/a
+| sendEmail.js | No Errors | 51 warnings |  | n/a
+
 
 ### 4.2.3 Device Testing
 tbc
