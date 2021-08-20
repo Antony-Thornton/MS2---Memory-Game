@@ -1,297 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Home - BMW Memory Game by Antony Thornton</title>
-</head>
-
-<body>
+    <title>Home - BMW Memory Game by Antony Thornton
+    </title>
+  </head>
+  <body>
     <header>
-        <div id="navigation_bar">
-            <div class="nav_div">
-                <h3>
-                    <a style="color: rgba(43,136,183,255);" href="index.html">Memory Game <i class="fas fa-gamepad" style="color: rgba(43,136,183,255)"></i></a>
-                </h3>
-            </div>
-            <div class="nav_div">
-                <h3>
-                    <a href="contact.html">Contact <i class="far fa-address-card"></i></a>
-                </h3>
-            </div>
-            <div class="nav_div">
-                <h3>
-                    <a href="more.html">More From BMW <i class="fas fa-car"></i></a>
-                </h3>
-            </div>
+      <div id="navigation_bar">
+        <div class="nav_div">
+          <h3>
+            <a style="color: rgba(43,136,183,255);" href="index.html">Memory Game 
+              <i class="fas fa-gamepad" style="color: rgba(43,136,183,255)">
+              </i>
+            </a>
+          </h3>
         </div>
-        <div id="header_format">
-            <img class="hero_format" src="assets/images/bmw_hero_image.jpg" alt="BMW Autumn Advert Cars On A Hill" no-repeat center center>
+        <div class="nav_div">
+          <h3>
+            <a href="contact.html">Contact 
+              <i class="far fa-address-card">
+              </i>
+            </a>
+          </h3>
         </div>
-        <div id="header_title">
-            <img class="logo_format" src="assets/images/bmw_logo.jpg" alt="BMW Logo">
-            <h1>BMW Car Models</h1>
-            <h2>A Memory Game</h2>
-            <h4>Thank you for visitng this website.
-                In order to celebrate everything BMW we have created a fun mini game that will test your memory skills. 
-                This website and it's contents is best enjoyed on a desktop.
-            </h4>
+        <div class="nav_div">
+          <h3>
+            <a href="more.html">More From BMW 
+              <i class="fas fa-car">
+              </i>
+            </a>
+          </h3>
         </div>
-        <div id="how_to_div">
-            <button type="button" onclick="hide_unhide()">How to play?</button>
-            <div id="hide_unhide" style="display: none">
-                <h4>You may find it easier to have numbers shown rather than the logo. This will be useful for mobile users. If so please click the numbers button.</h4>
-                <h4>When you are ready.</h4>
-                <h5>Step 1 - Press the start button. This will hide the unrelated images.</h5>
-                <h5>Step 2 - Click on a tile and then another.</h5>
-                <h5>Step 3 - Remember the tile pictures (they reset after 1 second) and try to match all of them as quickly as you can.</h5>
-                <h5>Please note: if you click on the tiles too quickly it "may" flag as an incorrect score.</h5>
-                <h5>If you want to start again please press the reset button.</h5>
-            </div>
+      </div>
+      <div id="header_format">
+        <img class="hero_format" src="assets/images/bmw_hero_image.jpg" alt="BMW Autumn Advert Cars On A Hill" no-repeat center center>
+      </div>
+      <div id="header_title">
+        <img class="logo_format" src="assets/images/bmw_logo.jpg" alt="BMW Logo">
+        <h1>BMW Car Models
+        </h1>
+        <h2>A Memory Game
+        </h2>
+        <h4>Thank you for visitng this website.
+          In order to celebrate everything BMW we have created a fun mini game that will test your memory skills. 
+          This website and it's contents is best enjoyed on a desktop.
+        </h4>
+      </div>
+      <div id="how_to_div">
+        <button type="button" onclick="hide_unhide()">How to play?
+        </button>
+        <div id="hide_unhide" style="display: none">
+          <h4>You may find it easier to have numbers shown rather than the logo. This will be useful for mobile users. If so please click the numbers button.
+          </h4>
+          <h4>When you are ready.
+          </h4>
+          <h5>Step 1 - Press the start button. This will hide the unrelated images.
+          </h5>
+          <h5>Step 2 - Click on a tile and then another.
+          </h5>
+          <h5>Step 3 - Remember the tile pictures (they reset after 1 second) and try to match all of them as quickly as you can.
+          </h5>
+          <h5>Please note: if you click on the tiles too quickly it "may" flag as an incorrect score.
+          </h5>
+          <h5>If you want to start again please press the reset button.
+          </h5>
         </div>
-        <div class="game_controls">
-            <button type="button" id="start" onclick="start()">Start</button>
-            <button type="button" id="reset" onclick="reset_game()">Reset</button>
-            <button type="button" id="numbers" class="" onclick="numbers_only()">Numbers</button>
-<!-- Removed the submit button for the moment. May add functionality back in later if time permits.
-            <button type="button" id="submit" onclick="incrementWrongAnswer()">Submit Score</button>
+      </div>
+      <div class="game_controls">
+        <button type="button" id="start" onclick="start()">Start
+        </button>
+        <button type="button" id="reset" onclick="reset_game()">Reset
+        </button>
+        <button type="button" id="numbers" class="" onclick="numbers_only()">Numbers
+        </button>
+        <!-- Removed the submit button for the moment. May add functionality back in later if time permits.
+<button type="button" id="submit" onclick="incrementWrongAnswer()">Submit Score</button>
 -->
-        </div>
+      </div>
     </header>
     <section class="main_section">
-        <div class="score">
-            <div>
-                <h1 id="correct_text">Correct</h1>
-            </div>
-            <div>
-                <h1 id="correct_score">0</h1>
-            </div>
-            <div>
-                <h1 id="incorrect_text">Incorrect</h1>
-            </div>
-            <div>
-                <h1 id="incorrect_score">0</h1>
-            </div>
+      <div class="score">
+        <div>
+          <h1 id="correct_text">Correct
+          </h1>
         </div>
+        <div>
+          <h1 id="correct_score">0
+          </h1>
+        </div>
+        <div>
+          <h1 id="incorrect_text">Incorrect
+          </h1>
+        </div>
+        <div>
+          <h1 id="incorrect_score">0
+          </h1>
+        </div>
+      </div>
     </section>
     <section class="memory_section">
-        <div class="container">
-            <div class="col">
-                <div id="front1.10" class="front" onclick="if_mapping(this)">
-                        <div class="number_hidden">1</div>
-                </div>
+      <div class="container">
+        <div class="col">
+          <div id="front1.10" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">1
             </div>
-            <div class="col">
-                <div id="front2.10" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">2</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.11" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">3</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.11" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">4</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.12" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">5</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.12" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">6</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.13" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">7</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.13" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">8</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.14" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">9</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.14" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">10</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.15" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">11</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.15" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">12</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.16" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">13</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.16" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">14</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.17" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">15</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.17" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">16</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.18" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">17</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.18" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">18</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.19" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">19</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.19" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">20</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.20" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">21</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.20" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">22</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.21" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">23</div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.21" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">24</div>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- See readme for modal credit -->
-          <div class="modal-parent">
-            <div class="modal">
-                <h1>
-                  Congratulations!!!
-                </h1>
-                <p>
-                  You beat the memory game! You got 
-                    <span id="congrats_correct" style="color: green;"></span> 
-                  correct and 
-                <span id="congrats_incorrect" style="color: red;"></span>
-                    incorrect. Did you have fun? I hope so. If you didn't why not drop me a 
-                        <a href="contact.html" title="Go to contact page">
-                            message and let me know what could be done better!
-                        </a>                             
-                </p>
-              <span class="X" draggable="true">&times;</span>
+        <div class="col">
+          <div id="front2.10" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">2
             </div>
           </div>
-          <div class="number-parent">
-            <div class="modal">
-                <h1>
-                  Would you like to reset the tile numbers also?
-                </h1>
-                <h4>You will no longer see the numbers on the tiles.</h4>
-                <div id="countdown">10 seconds remaining</div>
-                <div id="selection"></div>
-                <button id="number_yes" onclick="number_yes()">Yes</button>
-                <button id="number_no" onclick="number_no()">No</button>
-              
-            </div>
-          </div>
-          <div class="timeout-parent">
-            <div class="modal">
-                <h1>
-                  Reset game timed out. Please try again.
-                </h1>
-                <button id="number_yes" onclick="timeout_ok()">Ok</button>           
-            </div>
-          </div>
-          <div id="numbers_true" style="visibility: hidden;">
-              false
-          </div>
-          <div id="popup" class="closed" style="visibility: hidden;">
-
         </div>
+        <div class="col">
+          <div id="front1.11" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">3
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.11" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">4
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.12" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">5
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.12" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">6
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.13" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">7
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.13" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">8
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.14" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">9
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.14" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">10
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.15" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">11
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.15" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">12
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.16" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">13
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.16" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">14
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.17" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">15
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.17" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">16
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.18" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">17
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.18" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">18
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.19" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">19
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.19" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">20
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.20" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">21
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.20" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">22
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.21" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">23
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.21" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">24
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- See readme for modal credit -->
+      <div class="modal-parent">
+        <div class="modal">
+          <h1>
+            Congratulations!!!
+          </h1>
+          <p>
+            You beat the memory game! You got 
+            <span id="congrats_correct" style="color: green;">
+            </span> 
+            correct and 
+            <span id="congrats_incorrect" style="color: red;">
+            </span>
+            incorrect. Did you have fun? I hope so. If you didn't why not drop me a 
+            <a href="contact.html" title="Go to contact page">
+              message and let me know what could be done better!
+            </a>                             
+          </p>
+          <span class="X" draggable="true">&times;
+          </span>
+        </div>
+      </div>
+      <div class="number-parent">
+        <div class="modal">
+          <h1>
+            Would you like to reset the tile numbers also?
+          </h1>
+          <h4>You will no longer see the numbers on the tiles.
+          </h4>
+          <div id="countdown">10 seconds remaining
+          </div>
+          <div id="selection">
+          </div>
+          <button id="number_yes" onclick="number_yes()">Yes
+          </button>
+          <button id="number_no" onclick="number_no()">No
+          </button>
+        </div>
+      </div>
+      <div class="timeout-parent">
+        <div class="modal">
+          <h1>
+            Reset game timed out. Please try again.
+          </h1>
+          <button id="number_yes" onclick="timeout_ok()">Ok
+          </button>           
+        </div>
+      </div>
+      <div id="numbers_true" style="visibility: hidden;">
+        false
+      </div>
+      <div id="popup" class="closed" style="visibility: hidden;">
+      </div>
     </section>
     <footer>
-        <div class="footer_div">
-            <h1>Disclaimer</h1>
-            <p class="footer_p_format">
-                This is a fan made website created as a graded assessment, part of a software development course. It is not official and does not represent the views of BMW.
-                <br>
-                The information provided is for entertainment purposes only.
-                <br>
-                <br>
-            </p>
-        </div>
-        <div class="footer_div">
-            <h1>Official Information</h1>
-            <p class="footer_p_format">
-                If you would like to get more information on BMW and its products, please visit the following social media accounts provided below.
-                <br>
-            </p>
-        </div>
-        <div class="footer_div">
-            <!--UL taken from the love running project provided by Code Institute-->
-            <ul class="social_networks">
-                <li>
-                    <a style="text-decoration: none;" href="https://www.facebook.com/bmwuk" target="_blank" title="BMW Facebook">
-                        <i class="fab fa-facebook" title="BMW Facebook" style="color: rgba(43,136,183,255)"></i>
-                    </a>
-                </li>
-                <li>
-                    <a style="text-decoration: none;" href="https://twitter.com/bmw" target="_blank">
-                        <i class="fab fa-twitter-square" title="BMW Twitter" style="color: rgba(43,136,183,255)"></i>
-                    </a>
-                </li>
-                <li>
-                    <a style="text-decoration: none;" href="https://www.youtube.com/user/BMW" target="_blank" title="BMW Youtube">
-                        <i class="fab fa-youtube-square" title="BMW YouTube" style="color: rgba(43,136,183,255)"></i>
-                    </a>
-                </li>
-                <li>
-                    <a style="text-decoration: none;" href="https://www.bmw.co.uk/en/index.html" target="_blank">
-                        <i class="fas fa-globe" title="BMW Official Website" style="color: rgba(43,136,183,255)"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="footer_div">
+        <h1>Disclaimer
+        </h1>
+        <p class="footer_p_format">
+          This is a fan made website created as a graded assessment, part of a software development course. It is not official and does not represent the views of BMW.
+          <br>
+          The information provided is for entertainment purposes only.
+          <br>
+          <br>
+        </p>
+      </div>
+      <div class="footer_div">
+        <h1>Official Information
+        </h1>
+        <p class="footer_p_format">
+          If you would like to get more information on BMW and its products, please visit the following social media accounts provided below.
+          <br>
+        </p>
+      </div>
+      <div class="footer_div">
+        <!--UL taken from the love running project provided by Code Institute-->
+        <ul class="social_networks">
+          <li>
+            <a style="text-decoration: none;" href="https://www.facebook.com/bmwuk" target="_blank" title="BMW Facebook">
+              <i class="fab fa-facebook" title="BMW Facebook" style="color: rgba(43,136,183,255)">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a style="text-decoration: none;" href="https://twitter.com/bmw" target="_blank">
+              <i class="fab fa-twitter-square" title="BMW Twitter" style="color: rgba(43,136,183,255)">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a style="text-decoration: none;" href="https://www.youtube.com/user/BMW" target="_blank" title="BMW Youtube">
+              <i class="fab fa-youtube-square" title="BMW YouTube" style="color: rgba(43,136,183,255)">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a style="text-decoration: none;" href="https://www.bmw.co.uk/en/index.html" target="_blank">
+              <i class="fas fa-globe" title="BMW Official Website" style="color: rgba(43,136,183,255)">
+              </i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
-    <script src="assets/JS/index.js"></script>
-</body>
-
+    <script src="assets/JS/index.js">
+    </script>
+  </body>
 </html>
