@@ -218,6 +218,15 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | JS function was overrulling the user and removing the numbers on reset | Add in additional check to JS function to check if user wants numbers | Testing bugs - Bug 2
 | Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | If user selects numbers then tries to reset game but times out the next reset will reset the numbers by default | Change JS to accomodate this | Testing bugs - Bug 3
 | Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | On first click of reset game message to reset numbers would appear | Addd code to check if there are any changes to numbers | Testing bugs - Bug 4
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result - First click bug fixed. Numbers clicked then reset the numbers by selecting yes. Numbers clicked again and no selected from reset game. On additional reset click the numbers remain and a message pops up to ask for reset. | Expected Result | n/a
+| Tile click function | The user should be able to click on a tile and flip to show a picture. The user should be able to click a 2nd tile and flip over a 2nd picture | Expected result | n/a
+| Tile click function | The function should add 1 to incorrect score and flip tiles back to logo if 2 tiles are incorrectly matched | Expected Result | n/a
+| Tile click function | The function should add 1 to correct score and flip tiles back to logo if 2 tiles are correctly matched | Expected Result | n/a
+| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Tile flips to black instead | Testing Bug 5
+
+
+| Game Complete Message | When the user has correctly matchg 
+
 
 
 ### 4.2.3 Device Testing
@@ -250,7 +259,7 @@ tbc
  - Added to features left to implement. Will try to fix before submission
 * Bug 4 - On first click of reset game message to reset numbers would appear.  
     - Added number_check variable with If Statement in reset game
-
+* Bug 5 - Tile flips to black instead
 
 
 # 5. Deployment
