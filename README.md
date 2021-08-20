@@ -259,7 +259,8 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Javascript Validation | Expected Result | Result | Errors | Fix | Fix Comments
 | ------------- |:-------------:| -----:| -----:| -----:| -----:|
 | sendEmail.js | No Errors | n/a | One undefined variable 2	emailjs One unused variable 1 sendMail | n/a
-| sendEmail.js | No Errors | 51 warnings |  | n/a
+| index.js | No Errors | No Major issues 51 warnings |  | n/a
+| unused.js | n/a unused code | n/a| n/a
 
 
 ### 4.2.3 Device Testing
