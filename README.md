@@ -236,9 +236,9 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 
 # HTML Validator Testing
 
-| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:
-| How to play button | The button should display the instuctions div with associated format | Expected result | n/a | n/a| Expected result | n/a | n/a
+| HTML Validation | Expected Result | Result | Errors | Fix | Fix Comments
+| ------------- |:-------------:| -----:| -----:| -----:| -----:|
+| Index Page | No Errors | 4 Errors 7 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes
 
 # CSS Validator Testing
 
