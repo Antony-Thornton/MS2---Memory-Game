@@ -8,7 +8,6 @@ emailjs.send("gmail_account","memory_game",{
 })
 .then(
     function(response) {
-        console.log("SUCCESS", response);
         document.getElementById("firstname").value = "";
         document.getElementById("secondname").value = "";
         document.getElementById("email").value = "";

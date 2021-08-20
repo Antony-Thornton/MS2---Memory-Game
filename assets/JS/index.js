@@ -204,7 +204,6 @@ function if_mapping(e) {
     if (locked_check = "locked") {
 
         if (score_int === max_score) {
-            console.log("Game Complete")
             /* 
               Exit script - Game Complete 
               Show Popup message
@@ -213,12 +212,11 @@ function if_mapping(e) {
             if (selection_one === "") {
                 selection_one = e.id;
                 first_id = e.id.slice(-2);
-                console.log("Selection one = nothing so selection_one becomes e.id")
                 selectedElement.className = "back" + first_id;
 
             } else {
                 if (selection_one === selection_two) {
-                    console.log("Same tile selected")
+
                     /* below scoring adapted from the code instutute course */
                     old_score = parseInt(document.getElementById("incorrect_score").innerText);
                     document.getElementById("incorrect_score").innerText = ++old_score;
@@ -238,7 +236,7 @@ function if_mapping(e) {
                     second_id = e.id.slice(-2);
                     if (selection_one !== selection_two && first_id === second_id) {
 
-                        console.log("Selection one and two DO NOT match")
+
                         /* below scoring adapted from the code instutute course */
                         old_score = parseInt(document.getElementById("correct_score").innerText);
                         document.getElementById("correct_score").innerText = ++old_score;
@@ -257,7 +255,7 @@ function if_mapping(e) {
                         score_check = score.innerHTML;
                         score_int = parseInt(score_check);
                         if (score_int === max_score) {
-                            console.log("Max score but mid function")
+
 
                             appear();
                         }
@@ -300,7 +298,7 @@ function start() {
     start_time = currentdate.getHours() + ":" +
         currentdate.getMinutes() + ":" +
         currentdate.getSeconds();
-    console.log(start_time)
+
 }
 
 
