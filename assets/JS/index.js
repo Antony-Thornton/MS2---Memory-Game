@@ -10,7 +10,7 @@ let first_id = "";
 let second_id = "";
 let old_score = "";
 let array = ["front1.10", "front2.10", "front1.11", "front2.11", "front1.12", "front2.12", "front1.13", "front2.13", "front1.14", "front2.14", "front1.15", "front2.15", "front1.16", "front2.16", "front1.17", "front2.17", "front1.18", "front2.18", "front1.19", "front2.19", "front1.20", "front2.20", "front1.21", "front2.21"];
-
+let number_change = "";
 
 /* ****** Pop up message for time out function. ******* */
 
@@ -200,6 +200,7 @@ function if_mapping(e) {
     let max_score = 12;
     let locked_check = e.className.substr(0, 6);
     let numbers_only_check = e.className;
+    number_change = "changed"
 
     if (locked_check = "locked") {
 
@@ -366,7 +367,7 @@ function numbers_only() {
     }
 
     document.getElementById("numbers_true").innerHTML = "true";
-
+    number_change = "changed"
 }
 
 
@@ -382,7 +383,13 @@ function reset_game() {
     let numbers_true_check = document.getElementById("numbers_true").innerHTML;
     let user_check = document.getElementById("popup").className;
 
-if (numbers_true_check === "false"  && user_check !== "user_input_confirmed_no") {
+if(number_change === "") {
+    return
+} else {
+
+    
+
+if (numbers_true_check === "false"  && number_change === "No Change") {
     var divs = document.getElementsByTagName("div");
 
     for (var i = 0; i < divs.length; i++) {
@@ -580,6 +587,8 @@ return
         }
  
     }, 11000);
+}
+
 }
 }
 

@@ -121,7 +121,7 @@ n/a
 
 
 ## 3.2 Features Left to Implement
-n/a
+See Testing Bug 3 - Unlikely to be a common issue so will try to fix before project submission.
 
 
 ## 3.3 Technologies Used
@@ -217,6 +217,7 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | JS ALWAYS resetting numbers with no popup message | Update the JS function to correctly check for the numbers and if not run the popup function | Testing bugs - Bug 1
 | Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | JS function was overrulling the user and removing the numbers on reset | Add in additional check to JS function to check if user wants numbers | Testing bugs - Bug 2
 | Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | If user selects numbers then tries to reset game but times out the next reset will reset the numbers by default | Change JS to accomodate this | Testing bugs - Bug 3
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | On first click of reset game message to reset numbers would appear | Addd code to check if there are any changes to numbers | Testing bugs - Bug 4
 
 
 ### 4.2.3 Device Testing
@@ -243,9 +244,12 @@ tbc
 * General CSS format issues such as, objects not displaying in line correctly, not being able to overide body format etc.
 
 ## 4.4 Testing Bugs
-* Bug 1 - Wrote code in the reset game to check if numbers were not selected and if not to skip. It now ALWAYS resets the number and doesnt popup the message. Needs to be fixed.
+* Bug 1 - Wrote code in the reset game to check if numbers were not selected and if not to skip. It now ALWAYS resets the number and doesnt popup the message.
 * Bug 2 - JS function was overrulling the user and removing the numbers on reset
 * Bug 3 - If user selects numbers then tries to reset game but times out the next reset will reset the numbers by default
+ - Added to features left to implement. Will try to fix before submission
+* Bug 4 - On first click of reset game message to reset numbers would appear.  
+    - Added number_check variable with If Statement in reset game
 
 
 
