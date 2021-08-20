@@ -11,6 +11,7 @@ let second_id = "";
 let old_score = "";
 let array = ["front1.10", "front2.10", "front1.11", "front2.11", "front1.12", "front2.12", "front1.13", "front2.13", "front1.14", "front2.14", "front1.15", "front2.15", "front1.16", "front2.16", "front1.17", "front2.17", "front1.18", "front2.18", "front1.19", "front2.19", "front1.20", "front2.20", "front1.21", "front2.21"];
 let number_change = "";
+let selection_one_numbers_check = "";
 
 /* ****** Pop up message for time out function. ******* */
 
@@ -202,6 +203,8 @@ function if_mapping(e) {
     let numbers_only_check = e.className;
     number_change = "changed"
 
+    console.log(numbers_only_check)
+
     if (locked_check = "locked") {
 
         if (score_int === max_score) {
@@ -214,7 +217,8 @@ function if_mapping(e) {
                 selection_one = e.id;
                 first_id = e.id.slice(-2);
                 selectedElement.className = "back" + first_id;
-
+                selection_one_numbers_check = numbers_only_check;
+                console.log(selection_one_numbers_check)
             } else {
                 if (selection_one === selection_two) {
 
@@ -222,7 +226,7 @@ function if_mapping(e) {
                     old_score = parseInt(document.getElementById("incorrect_score").innerText);
                     document.getElementById("incorrect_score").innerText = ++old_score;
                     /* End */
-                    if (numbers_only_check === "front") {
+                    if (selection_one_numbers_check === "front") {
                         selectedElement.className = "front";
 
                     } else {
