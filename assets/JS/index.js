@@ -379,9 +379,9 @@ If the popup message times out do nothing else check user selection and reset th
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_game() {
 
-let numbers_check = document.getElementById("numbers_true").innerText;
+    let numbers_true_check = document.getElementById("numbers_true").innerHTML;
 
-if (numbers_check = "false") {
+if (numbers_true_check === "false") {
     var divs = document.getElementsByTagName("div");
 
     for (var i = 0; i < divs.length; i++) {
@@ -430,7 +430,7 @@ if (numbers_check = "false") {
         }
 
     }
-
+return
 
 } else {
 
