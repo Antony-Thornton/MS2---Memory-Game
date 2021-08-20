@@ -206,7 +206,8 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - YouTube | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
-
+| Links | All links to external sites should direct correctly | Expected result | n/a | n/a
+| Videos | Videos should ONLY play when the user clicks play | Expected result | n/a | n/a
 
 # JavaScript Testing
 
@@ -233,8 +234,24 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 
 ![index web](assets/images/email_picture.jpg)
 
+# HTML Validator Testing
+
+| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
+| ------------- |:-------------:| -----:| -----:| -----:
+| How to play button | The button should display the instuctions div with associated format | Expected result | n/a | n/a| Expected result | n/a | n/a
+
+# CSS Validator Testing
+
+| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
+| ------------- |:-------------:| -----:| -----:| -----:
+| How to play button | The button should display the instuctions div with associated format | Expected result | n/a | n/a| Expected result | n/a | n/a
 
 
+# JavaScript Validator Testing
+
+| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
+| ------------- |:-------------:| -----:| -----:| -----:
+| How to play button | The button should display the instuctions div with associated format | Expected result | n/a | n/a| Expected result | n/a | n/a
 
 ### 4.2.3 Device Testing
 tbc
