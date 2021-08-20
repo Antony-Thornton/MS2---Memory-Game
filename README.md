@@ -180,7 +180,6 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - YouTube | Link should take user to expected BMW social media page 
 | Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
-| How to play button | The button should display the instuctions div with associated format using JS | Expected result | n/a | n/a| Expected result | n/a | n/a
 
 
 # Contact Page
@@ -206,6 +205,15 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - YouTube | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
+
+
+# JavaScript Testing
+
+| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
+| ------------- |:-------------:| -----:| -----:| -----:
+| How to play button | The button should display the instuctions div with associated format using JS | Expected result | n/a | n/a| Expected result | n/a | n/a
+
+
 
 ### 4.2.3 Device Testing
 tbc
