@@ -1,10 +1,8 @@
 ![index web](documentation-assets/wireframe-images/ms2_memory_game_device_screenshots.jpg)
 
-
 # MS2---Memory-Game
 
 # BMW Memory Game
-
 
 # Contents
 
@@ -26,7 +24,7 @@
     - 4.2.2 Functionality Testing
     - 4.2.3 Device Testing
     - 4.2.4 Spelling and Grammar
-* 4.3 Build In Progress Bugs
+* 4.3 Build in Progress Bugs
 * 4.4 Testing Bugs
 ## 5. Deployment
 * 5.1 Local Deployment
@@ -38,7 +36,6 @@
 * 7.1 Lessons
 * 7.2 Future Study Points
 
-
 # 1. Project Status
 Deadline: 22nd August 2021
 
@@ -46,7 +43,7 @@ The project is currently underway.
 
 The first mentor meeting is booked on the 04/07/2021.
 
-The second mentor meeting is booke on the 12/08/2021.
+The second mentor meeting is booked on the 12/08/2021.
 
 # 2. User Story
 ## 2.1 The business case (Project Goals):
@@ -73,7 +70,6 @@ The overall story would be as follows:
 
 ![index web](documentation-assets/wireframe-images/more_from_bmw_page_mobile.jpg)
 
-
 ### Computer Wireframes
 
 ![index web](documentation-assets/wireframe-images/home_page_computer.jpg)
@@ -84,13 +80,11 @@ The overall story would be as follows:
 
 
 
-
 ## 2.3 Website Objectives:
 * The user must have fun
 * The BMW brand should be well represented
 * The user should learn more about the vehicles available to them
 * The website should scroll in a way that allows mobile and computer players to play
-
 
 ## 2.4 Design Inspiration
 
@@ -101,7 +95,6 @@ The general color theme of the game tries to mirror the theme in the below links
 https://www.bmw.com/en/automotive-life/bmw-logo-meaning-history1.html
 
 https://www.bmw.co.uk/en/index.html
-
 
 
 # 3. Features
@@ -115,21 +108,18 @@ https://www.bmw.co.uk/en/index.html
 * The website will have links to official BMW pages and content
 * The more page will have embedded videos from BMW YouTube.
 
-
 ## 3.1 Existing Features
 n/a
 
-
 ## 3.2 Features Left to Implement
 See Testing Bug 3 - Unlikely to be a common issue so will try to fix before project submission.
-
 
 ## 3.3 Technologies Used
 HTML 5 - https://html.com/html5/
 
 CSS3 - https://en.wikipedia.org/wiki/CSS
 
-Javascript - https://www.javascript.com/
+JavaScript - https://www.javascript.com/
 
 Balsamiq Wireframes - https://balsamiq.com/wireframes/
 
@@ -176,11 +166,10 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Memory Game page link | User should see no change in page | Expected result | n/a | n/a
 | Contact page link | Link should take user to contact page | Expected result | n/a | n/a
 | More from page link | Link should take user to more from BMW page | Expected result | n/a | n/a
-| Footer link - Facebook  | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
+| Footer link - Facebook | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - YouTube | Link should take user to expected BMW social media page 
 | Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
-
 
 # Contact Page
 
@@ -189,7 +178,7 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Memory Game page link | Link should take user to BMW memory page | Expected result | n/a | n/a
 | Contact page link | User should see no change in page | Expected result | n/a | n/a
 | More from page link | Link should take user to more from BMW page | Expected result | n/a | n/a
-| Footer link - Facebook  | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
+| Footer link - Facebook | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - YouTube | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
@@ -202,7 +191,7 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Memory Game page link | Link should take user to contact page | Expected result | n/a | n/a
 | Contact page link | Link should take user to contact page | Expected result | n/a | n/a
 | More from page link | User should see no change in page | Expected result | n/a | n/a
-| Footer link - Facebook  | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
+| Footer link - Facebook | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - YouTube | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
@@ -249,19 +238,17 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 
 | CSS Validation | Expected Result | Result | Errors | Fix | Fix Comments
 | ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| Index Page | No Errors | No Errors found | n/a | n/a
-| Contact Page | No Errors | No Errors found | n/a | n/a
-| More Page | No Errors | No Errors found | n/a | n/a
-
+| Index Page | No Errors | No Errors found | n/a | n/a | n/a
+| Contact Page | No Errors | No Errors found | n/a | n/a | n/a
+| More Page | No Errors | No Errors found | n/a | n/a | n/a
 
 # JavaScript Validator Testing
 
 | Javascript Validation | Expected Result | Result | Errors | Fix | Fix Comments
 | ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| sendEmail.js | No Errors | n/a | One undefined variable 2	emailjs One unused variable 1 sendMail | n/a
-| index.js | No Errors | No Major issues 51 warnings |  | n/a
-| unused.js | n/a unused code | n/a| n/a
-
+| sendEmail.js | No Errors | n/a | One undefined variable 2 emailjs One unused variable 1 sendMail | n/a | n/a
+| index.js | No Errors | No Major issues 51 warnings | n/a | n/a | n/a
+| unused.js | n/a unused code | n/a| n/a | n/a | n/a
 
 ### 4.2.3 Device Testing
 tbc
@@ -295,7 +282,7 @@ tbc
     - Added number_check variable with If Statement in reset game
 * Bug 5 - Tile flips to black instead
 * Bug 6 - Changed Name_div from ID to class and formatting fell off even after css changes
-
+    - Bug resolved. Web preview didn’t update straight away.
 
 # 5. Deployment
 The website will be deployed using GitHubs built in pages' manager.
@@ -311,7 +298,6 @@ Step 4 - Under the source dropdown select main and click save
 A link should appear above the source dropdown and look something like this
 
 Your site is ready to be published at https://antony-thornton.github.io/MS2---Memory-Game/
-
 
 ## 5.1 Local Deployment
 
@@ -337,26 +323,22 @@ https://github.com/redouand/Pop-Up-Window-modal-
 
 https://www.youtube.com/watch?v=APG7e7CE5O8
 
-
 ## Acknowledgements
 This project was inspired by Code Institute as part of my Second Milestone Project (MS2). 
 
 Thank you to Sean Young from Code institute for helping me with a couple of Javascript queries. See Javascript file for details.
 
-
 Gradience - https://www.w3schools.com/css/css3_gradients.asp - Helped me learn about css colour gradience.
-
 
 Hide_unhide elements - https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp - Referenced in code to show/hid objects.
 
 Thank you to:
 https://www.gitpod.io/blog/gitpodify/ 
-for references to using gitpod. Specifically opening a preview.
+for references to using GitPod. Specifically opening a preview.
 
 Thank you especially to my mentor Marcel for the time and effort provided. Including during his weekend.
 
 Where possible acknowledgements will be noted in the code.
-
 
 
 # 7. Lessons learnt
@@ -374,8 +356,9 @@ I learned that you can export PNG files of your balsamiq wireframes. This avoids
 
 Learn the difference between ===, == and =. Had an issue where the JS code didnt work as expected due to not having the right amount of =.
 
-
+Learn to structure Javascript a little better. Code ended up being a bit messy. 
 
 
 
 README written by Antony Thornton, 2021
+
