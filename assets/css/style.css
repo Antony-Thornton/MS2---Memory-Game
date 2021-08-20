@@ -48,7 +48,6 @@
     /* https://www.w3schools.com/css/css3_gradients.asp - learned about gradience*/
     background-image: linear-gradient(rgb(170, 170, 170), white);
     padding-bottom: 10px;
-
 }
 
 #header_title h1 {
@@ -102,7 +101,6 @@
     border-style: solid;
     border-radius: 25px;
     margin-top: 1.5%;
-
 }
 
 #hide_unhide h4 {
@@ -152,7 +150,6 @@
     border-radius: 25px;
     text-transform: uppercase;
     font-weight: bolder;
-
 }
 
 #number_ok {
@@ -162,9 +159,7 @@
     border-radius: 25px;
     text-transform: uppercase;
     font-weight: bolder;
-
 }
-
 
 #number_no {
     height: 50px;
@@ -173,7 +168,6 @@
     border-radius: 25px;
     text-transform: uppercase;
     font-weight: bolder;
-
 }
 
 .score {
@@ -184,23 +178,20 @@
 
 .score_div {
     display: inline-flex;
-
 }
 
 .score_div {
     display: inline-flex;
-
 }
-
 
 #correct_text {
     color: green;
 }
 
-
 #incorrect_text {
     color: red;
 }
+
 
 /* ************ More From BMW Page ************ */
 
@@ -209,7 +200,6 @@
     width: auto;
     height: auto;
     background-image: linear-gradient(rgb(170, 170, 170), white);
-
 }
 
 .more_main_section div {
@@ -222,12 +212,9 @@
     padding: 10px 0;
 }
 
-
-
 .BMW_links a:hover {
     background-color: rgba(43, 136, 183, 255);
     color: Black;
-
 }
 
 .video {
@@ -241,8 +228,7 @@
     padding: 0;
 }
 
-/* ************ Contact us page ************ */
-
+/* ************ Contact us page and form ************ */
 
 .contact_form {
     height: auto;
@@ -259,7 +245,6 @@
 
 }
 
-
 .form {
     color: #fff;
     width: 100%;
@@ -270,8 +255,6 @@
 .form h4 {
     padding-left: 1%;
 }
-
-
 
 .form_boxes {
     width: 100%;
@@ -295,13 +278,10 @@
 
 }
 
-
 option::selection {
     background: white;
     color: black;
 }
-
-
 
 .name_div {
     text-align: left;
@@ -340,7 +320,6 @@ option::selection {
 
 }
 
-
 .button {
     background-color: black;
     /* Green */
@@ -360,6 +339,11 @@ option::selection {
     box-shadow: 1px 1px black;
 }
 
+.confirmed_sent {
+    padding: 20px 0px;
+    font-size: x-large;
+}
+
 
 /* ************ Main Section Format ************ */
 
@@ -368,10 +352,8 @@ option::selection {
     background-color: white;
 }
 
-
 .memory_section {
     height: auto;
-
 }
 
 .container {
@@ -379,11 +361,6 @@ option::selection {
     max-width: 1550px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.confirmed_sent {
-    padding: 20px 0px;
-    font-size: x-large;
 }
 
 .col {
@@ -396,6 +373,7 @@ option::selection {
 }
 
 
+/* ****** Tile formatting. Front and back codes ******* */
 
 .front {
     width: 150px;
@@ -408,7 +386,6 @@ option::selection {
     height: 150px;
     background: url(../images/bmw_test.jpg) no-repeat center center /contain;
 }
-
 
 .back10 {
     width: 150px;
@@ -438,9 +415,6 @@ option::selection {
     border-radius: 25px;
 }
 
-
-
-
 .back12 {
     width: 150px;
     height: 150px;
@@ -468,7 +442,6 @@ option::selection {
     background: url(../images/pexels-joshua-köller-757185.jpg) no-repeat center center /contain;
     border-radius: 25px;
 }
-
 
 .back14 {
     width: 150px;
@@ -498,7 +471,6 @@ option::selection {
     border-radius: 25px;
 }
 
-
 .back16 {
     width: 150px;
     height: 150px;
@@ -526,7 +498,6 @@ option::selection {
     background: url(../images/pexels-maria-geller-2127022.jpg) no-repeat center center /contain;
     border-radius: 25px;
 }
-
 
 .back18 {
     width: 150px;
@@ -585,6 +556,7 @@ option::selection {
 }
 
 
+/* ****** Numbers only formatting ******* */
 
 .number_hidden {
     visibility: hidden;
