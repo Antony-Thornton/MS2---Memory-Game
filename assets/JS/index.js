@@ -380,8 +380,9 @@ If the popup message times out do nothing else check user selection and reset th
 function reset_game() {
 
     let numbers_true_check = document.getElementById("numbers_true").innerHTML;
+    let user_check = document.getElementById("popup").className;
 
-if (numbers_true_check === "false") {
+if (numbers_true_check === "false"  && user_check !== "user_input_confirmed_no") {
     var divs = document.getElementsByTagName("div");
 
     for (var i = 0; i < divs.length; i++) {
