@@ -31,8 +31,8 @@
     list-style-type: none;
 }
 
-.nav_div h3 a{
-text-decoration: none;
+.nav_div h3 a {
+    text-decoration: none;
 }
 
 #header_format {
@@ -219,13 +219,13 @@ text-decoration: none;
 }
 
 .BMW_links {
- padding: 10px 0;
+    padding: 10px 0;
 }
 
 
 
 .BMW_links a:hover {
-    background-color: rgba(43,136,183,255);
+    background-color: rgba(43, 136, 183, 255);
     color: Black;
 
 }
@@ -255,7 +255,7 @@ text-decoration: none;
 .contact_form_inner {
     border-style: solid;
     padding: 2% 2%;
-    box-shadow: 5px 10px rgba(43,136,183,255);
+    box-shadow: 5px 10px rgba(43, 136, 183, 255);
 
 }
 
@@ -287,7 +287,7 @@ text-decoration: none;
 .form_button input {
     height: 50px;
     width: 110px;
-    background-color: rgba(43,136,183,255);
+    background-color: rgba(43, 136, 183, 255);
     border-radius: 25px;
     text-transform: uppercase;
     font-weight: bolder;
@@ -638,40 +638,40 @@ footer {
 footer div h1 {
     font-size: 1.25rem;
     text-transform: uppercase;
-    color: rgba(43,136,183,255);
+    color: rgba(43, 136, 183, 255);
 }
 
 /* ****** Popup/Modal - See Readme for source ****** */
 
-.modal-parent{
+.modal-parent {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100%;
     display: none;
-  }
+}
 
-  .number-parent{
+.number-parent {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100%;
     display: none;
-    
-  }
 
-  .timeout-parent{
+}
+
+.timeout-parent {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100%;
     display: none;
-  }
+}
 
-  .modal{
+.modal {
     background: white;
     width: 70%;
     padding: 30px;
@@ -684,26 +684,30 @@ footer div h1 {
     font-family: arial;
     position: relative;
     animation: 0.5s drop;
-  }
-  @keyframes drop {
-    0%{
-      top: -100px;
+}
+
+@keyframes drop {
+    0% {
+        top: -100px;
     }
-    100%{
-      top: 50%;
+
+    100% {
+        top: 50%;
     }
-  }
-  .X{
+}
+
+.X {
     position: absolute;
     right: 20px;
     top: 5px;
     font-size: 40px;
     cursor: pointer;
-  
-  }
-  section{
+
+}
+
+section {
     transition: 2s;
-  }
+}
 
 /* Social networks code below borrowed from Code Institute Love running project */
 .social_networks {
