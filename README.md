@@ -211,8 +211,10 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 
 | General Functionality | Expected Result | Result | Potential Fix | Fix Comments
 | ------------- |:-------------:| -----:| -----:| -----:
-| How to play button | The button should display the instuctions div with associated format using JS | Expected result | n/a | n/a| Expected result | n/a | n/a
-
+| How to play button | The button should display the instuctions div with associated format | Expected result | n/a | n/a| Expected result | n/a | n/a
+| Numbers Button | When clicked the format of the tiles should change to a black circle with white numbered text. Repeated clicks should do nothing | Expected result | n/a | n/a| Expected result | n/a | n/a
+| Start Game button | When clicked the hero image should be hidden, close the instructions and the time logged in a variable | Expected result | n/a | n/a| Expected result | n/a | n/a
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | JS ALWAYS resetting numbers with no popup message | Update the JS function to correctly check for the numbers and if not run the popup function | Testing bugs - Bug 1
 
 
 ### 4.2.3 Device Testing
@@ -239,6 +241,8 @@ tbc
 * General CSS format issues such as, objects not displaying in line correctly, not being able to overide body format etc.
 
 ## 4.4 Testing Bugs
+* Bug 1 - Wrote code in the reset game to check if numbers were not selected and if not to skip. It now ALWAYS resets the number and doesnt popup the message. Needs to be fixed.
+
 
 # 5. Deployment
 The website will be deployed using GitHubs built in pages' manager.
