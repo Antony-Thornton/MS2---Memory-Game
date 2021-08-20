@@ -215,6 +215,8 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Numbers Button | When clicked the format of the tiles should change to a black circle with white numbered text. Repeated clicks should do nothing | Expected result | n/a | n/a| Expected result | n/a | n/a
 | Start Game button | When clicked the hero image should be hidden, close the instructions and the time logged in a variable | Expected result | n/a | n/a| Expected result | n/a | n/a
 | Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | JS ALWAYS resetting numbers with no popup message | Update the JS function to correctly check for the numbers and if not run the popup function | Testing bugs - Bug 1
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | JS function was overrulling the user and removing the numbers on reset | Add in additional check to JS function to check if user wants numbers | Testing bugs - Bug 2
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | If user selects numbers then tries to reset game but times out the next reset will reset the numbers by default | Change JS to accomodate this | Testing bugs - Bug 3
 
 
 ### 4.2.3 Device Testing
@@ -242,6 +244,9 @@ tbc
 
 ## 4.4 Testing Bugs
 * Bug 1 - Wrote code in the reset game to check if numbers were not selected and if not to skip. It now ALWAYS resets the number and doesnt popup the message. Needs to be fixed.
+* Bug 2 - JS function was overrulling the user and removing the numbers on reset
+* Bug 3 - If user selects numbers then tries to reset game but times out the next reset will reset the numbers by default
+
 
 
 # 5. Deployment
