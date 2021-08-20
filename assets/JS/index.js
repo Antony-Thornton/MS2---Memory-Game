@@ -63,7 +63,7 @@ function number_yes() {
     */
     document.getElementById("popup").className = "user_input_confirmed_yes";
     document.getElementById("selection").innerText = "Number's will not show."
-    document.getElementById("number_yes").style = "visibility: hidden;"
+    document.getElementsByClassName("number_yes").style = "visibility: hidden;"
     document.getElementById("number_no").style = "visibility: hidden;"
 }
 
@@ -74,7 +74,7 @@ function number_no() {
     */
     document.getElementById("popup").className = "user_input_confirmed_no";
     document.getElementById("selection").innerText = "Number's will show."
-    document.getElementById("number_yes").style = "visibility: hidden;"
+    document.getElementsByClassName("number_yes").style = "visibility: hidden;"
     document.getElementById("number_no").style = "visibility: hidden;"
 }
 
@@ -82,7 +82,7 @@ function number_close() {
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
     document.getElementById("selection").innerText = ""
-    document.getElementById("number_yes").style = "visibility: visible;"
+    document.getElementsByClassName("number_yes").style = "visibility: visible;"
     document.getElementById("number_no").style = "visibility: visible;"
 }
 
