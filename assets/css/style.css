@@ -308,7 +308,6 @@ option::selection {
     width: 95%;
     padding-left: 1%;
     text-decoration: underline;
-    text-transform: capitalize;
     padding: 5px 0px 0px 1%;
 }
 
