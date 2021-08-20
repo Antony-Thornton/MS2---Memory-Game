@@ -1,5 +1,5 @@
 
-
+/* ******* Variables for if mapping function ****** */
 
 let selection_one = "";
 let selection_two = "";
@@ -12,6 +12,7 @@ let old_score = "";
 let array = ["front1.10", "front2.10", "front1.11", "front2.11", "front1.12", "front2.12", "front1.13", "front2.13", "front1.14", "front2.14", "front1.15", "front2.15", "front1.16", "front2.16", "front1.17", "front2.17", "front1.18", "front2.18", "front1.19", "front2.19", "front1.20", "front2.20", "front1.21", "front2.21"];
 
 
+/* ****** Pop up message for time out function. ******* */
 
 
 var timeout_parent = document.querySelector(".timeout-parent"),
@@ -32,6 +33,8 @@ var number_parent = document.querySelector(".number-parent"),
     X = document.querySelector(".X"),
     number_section = document.querySelector("section");
 
+
+/* ****** Pop up message to allow user to reset numbers or not ******* */
 
 function number_appear() {
     document.getElementById("popup").className = "open";
@@ -82,12 +85,17 @@ function number_close() {
     document.getElementById("number_no").style = "visibility: visible;"
 }
 
+/* ****** Timeout function. Appears if user does not make a selection ******* */
 
 function timeout_ok() {
     timeout_parent.style.display = "none";
     timeout_section.style.filter = "blur(0px)";
     document.getElementById("popup").className = "closed";
 }
+
+
+
+/* ****** Hides/unhides element not needed ******* */
 
 /* Helped with the hide_unide element function. Worked as is so no changes needed
 https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp */
@@ -111,6 +119,8 @@ function show_hero() {
 
 
 
+/* ****** When pages loads this will randomly assign id's to each of the tiles to ensure the game is never the same ******* */
+
 /* 
 https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javascript/
 Helped with the divs[i].id array randomiser
@@ -133,6 +143,8 @@ window.onload = function random_array() {
     }
 }
 
+/* ****** Shuffle array function. Called by other functions. ******* */
+
 
 /* https://www.youtube.com/watch?v=5sNGqsMpW1E */
 const shuffleArray = array => {
@@ -146,6 +158,8 @@ const shuffleArray = array => {
 
     return array
 };
+
+/* ****** Reset tiles function called by reset Game function. Function will check if the tiles are "back" and reset them to "front x" ******* */
 
 
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
@@ -167,8 +181,8 @@ function reset_tiles() {
     }
 }
 
-/* 
-    Main Game function. The If statement below interacts with the tiles on the memory page. The general logic is as follows.
+/* ****** Main Game function. The If statement below interacts with the tiles on the memory page. *******
+    The general logic is as follows:
     If tile is locked do nothing else
     If score is equal to the max score show the game complete message else
     if selection one equals nothing then define selection one and turn over tile else
@@ -358,7 +372,10 @@ function numbers_only() {
 }
 
 
-/* ******* Reset Game function. Allows the user to reset the game and decide whether to keep numbers or not. 
+/* ******* Reset Game function. Allows the user to reset the game and decide whether to keep numbers or not. General Logic as follows:
+If numbers check is not true then no need to ask about numbers else
+If numbers check is true ask the user if they want to keep the numbers
+If the popup message times out do nothing else check user selection and reset the format of the tiles to either keep the numbers or remove the numbers
 
 
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
@@ -431,6 +448,7 @@ if (numbers_check = "false") {
             timeout_appear();
 
             /*
+            Removed the below to have a popup message.
             window.alert("Popup timed out. Please try again.")
             return
              */
