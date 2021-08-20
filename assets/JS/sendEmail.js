@@ -16,7 +16,7 @@ emailjs.send("gmail_account","memory_game",{
         
     },
     function(error) {
-        console.log("FAILED", error);
+        document.getElementById("confirmed_sent").innerText = "An error has occured please try again. If the error persists please contact Antony_thornton_p@outlook.com";
     });
 
     return false; // To block from loading a new page
