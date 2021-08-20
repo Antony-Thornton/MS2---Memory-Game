@@ -193,6 +193,7 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - YouTube | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
+| Form Functionality | The form should not submit without completed fields | Expected Result | n/a
 
 # More From BMW Page
 
@@ -223,9 +224,15 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Tile click function | The function should add 1 to incorrect score and flip tiles back to logo if 2 tiles are incorrectly matched | Expected Result | n/a
 | Tile click function | The function should add 1 to correct score and flip tiles back to logo if 2 tiles are correctly matched | Expected Result | n/a
 | Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Tile flips to black instead | Testing Bug 5
+| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Expected Result | n/a
+| Tile click function | When all tiles are matched and score equals 12 a message should popup with score | Expected Result | n/a
+| Tile click function | When game complete message pops the link provided should take the user to the contact page | Expected Result | n/a
+| Form Javascript | When the user has completed all the fields they should be able to submit the form | Expected Result | N/a
+| Form Javascript | The form should send all of the contents/details to my personal email address | Expected Result | n/a
+| Form Javascript | If successful the JS will display a success form via HTML | Expected Result | n/a
 
+![index web](assets/images/email_picture.jpg)
 
-| Game Complete Message | When the user has correctly matchg 
 
 
 
