@@ -251,7 +251,11 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | unused.js | n/a unused code | n/a| n/a | n/a | n/a
 
 ### 4.2.3 Device Testing
-tbc
+The Website was tested on:
+Samsung Galaxy S10+ 
+Apple IPad – model unknown
+Apple IPhone
+
 
 ### 4.2.4 Spelling
 
