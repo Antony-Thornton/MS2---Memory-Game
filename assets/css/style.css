@@ -145,7 +145,7 @@ text-decoration: none;
     font-weight: bolder;
 }
 
-.number_yes {
+#number_yes {
     height: 50px;
     width: 110px;
     background-color: rgba(0, 128, 0, 0.8);
@@ -154,6 +154,17 @@ text-decoration: none;
     font-weight: bolder;
 
 }
+
+#number_ok {
+    height: 50px;
+    width: 110px;
+    background-color: rgba(0, 128, 0, 0.8);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+
 
 #number_no {
     height: 50px;
