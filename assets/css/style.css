@@ -198,9 +198,10 @@
     padding: 3px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid black;
-  }
+}
 
 /* ************ More From BMW Page ************ */
 
@@ -709,7 +710,6 @@ section {
     color: pink;
 
 }
-
 
 
 /* ******* 404 Page ******* */

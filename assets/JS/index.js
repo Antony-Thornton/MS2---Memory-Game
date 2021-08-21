@@ -201,16 +201,15 @@ function if_mapping(e) {
     let numbers_only_check = e.className;
     number_change = "changed";
 
-if (start_time == "") {
-    start();
-}
-    if (locked_check == "locked") {
-    } else {
-        
+    if (start_time == "") {
+        start();
+    }
+    if (locked_check == "locked") {} else {
+
         if (score_int === max_score) {
-            
+
             appear();
-            
+
         } else {
             if (selection_one === "") {
                 selection_one = e.id;
@@ -260,8 +259,8 @@ if (start_time == "") {
                         if (score_int === max_score) {
 
                             end_game_time();
-                            let time_taken = Math.abs((end_time - start_time)/1000);
-                            
+                            let time_taken = Math.abs((end_time - start_time) / 1000);
+
                             document.getElementById("time_taken").innerText = "You completed the game in " + time_taken + " seconds.";
                             document.getElementById("time_completion").innerText = time_taken;
                             appear();
@@ -301,7 +300,7 @@ function start() {
     var x = document.getElementById("hide_unhide");
     x.style.display = "none";
 
-    
+
 
     var currentdate = new Date();
     start_time = currentdate;
@@ -313,7 +312,7 @@ function start() {
 /* ******* End button for game ******* */
 function end_game_time() {
     var hero = document.getElementById("header_format");
-    hero.style.display = "block";    
+    hero.style.display = "block";
 
     var currentdate = new Date();
     end_time = currentdate;
@@ -410,7 +409,7 @@ function reset_game() {
         return;
     } else {
 
-        
+
 
         if (numbers_true_check === "false" && number_change === "No Change") {
             var divs = document.getElementsByTagName("div");
@@ -615,4 +614,4 @@ function reset_game() {
     }
 }
 
-/* Code beautified 20/08/2021 17:39 */
+/* Code beautified 21/08/2021 */
