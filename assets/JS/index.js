@@ -204,8 +204,9 @@ function if_mapping(e) {
 if (start_time == "") {
     start();
 }
-    if (locked_check = "locked") {
-
+    if (locked_check == "locked") {
+    } else {
+        
         if (score_int === max_score) {
             
             appear();
