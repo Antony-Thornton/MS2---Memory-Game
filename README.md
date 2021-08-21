@@ -116,7 +116,7 @@ https://www.bmw.co.uk/en/index.html
 n/a
 
 ## 3.2 Features Left to Implement
-See Testing Bug 3 - Unlikely to be a common issue so will try to fix before project submission.
+
 
 ## 3.3 Technologies Used
 HTML 5 - https://html.com/html5/
