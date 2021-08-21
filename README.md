@@ -352,7 +352,9 @@ Round 1 - Pre testing round 1
 Round 2 - Post testing round 1
 
 * Noticed that if you click on an already "locked" tab the image will turn to black circle. Need to fix
-* Issue with time rounding incorrectly using fixed to
+    - } was in the wrong place so added an else to make sure that the JS did nothing.
+* Issue with time rounding incorrectly using .fixed(2)
+    - Removed the fixed(2)
 
 ## 4.4 Testing Bugs
 * Bug 1 - Wrote code in the reset game to check if numbers were not selected and if not to skip. It now ALWAYS resets the number and doesnt popup the message.
