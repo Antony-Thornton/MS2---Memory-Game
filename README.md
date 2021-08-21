@@ -123,7 +123,7 @@ JavaScript - https://www.javascript.com/
 
 Balsamiq Wireframes - https://balsamiq.com/wireframes/
 
-JavaScript code beutifier - https://beautifier.io/ - Corrects javascript code with correct spacing/lines etc.
+JavaScript code beutifier - https://beautifier.io/ - Corrects Javascript/HTML/CSS code with correct spacing/lines etc.
 
 Am I responsive - http://ami.responsivedesign.is/
 
