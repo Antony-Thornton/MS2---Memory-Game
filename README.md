@@ -348,7 +348,7 @@ I have included a specific section for spelling. My dyslexia can make this part 
 ### 4.2.5 User testing and feedback
 Jo - A work colleague tested the game on an iPhone 8 and successfully completed the game. She mentioned that scrolling on a mobile is a bit clunky but not sure how she would fix it.
 
-Dani - My partner tested the game and it works. She also sent an email successfully via the form.
+Dani - My partner tested the game and it works. She also sent an email successfully via the form. She found 2 bugs. 7 and 8.
 
 ## 4.3 Build in Progress Bugs
 
@@ -382,6 +382,15 @@ Round 2 - Post testing round 1
 * Bug 5 - Tile flips to black instead
 * Bug 6 - Changed Name_div from ID to class and formatting fell off even after css changes
     - Bug resolved. Web preview didn’t update straight away.
+* Bug 7 - When mid game the reset game function doesnt reset the score. Steps taken to produce bug:
+    - Started the game
+    - Got 2 incorrect
+    - Reset the game and selected yes
+    - Score stayed at 2
+* Bug 8 - Css may not be formatted correctly for time table. Looked strange on mobile.
+    - Double checked in browser version when game complete and looked ok see below.
+
+![index web](documentation-assets/wireframe-images/bug8.jpg)
 
 # 5. Deployment
 The website will be deployed using GitHubs built in pages' manager.
