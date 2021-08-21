@@ -401,7 +401,7 @@ If the popup message times out do nothing else check user selection and reset th
 function reset_game() {
 
     document.getElementById("game_start_time").innerText = "";
-    document.getElementById("game_game_time").innerText = "";
+    document.getElementById("game_end_time").innerText = "";
 
     let numbers_true_check = document.getElementById("numbers_true").innerHTML;
     let user_check = document.getElementById("popup").className;
