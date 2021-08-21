@@ -210,10 +210,6 @@ if (start_time == "") {
             
             appear();
             
-            /* 
-              Exit script - Game Complete 
-              Show Popup message
-              */
         } else {
             if (selection_one === "") {
                 selection_one = e.id;
