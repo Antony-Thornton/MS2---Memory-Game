@@ -102,8 +102,6 @@ https://www.bmw.co.uk/en/index.html
 
 I left the full time and date in the game start/end intentionally. I thought it was interesting to show the user all the information. I considered removing it but I prefer the way it looks. This wont apply to everyone and is likely something I would change in not for fun projects.
 
-The 
-
 # 3. Features
 
 * The website will have a memory game
