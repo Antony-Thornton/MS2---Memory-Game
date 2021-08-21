@@ -259,6 +259,10 @@ if (start_time == "") {
                         if (score_int === max_score) {
 
                             end_game_time();
+                            let start = document.getElementById("game_start_time").innerText;
+                            let end = document.getElementById("game_end_time").innerText;
+                            let time_taken = Math.abs(end - start);
+                            console.log(time_taken);
                             appear();
                         }
 
