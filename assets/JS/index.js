@@ -200,7 +200,6 @@ function if_mapping(e) {
     let max_score = 12;
     let locked_check = e.className.substr(0, 6);
     let numbers_only_check = e.className;
-    number_change = "changed";
 
     if (start_time == "") {
         start();
@@ -410,7 +409,8 @@ function reset_game() {
         return;
     } else {
 
-
+        document.getElementById("correct_score").innerText = 0;
+        document.getElementById("incorrect_score").innerText = 0;
 
         if (numbers_true_check === "false" && number_change === "No Change") {
             var divs = document.getElementsByTagName("div");
