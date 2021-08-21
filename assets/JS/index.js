@@ -260,7 +260,7 @@ if (start_time == "") {
                         if (score_int === max_score) {
 
                             end_game_time();
-                            let time_taken = Math.abs(((end_time - start_time)/1000)/60);
+                            let time_taken = Math.abs((end_time - start_time)/1000);
                             
                             document.getElementById("time_taken").innerText = "You completed the game in " + time_taken + " seconds.";
                             document.getElementById("time_completion").innerText = time_taken;
