@@ -193,6 +193,15 @@
 }
 
 
+#start_time {
+    color: black;
+    padding: 3px;
+}
+
+th, td {
+    border: 1px solid black;
+  }
+
 /* ************ More From BMW Page ************ */
 
 .more_main_section {

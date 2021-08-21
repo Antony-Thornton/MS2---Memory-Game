@@ -201,7 +201,9 @@ function if_mapping(e) {
     let numbers_only_check = e.className;
     number_change = "changed";
 
-
+if (start_time == "") {
+    start();
+}
     if (locked_check = "locked") {
 
         if (score_int === max_score) {
@@ -257,7 +259,7 @@ function if_mapping(e) {
                         score_int = parseInt(score_check);
                         if (score_int === max_score) {
 
-
+                            end_game_time();
                             appear();
                         }
 
@@ -295,11 +297,29 @@ function start() {
     var x = document.getElementById("hide_unhide");
     x.style.display = "none";
 
+    
+
     var currentdate = new Date();
     start_time = currentdate.getHours() + ":" +
         currentdate.getMinutes() + ":" +
         currentdate.getSeconds();
 
+    let start_element = document.getElementById("game_start_time");
+    start_element.innerText = start_time;
+}
+
+/* ******* End button for game ******* */
+function end_game_time() {
+    var hero = document.getElementById("header_format");
+    hero.style.display = "block";    
+
+    var currentdate = new Date();
+    end_time = currentdate.getHours() + ":" +
+        currentdate.getMinutes() + ":" +
+        currentdate.getSeconds();
+
+    let end_element = document.getElementById("game_end_time");
+    end_element.innerText = end_time;
 }
 
 
@@ -380,6 +400,9 @@ If the popup message times out do nothing else check user selection and reset th
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_game() {
 
+    document.getElementById("game_start_time").innerText = "";
+    document.getElementById("game_game_time").innerText = "";
+
     let numbers_true_check = document.getElementById("numbers_true").innerHTML;
     let user_check = document.getElementById("popup").className;
 
@@ -387,7 +410,7 @@ function reset_game() {
         return;
     } else {
 
-
+        
 
         if (numbers_true_check === "false" && number_change === "No Change") {
             var divs = document.getElementsByTagName("div");
