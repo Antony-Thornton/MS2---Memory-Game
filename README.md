@@ -45,6 +45,10 @@ The first mentor meeting is booked on the 04/07/2021.
 
 The second mentor meeting is booked on the 12/08/2021.
 
+The third mentor meeting was booked on the 18/08/2021.
+
+As it currently stands the project is in the final checks stage. Waiting for user testing feedback but ready to submit - 21/08/2021.
+
 # 2. User Story
 ## 2.1 The business case (Project Goals):
 A BMW representitive approached me asking for a fun mini game in order to celebrate BMW cars and improve knowledge of the models available.
