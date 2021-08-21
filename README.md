@@ -102,6 +102,8 @@ https://www.bmw.co.uk/en/index.html
 
 I left the full time and date in the game start/end intentionally. I thought it was interesting to show the user all the information. I considered removing it but I prefer the way it looks. This wont apply to everyone and is likely something I would change in not for fun projects.
 
+The 
+
 # 3. Features
 
 * The website will have a memory game
@@ -323,6 +325,14 @@ No changes so testing not needed
 | index.js | No Errors | No Major issues 51 warnings | n/a | n/a | n/a
 | index.js | No Errors | 5 Major issues 51 warnings | Marcel showed me I had not configured JShint correctly. One undefined variable 4 missing semi colons | Fixed in jshint and changed in index | n/a
 
+# Console Checks
+On the live page I get 4 error's. I had to look up the first error. I dont believe its an error with the code I have written. Added to future study points.
+
+https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780/2
+
+The next 3 are error's out of my control. I asked my mentor for advice and he said its not something I can fix.
+
+![index web](documentation-assets/wireframe-images/console_log_errors.jpg)
 
 ### 4.2.3 Device Testing
 The Website was tested on:
@@ -336,7 +346,9 @@ Apple IPhone
 I have included a specific section for spelling. My dyslexia can make this part particularly troublesome. In order to ensure that my spelling is correct I have taken each page and put it into word to spell check. I then manually correct the page in GitPod.
 
 ### 4.2.5 User testing and feedback
-tbc
+Jo - A work colleague tested the game on an iPhone 8 and successfully completed the game. She mentioned that scrolling on a mobile is a bit clunky but not sure how she would fix it.
+
+Dani - My partner tested the game and it works. She also sent an email successfully via the form.
 
 ## 4.3 Build in Progress Bugs
 
@@ -447,7 +459,7 @@ Learn to structure Javascript a little better. Code ended up being a bit messy.
 
 In some places code was re used. Evaluate the final product post project to see what could be done better. Similar thing when I started learning VBA
 
-
+Look at how to sort out the short version of the time code.
 
 README written by Antony Thornton, 2021
 
