@@ -281,21 +281,19 @@ No changes so testing not needed
 | Numbers Button | When clicked the format of the tiles should change to a black circle with white numbered text. Repeated clicks should do nothing | Expected result | n/a | n/a| Expected result | n/a | n/a
 | Start Game button | When clicked the hero image should be hidden, close the instructions and the time logged in a variable | Expected result | n/a | n/a| Expected result | n/a | n/a
 | Start Game button | When clicked the game start time should update with current timezone info | Expected result | n/a | n/a| Expected result | n/a | n/a
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | JS ALWAYS resetting numbers with no popup message | Update the JS function to correctly check for the numbers and if not run the popup function | Testing bugs - Bug 1
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | JS function was overrulling the user and removing the numbers on reset | Add in additional check to JS function to check if user wants numbers | Testing bugs - Bug 2
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | If user selects numbers then tries to reset game but times out the next reset will reset the numbers by default | Change JS to accomodate this | Testing bugs - Bug 3
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | On first click of reset game message to reset numbers would appear | Addd code to check if there are any changes to numbers | Testing bugs - Bug 4
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result - First click bug fixed. Numbers clicked then reset the numbers by selecting yes. Numbers clicked again and no selected from reset game. On additional reset click the numbers remain and a message pops up to ask for reset. | Expected Result | n/a
-| Tile click function | The user should be able to click on a tile and flip to show a picture. The user should be able to click a 2nd tile and flip over a 2nd picture | Expected result | n/a
-| Tile click function | The function should add 1 to incorrect score and flip tiles back to logo if 2 tiles are incorrectly matched | Expected Result | n/a
-| Tile click function | The function should add 1 to correct score and flip tiles back to logo if 2 tiles are correctly matched | Expected Result | n/a
-| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Tile flips to black instead | Testing Bug 5
-| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Expected Result | n/a
-| Tile click function | When all tiles are matched and score equals 12 a message should popup with score | Expected Result | n/a
-| Tile click function | When game complete message pops the link provided should take the user to the contact page | Expected Result | n/a
-| Form Javascript | When the user has completed all the fields they should be able to submit the form | Expected Result | N/a
-| Form Javascript | The form should send all of the contents/details to my personal email address | Expected Result | n/a
-| Form Javascript | If successful the JS will display a success form via HTML | Expected Result | n/a
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result | n/a | n/a
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result | n/a | n/a
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result | n/a | n/a
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result | n/a | n/a
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result | n/a | n/a
+| Tile click function | The user should be able to click on a tile and flip to show a picture. The user should be able to click a 2nd tile and flip over a 2nd picture | Expected result | n/a| n/a
+| Tile click function | The function should add 1 to incorrect score and flip tiles back to logo if 2 tiles are incorrectly matched | Expected Result | n/a| n/a
+| Tile click function | The function should add 1 to correct score and flip tiles back to logo if 2 tiles are correctly matched | Expected Result | n/a| n/a
+| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Tile flips to black instead | Testing Bug 5| n/a
+| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Expected Result | n/a| n/a
+| Tile click function | When all tiles are matched and score equals 12 a message should popup with score | Expected Result | n/a| n/a
+| Tile click function | When game complete message pops the link provided should take the user to the contact page | Expected Result | n/a| n/a
+| Rest Game | The reset game function should reset both start and end time results | Expected result | n/a | n/a
 
 
 
@@ -303,21 +301,20 @@ No changes so testing not needed
 
 | HTML Validation | Expected Result | Result | Errors | Fix | Fix Comments
 | ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| Index Page | No Errors | 4 Errors 7 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.
+| Index Page | No Errors | 4 Errors 7 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.| n/a
 
 
 # CSS Validator Testing
 
 | CSS Validation | Expected Result | Result | Errors | Fix | Fix Comments
 | ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| Index Page | No Errors | No Errors found | n/a | n/a | n/a
+| Index Page | No Errors | No Errors found | n/a | n/a | n/a| n/a
 
 
 # JavaScript Validator Testing
 
 | Javascript Validation | Expected Result | Result | Errors | Fix | Fix Comments
 | ------------- |:-------------:| -----:| -----:| -----:| -----:|
-
 | index.js | No Errors | No Major issues 51 warnings | n/a | n/a | n/a
 
 
