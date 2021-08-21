@@ -309,10 +309,10 @@ For information on how to clone your files on your desktop. You may need to down
 https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository
 
 # 6. Credits
-## Content
+## 6.1 Content
 Where needed source material is referenced below but also in the HTML page itself using comments. I have done it this way so that the referenced material can be easy to find within the code.
 
-## Media
+## 6.2 Media
 BMW logo - https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogo-logos.com%2Fwp-content%2Fuploads%2F2016%2F10%2FBMW_logo.png&f=1&nofb=1
 
 Hero image link - https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fddc1.s3.us-east-1.amazonaws.com%2FNjS7CblGrGnT4miQBA%253D%253D%2FCDy2BvBgoiXPo024%2FVm3qUg%253D%253D%2FBSisF-Rg6GDJp0Sp%2Fheader.jpg&f=1&nofb=1
@@ -327,7 +327,7 @@ https://github.com/redouand/Pop-Up-Window-modal-
 
 https://www.youtube.com/watch?v=APG7e7CE5O8
 
-## Acknowledgements
+## 6.3 Acknowledgements
 This project was inspired by Code Institute as part of my Second Milestone Project (MS2). 
 
 Thank you to Sean Young from Code institute for helping me with a couple of Javascript queries. See Javascript file for details.
