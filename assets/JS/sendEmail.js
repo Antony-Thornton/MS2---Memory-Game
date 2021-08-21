@@ -1,4 +1,7 @@
 function sendMail(contactForm) {
+    /* JShint defines the next line as undefined variable - This line was copied from the code institute course so unable to validate if it is correct/needed or not.
+        Added this to the future study points but leaving this as is as I do not want to risk breaking the code before submission.
+    */
     emailjs.send("gmail_account", "memory_game", {
 
             first_name: contactForm.firstname.value,
