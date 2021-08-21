@@ -20,6 +20,6 @@ function sendMail(contactForm) {
             });
 
     return false; // To block from loading a new page
-};
+}
 
 /* Code beutified 20/08/2021 17:38 */
