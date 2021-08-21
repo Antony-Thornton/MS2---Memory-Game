@@ -301,7 +301,7 @@ No changes so testing not needed
 
 | HTML Validation | Expected Result | Result | Errors | Fix | Fix Comments
 | ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| Index Page | No Errors | 4 Errors 7 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.| n/a
+| Index Page | No Errors | 0 Errors 8 warnings | Expected Result | n/a| n/a
 
 
 # CSS Validator Testing
