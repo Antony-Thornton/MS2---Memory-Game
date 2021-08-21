@@ -259,10 +259,9 @@ if (start_time == "") {
                         if (score_int === max_score) {
 
                             end_game_time();
-                            let start = document.getElementById("game_start_time").innerText;
-                            let end = document.getElementById("game_end_time").innerText;
-                            let time_taken = Math.abs(end - start);
-                            console.log(time_taken);
+                            let time_taken = Math.abs((end_time - start_time)/1000);
+                            
+                            document.getElementById("time_taken").innerText = "You completed the game in " + time_taken + " seconds."
                             appear();
                         }
 
@@ -303,9 +302,7 @@ function start() {
     
 
     var currentdate = new Date();
-    start_time = currentdate.getHours() + ":" +
-        currentdate.getMinutes() + ":" +
-        currentdate.getSeconds();
+    start_time = currentdate;
 
     let start_element = document.getElementById("game_start_time");
     start_element.innerText = start_time;
@@ -317,9 +314,7 @@ function end_game_time() {
     hero.style.display = "block";    
 
     var currentdate = new Date();
-    end_time = currentdate.getHours() + ":" +
-        currentdate.getMinutes() + ":" +
-        currentdate.getSeconds();
+    end_time = currentdate;
 
     let end_element = document.getElementById("game_end_time");
     end_element.innerText = end_time;
