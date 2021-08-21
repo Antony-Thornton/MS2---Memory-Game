@@ -159,6 +159,7 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 
 ### 4.2.2 Functionality Testing
 
+# Round 1 Testing
 # Home Page
 
 | General Functionality | Expected Result | Result | Potential Fix | Fix Comments
@@ -168,7 +169,7 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | More from page link | Link should take user to more from BMW page | Expected result | n/a | n/a
 | Footer link - Facebook | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
-| Footer link - YouTube | Link should take user to expected BMW social media page 
+| Footer link - YouTube | Link should take user to expected BMW social media page | n/a | n/a | n/a
 | Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
 
 # Contact Page
@@ -182,7 +183,7 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - YouTube | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
 | Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
-| Form Functionality | The form should not submit without completed fields | Expected Result | n/a
+| Form Functionality | The form should not submit without completed fields | Expected Result | n/a| n/a
 
 # More From BMW Page
 
@@ -210,16 +211,16 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | If user selects numbers then tries to reset game but times out the next reset will reset the numbers by default | Change JS to accomodate this | Testing bugs - Bug 3
 | Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | On first click of reset game message to reset numbers would appear | Addd code to check if there are any changes to numbers | Testing bugs - Bug 4
 | Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result - First click bug fixed. Numbers clicked then reset the numbers by selecting yes. Numbers clicked again and no selected from reset game. On additional reset click the numbers remain and a message pops up to ask for reset. | Expected Result | n/a
-| Tile click function | The user should be able to click on a tile and flip to show a picture. The user should be able to click a 2nd tile and flip over a 2nd picture | Expected result | n/a
-| Tile click function | The function should add 1 to incorrect score and flip tiles back to logo if 2 tiles are incorrectly matched | Expected Result | n/a
-| Tile click function | The function should add 1 to correct score and flip tiles back to logo if 2 tiles are correctly matched | Expected Result | n/a
-| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Tile flips to black instead | Testing Bug 5
-| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Expected Result | n/a
-| Tile click function | When all tiles are matched and score equals 12 a message should popup with score | Expected Result | n/a
-| Tile click function | When game complete message pops the link provided should take the user to the contact page | Expected Result | n/a
-| Form Javascript | When the user has completed all the fields they should be able to submit the form | Expected Result | N/a
-| Form Javascript | The form should send all of the contents/details to my personal email address | Expected Result | n/a
-| Form Javascript | If successful the JS will display a success form via HTML | Expected Result | n/a
+| Tile click function | The user should be able to click on a tile and flip to show a picture. The user should be able to click a 2nd tile and flip over a 2nd picture | Expected result | n/a | n/a 
+| Tile click function | The function should add 1 to incorrect score and flip tiles back to logo if 2 tiles are incorrectly matched | Expected Result | n/a| n/a
+| Tile click function | The function should add 1 to correct score and flip tiles back to logo if 2 tiles are correctly matched | Expected Result | n/a| n/a
+| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Tile flips to black instead | Testing Bug 5 | n/a
+| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Expected Result | n/a| n/a
+| Tile click function | When all tiles are matched and score equals 12 a message should popup with score | Expected Result | n/a| n/a
+| Tile click function | When game complete message pops the link provided should take the user to the contact page | Expected Result | n/a| n/a
+| Form Javascript | When the user has completed all the fields they should be able to submit the form | Expected Result | N/a | n/a
+| Form Javascript | The form should send all of the contents/details to my personal email address | Expected Result | n/a | n/a
+| Form Javascript | If successful the JS will display a success form via HTML | Expected Result | n/a | n/a
 
 ![index web](assets/images/email_picture.jpg)
 
@@ -227,12 +228,12 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 
 | HTML Validation | Expected Result | Result | Errors | Fix | Fix Comments
 | ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| Index Page | No Errors | 4 Errors 7 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.
-| Index Page | No Errors | 7 warnings | No Errors | n/a
-| Contact Page | No Errors | 12 Errors 2 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.
-| Contact Page | No Errors | 2 warnings | No Errors | Need to fix name_div Class not applying formats - Bug 6
-| More Page | No Errors | 3 Errors 12 warnings | frameborder element is obsolute message | Make required changes.
-| Contact Page | No Errors | 3 warnings | No Errors | n/a
+| Index Page | No Errors | 4 Errors 7 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.| n/a
+| Index Page | No Errors | 7 warnings | No Errors | n/a| n/a
+| Contact Page | No Errors | 12 Errors 2 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.| n/a
+| Contact Page | No Errors | 2 warnings | No Errors | Need to fix name_div Class not applying formats - Bug 6| n/a
+| More Page | No Errors | 3 Errors 12 warnings | frameborder element is obsolute message | Make required changes.| n/a
+| Contact Page | No Errors | 3 warnings | No Errors | n/a| n/a
 
 # CSS Validator Testing
 
@@ -250,6 +251,75 @@ https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies 
 | index.js | No Errors | No Major issues 51 warnings | n/a | n/a | n/a
 | unused.js | n/a unused code | n/a| n/a | n/a | n/a
 
+
+
+# Round 2 Testing
+# Home Page
+
+| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
+| ------------- |:-------------:| -----:| -----:| -----:
+| Memory Game page link | User should see no change in page | Expected result | n/a | n/a
+| Contact page link | Link should take user to contact page | Expected result | n/a | n/a
+| More from page link | Link should take user to more from BMW page | Expected result | n/a | n/a
+| Footer link - Facebook | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
+| Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
+| Footer link - YouTube | Link should take user to expected BMW social media page | n/a | n/a
+| Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
+
+
+# Contact Page
+No changes so testing not needed
+
+# More From BMW Page
+No changes so testing not needed
+
+# JavaScript Testing
+
+| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
+| ------------- |:-------------:| -----:| -----:| -----:
+| How to play button | The button should display the instuctions div with associated format | Expected result | n/a | n/a| Expected result | n/a | n/a
+| Numbers Button | When clicked the format of the tiles should change to a black circle with white numbered text. Repeated clicks should do nothing | Expected result | n/a | n/a| Expected result | n/a | n/a
+| Start Game button | When clicked the hero image should be hidden, close the instructions and the time logged in a variable | Expected result | n/a | n/a| Expected result | n/a | n/a
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | JS ALWAYS resetting numbers with no popup message | Update the JS function to correctly check for the numbers and if not run the popup function | Testing bugs - Bug 1
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | JS function was overrulling the user and removing the numbers on reset | Add in additional check to JS function to check if user wants numbers | Testing bugs - Bug 2
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | If user selects numbers then tries to reset game but times out the next reset will reset the numbers by default | Change JS to accomodate this | Testing bugs - Bug 3
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | On first click of reset game message to reset numbers would appear | Addd code to check if there are any changes to numbers | Testing bugs - Bug 4
+| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result - First click bug fixed. Numbers clicked then reset the numbers by selecting yes. Numbers clicked again and no selected from reset game. On additional reset click the numbers remain and a message pops up to ask for reset. | Expected Result | n/a
+| Tile click function | The user should be able to click on a tile and flip to show a picture. The user should be able to click a 2nd tile and flip over a 2nd picture | Expected result | n/a
+| Tile click function | The function should add 1 to incorrect score and flip tiles back to logo if 2 tiles are incorrectly matched | Expected Result | n/a
+| Tile click function | The function should add 1 to correct score and flip tiles back to logo if 2 tiles are correctly matched | Expected Result | n/a
+| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Tile flips to black instead | Testing Bug 5
+| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Expected Result | n/a
+| Tile click function | When all tiles are matched and score equals 12 a message should popup with score | Expected Result | n/a
+| Tile click function | When game complete message pops the link provided should take the user to the contact page | Expected Result | n/a
+| Form Javascript | When the user has completed all the fields they should be able to submit the form | Expected Result | N/a
+| Form Javascript | The form should send all of the contents/details to my personal email address | Expected Result | n/a
+| Form Javascript | If successful the JS will display a success form via HTML | Expected Result | n/a
+
+
+
+# HTML Validator Testing
+
+| HTML Validation | Expected Result | Result | Errors | Fix | Fix Comments
+| ------------- |:-------------:| -----:| -----:| -----:| -----:|
+| Index Page | No Errors | 4 Errors 7 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.
+
+
+# CSS Validator Testing
+
+| CSS Validation | Expected Result | Result | Errors | Fix | Fix Comments
+| ------------- |:-------------:| -----:| -----:| -----:| -----:|
+| Index Page | No Errors | No Errors found | n/a | n/a | n/a
+
+
+# JavaScript Validator Testing
+
+| Javascript Validation | Expected Result | Result | Errors | Fix | Fix Comments
+| ------------- |:-------------:| -----:| -----:| -----:| -----:|
+
+| index.js | No Errors | No Major issues 51 warnings | n/a | n/a | n/a
+
+
 ### 4.2.3 Device Testing
 The Website was tested on:
 Samsung Galaxy S10+ 
@@ -266,6 +336,8 @@ tbc
 
 ## 4.3 Build in Progress Bugs
 
+Round 1 - Pre testing round 1
+
 * General IF structure issues with JS. To resolve I manually mapped the IF/ELSE statements with comments without coding
 * Issue with start and end time. Removed functionality due to issues comparing times of mobile vs desktop completion rates
 * When the numbers JS was added a bug when a certain combination of buttons pressed would result in black circles with no numbers
@@ -276,6 +348,11 @@ tbc
 * Issue with timeout JS code. See JS file for more details and credits for Sean Young's fix.
 * Issue with EmailJS sending me blank email templates. I had used "first_name" when I didn't need the ".
 * General CSS format issues such as, objects not displaying in line correctly, not being able to overide body format etc.
+
+Round 2 - Post testing round 1
+
+* Noticed that if you click on an already "locked" tab the image will turn to black circle. Need to fix
+* Issue with time rounding incorrectly using fixed to
 
 ## 4.4 Testing Bugs
 * Bug 1 - Wrote code in the reset game to check if numbers were not selected and if not to skip. It now ALWAYS resets the number and doesnt popup the message.
