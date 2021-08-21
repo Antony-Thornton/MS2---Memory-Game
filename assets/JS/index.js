@@ -207,6 +207,9 @@ if (start_time == "") {
     if (locked_check = "locked") {
 
         if (score_int === max_score) {
+            
+            appear();
+            
             /* 
               Exit script - Game Complete 
               Show Popup message
