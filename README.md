@@ -316,6 +316,7 @@ No changes so testing not needed
 | Javascript Validation | Expected Result | Result | Errors | Fix | Fix Comments
 | ------------- |:-------------:| -----:| -----:| -----:| -----:|
 | index.js | No Errors | No Major issues 51 warnings | n/a | n/a | n/a
+| index.js | No Errors | 5 Major issues 51 warnings | Marcel showed me I had not configured JShint correctly. One undefined variable 4 missing semi colons | Fixed in jshint and changed in index | n/a
 
 
 ### 4.2.3 Device Testing
@@ -438,6 +439,8 @@ I learned that you can export PNG files of your balsamiq wireframes. This avoids
 Learn the difference between ===, == and =. Had an issue where the JS code didnt work as expected due to not having the right amount of =.
 
 Learn to structure Javascript a little better. Code ended up being a bit messy. 
+
+In some places code was re used. Evaluate the final product post project to see what could be done better. Similar thing when I started learning VBA
 
 
 
