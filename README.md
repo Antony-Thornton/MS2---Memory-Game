@@ -1,472 +1,196 @@
-![index web](documentation-assets/wireframe-images/ms2_memory_game_device_screenshots.jpg)
+# The Veggie Guy Memory Game
+# Introduction
+Welcome to my second project. This project is designed to create a fun memory game that compliments the veggie guy brand. This will use languages such as HTML, CSS and JavaScript.
 
-# MS2---Memory-Game
+A live website can be found <a href="" target="_blank">here</a>.
 
-# BMW Memory Game
+![index web](static/assets/images/site_images/responsive.jpg)
 
-# Contents
+# Table of Contents
 
-## 1. Project Status
-## 2. User Story
-* 2.1 The Business Case (Project Goals)
-* 2.2 Wireframes
-* 2.3 Website Objectives:
-* 2.4 Design Inspiration
-## 3. Features
-* 3.1 Existing Features
-* 3.2 Features Left to Implement
-* 3.3 Technologies Used
-## 4. Testing
-* 4.1 Informal
-* 4.2 Formal
-    - 4.2.1 External Website Testing
-     + 4.2.1.1 Testing Results
-    - 4.2.2 Functionality Testing
-    - 4.2.3 Device Testing
-    - 4.2.4 Spelling and Grammar
-* 4.3 Build in Progress Bugs
-* 4.4 Testing Bugs
-## 5. Deployment
-* 5.1 Local Deployment
-## 6. Credits
-* 6.1 Content
-* 6.2 Media
-* 6.3 Acknowledgements
-## 7. Lessons Learnt
-* 7.1 Lessons
-* 7.2 Future Study Points
+-   [1. UX](#ux)
+    -   [1.1. Strategy](#strategy)
+        -   [Project Goals](#project-goals)
+            -   [User Goals:](#user-goals)
+            -   [User Expectations:](#user-expectations)
+    -   [1.2. Structure](#structure)
+    -   [1.3. Skeleton](#skeleton)
+    -   [1.4. Surface](#surface)
+-   [2. Features](#features)
+-   [3. Technologies Used](#technologies-used)
+-   [4. Testing](#testing)
+-   [5. Development Cycle](#development-cycle)
+-   [6. Deployment](#deployment)
+-   [7. End Product](#end-product)
+-   [8. Known Bugs](#known-bugs)
+-   [9. Credits](#credits)
 
-# 1. Project Status
-Deadline: 22nd August 2021
+<a name="ux"></a>
 
-The project is currently underway. 
+# 1.UX
+#### [Go To Top](#table-of-contents "Go To Top")
 
-The first mentor meeting is booked on the 04/07/2021.
 
-The second mentor meeting is booked on the 12/08/2021.
+ADD CONTENT HERE
 
-The third mentor meeting was booked on the 18/08/2021.
+<a name="strategy"></a>
 
-As it currently stands the project is in the final checks stage. Waiting for user testing feedback but ready to submit - 21/08/2021.
+## 1.1 Strategy
+#### [Go To Top](#table-of-contents "Go To Top")
 
-# 2. User Story
-## 2.1 The business case (Project Goals):
-A BMW representitive approached me asking for a fun mini game in order to celebrate BMW cars and improve knowledge of the models available.
+## Project Goals
+The website should:
 
-The overall story would be as follows:
-* The user will navigate to the website
-* The user will be able to view the instructions and understand how the game works
-* The user will be able to play the game
-* The user will be able to find out more about BMW, its products, history and offerings
-* Most importantly the user should have fun
+ADD CONTENT HERE
 
-## 2.2 Wireframes
+## User Goals:
 
-### Sitemap
+### First Time Visitor Goals
 
-![index web](documentation-assets/wireframe-images/site_map.jpg)
+The user should be able to add items to:
 
-### Mobile Wireframes
 
-![index web](documentation-assets/wireframe-images/home_page_mobile.jpg)
+ADD CONTENT HERE
 
-![index web](documentation-assets/wireframe-images/contact_page_mobile.jpg)
-
-![index web](documentation-assets/wireframe-images/more_from_bmw_page_mobile.jpg)
-
-### Computer Wireframes
-
-![index web](documentation-assets/wireframe-images/home_page_computer.jpg)
-
-![index web](documentation-assets/wireframe-images/contact_page_computer.jpg)
-
-![index web](documentation-assets/wireframe-images/more_from_bmw_page_computer.jpg)
+Returning Visitor Goals
+The user should be able to add items to:
+ADD CONTENT HERE
 
 
 
-## 2.3 Website Objectives:
-* The user must have fun
-* The BMW brand should be well represented
-* The user should learn more about the vehicles available to them
-* The website should scroll in a way that allows mobile and computer players to play
+### User Expectations:
+The system should have a simple user interface, with the navigation to each section clear and concise.
 
-## 2.4 Design Inspiration
-
-General
-
-The general color theme of the game tries to mirror the theme in the below links. It uses a mostly white theme with elements of grey.
-
-https://www.bmw.com/en/automotive-life/bmw-logo-meaning-history1.html
-
-https://www.bmw.co.uk/en/index.html
-
-I left the full time and date in the game start/end intentionally. I thought it was interesting to show the user all the information. I considered removing it but I prefer the way it looks. This wont apply to everyone and is likely something I would change in not for fun projects.
-
-# 3. Features
-
-* The website will have a memory game
-* It will have a button that will show and hide game instructions
-* It will have a start button to hide content that isnt needed during the game
-* It will have a reset game button with the option to remove numbers if they were selected and reset the game tiles
-* It will have a numbers button which will replace the BMW Logo with black circles with white numbers. This should make it easier for the user in the mobile version
-* The website will have a contact page with a form that will send an email to my account
-* The website will have links to official BMW pages and content
-* The more page will have embedded videos from BMW YouTube.
-
-## 3.1 Existing Features
-n/a
-
-## 3.2 Features Left to Implement
+* Each page is clear to read
+* The user interface is easy to navigate
+* The website is responsive on all devices
 
 
-## 3.3 Technologies Used
-HTML 5 - https://html.com/html5/
+<a name="structure"></a>
 
-CSS3 - https://en.wikipedia.org/wiki/CSS
+## 1.2 Structure
+#### [Go To Top](#table-of-contents "Go To Top")
 
-JavaScript - https://www.javascript.com/
 
-Balsamiq Wireframes - https://balsamiq.com/wireframes/
 
-JavaScript code beutifier - https://beautifier.io/ - Corrects Javascript/HTML/CSS code with correct spacing/lines etc.
+<a name="skeleton"></a>
 
-Am I responsive - http://ami.responsivedesign.is/
+## 1.3 Skeleton
+#### [Go To Top](#table-of-contents "Go To Top")
+
+## Sitemap
+
+
+
+## Wireframes
+
+
+<a name="surface"></a>
+
+## 1.4 Surface
+#### [Go To Top](#table-of-contents "Go To Top")
+
+### Font and colours:
+
+<a name="features"></a>
+
+# 2. Features
+#### [Go To Top](#table-of-contents "Go To Top")
+
+## Navigation
+
+
+## Home Page
+
+
+## Features left to implement
+
+
+<a name="technologies-used"></a>
+
+# 3. Technologies Used
+#### [Go To Top](#table-of-contents "Go To Top")
+
+* <a href="https://html.com/html5/" target="_blank">HTML 5</a>  
+    * The project uses Hypertext Markup Language
+* <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS3</a>
+    * The project uses Cascading Style Sheets 
+* <a href="https://www.javascript.com/" target="_blank">JavaScript</a>
+    * The project uses JavaScript
+* <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+    * The project uses Bootstrap structuring
+* <a href="https://balsamiq.com/wireframes/" target="_blank">Balsamiq Wireframes</a>
+    * Balsamiq was used to create the wireframes during the design process
+* <a href="https://www.gitpod.io/" target="_blank">Gitpod</a>
+    * The project uses Gitpod
+* <a href="https://github.com/" target="_blank">GitHub</a>
+    * GitHub was used to store the project's code after being pushed from Git
+* <a href="https://beautifier.io/" target="_blank">Code beautifier</a>
+    * Corrects JavaScript/HTML/CSS code with correct spacing/lines etc.
+
+
+<a name="testing"></a>
 
 # 4. Testing
-## 4.1 Informal Development Testing
-Informal testing is and was conducted throughout the build. 
-
-My method of testing is based on trial and error, something that I learnt through my time with VBA for MSOffice. I would write a line of code and check the outcome. Mostly working step by step.
-
-The informal process of testing is as follows:
-* Before code is written a new preview is opened
-* Line/lines of code written
-* Preview is opened and refreshed
-* Desired outcome is checked
-* Outcome is checked in a mobile phone layout using Chrome developer tools.
-* If outcome is successful then wider checks on other code are conducted. For example, what impact does it have on other elements.
-* If outcome is unsuccessful then the line/lines of code written will be checked and informal testing repeated.
-
-Further testing including sending the website link to my partner who navigated the website on both her phone and tablet.
-
-## 4.2 Formal Deployment Testing
-### 4.2.1 External website testing
-
-In order to ensure that my code is correct I used the following website to flag issues with my code.
-
-https://validator.w3.org/ - HTML validator. Looks specifically for errors in my HTML code.
-
-https://jigsaw.w3.org/css-validator/ - CSS validator. Looks specifically for errors in my CSS code.
-
-https://jshint.com/ - Javascript validator. Looks for errors or inconsistencies in the code and suggests solutions.
-
-### 4.2.1.1 Testing Results
-
-### 4.2.2 Functionality Testing
-
-# Round 1 Testing
-# Home Page
-
-| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:
-| Memory Game page link | User should see no change in page | Expected result | n/a | n/a
-| Contact page link | Link should take user to contact page | Expected result | n/a | n/a
-| More from page link | Link should take user to more from BMW page | Expected result | n/a | n/a
-| Footer link - Facebook | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
-| Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
-| Footer link - YouTube | Link should take user to expected BMW social media page | n/a | n/a | n/a
-| Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
-
-# Contact Page
-
-| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:
-| Memory Game page link | Link should take user to BMW memory page | Expected result | n/a | n/a
-| Contact page link | User should see no change in page | Expected result | n/a | n/a
-| More from page link | Link should take user to more from BMW page | Expected result | n/a | n/a
-| Footer link - Facebook | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
-| Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
-| Footer link - YouTube | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
-| Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
-| Form Functionality | The form should not submit without completed fields | Expected Result | n/a| n/a
-
-# More From BMW Page
-
-| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:
-| Memory Game page link | Link should take user to contact page | Expected result | n/a | n/a
-| Contact page link | Link should take user to contact page | Expected result | n/a | n/a
-| More from page link | User should see no change in page | Expected result | n/a | n/a
-| Footer link - Facebook | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
-| Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
-| Footer link - YouTube | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
-| Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
-| Links | All links to external sites should direct correctly | Expected result | n/a | n/a
-| Videos | Videos should ONLY play when the user clicks play | Expected result | n/a | n/a
-
-# JavaScript Testing
-
-| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:
-| How to play button | The button should display the instuctions div with associated format | Expected result | n/a | n/a| Expected result | n/a | n/a
-| Numbers Button | When clicked the format of the tiles should change to a black circle with white numbered text. Repeated clicks should do nothing | Expected result | n/a | n/a| Expected result | n/a | n/a
-| Start Game button | When clicked the hero image should be hidden, close the instructions and the time logged in a variable | Expected result | n/a | n/a| Expected result | n/a | n/a
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | JS ALWAYS resetting numbers with no popup message | Update the JS function to correctly check for the numbers and if not run the popup function | Testing bugs - Bug 1
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | JS function was overrulling the user and removing the numbers on reset | Add in additional check to JS function to check if user wants numbers | Testing bugs - Bug 2
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | If user selects numbers then tries to reset game but times out the next reset will reset the numbers by default | Change JS to accomodate this | Testing bugs - Bug 3
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | On first click of reset game message to reset numbers would appear | Addd code to check if there are any changes to numbers | Testing bugs - Bug 4
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result - First click bug fixed. Numbers clicked then reset the numbers by selecting yes. Numbers clicked again and no selected from reset game. On additional reset click the numbers remain and a message pops up to ask for reset. | Expected Result | n/a
-| Tile click function | The user should be able to click on a tile and flip to show a picture. The user should be able to click a 2nd tile and flip over a 2nd picture | Expected result | n/a | n/a 
-| Tile click function | The function should add 1 to incorrect score and flip tiles back to logo if 2 tiles are incorrectly matched | Expected Result | n/a| n/a
-| Tile click function | The function should add 1 to correct score and flip tiles back to logo if 2 tiles are correctly matched | Expected Result | n/a| n/a
-| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Tile flips to black instead | Testing Bug 5 | n/a
-| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Expected Result | n/a| n/a
-| Tile click function | When all tiles are matched and score equals 12 a message should popup with score | Expected Result | n/a| n/a
-| Tile click function | When game complete message pops the link provided should take the user to the contact page | Expected Result | n/a| n/a
-| Form Javascript | When the user has completed all the fields they should be able to submit the form | Expected Result | N/a | n/a
-| Form Javascript | The form should send all of the contents/details to my personal email address | Expected Result | n/a | n/a
-| Form Javascript | If successful the JS will display a success form via HTML | Expected Result | n/a | n/a
-
-![index web](assets/images/email_picture.jpg)
-
-# HTML Validator Testing
-
-| HTML Validation | Expected Result | Result | Errors | Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| Index Page | No Errors | 4 Errors 7 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.| n/a
-| Index Page | No Errors | 7 warnings | No Errors | n/a| n/a
-| Contact Page | No Errors | 12 Errors 2 warnings | Duplicate Attribute (center center), No repeat not allowed on image at certain point, same as previous with center, duplicate ID (Number_yes) | Make required changes.| n/a
-| Contact Page | No Errors | 2 warnings | No Errors | Need to fix name_div Class not applying formats - Bug 6| n/a
-| More Page | No Errors | 3 Errors 12 warnings | frameborder element is obsolute message | Make required changes.| n/a
-| Contact Page | No Errors | 3 warnings | No Errors | n/a| n/a
+#### [Go To Top](#table-of-contents "Go To Top")
 
-# CSS Validator Testing
+ADD CONTENT HERE
 
-| CSS Validation | Expected Result | Result | Errors | Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| Index Page | No Errors | No Errors found | n/a | n/a | n/a
-| Contact Page | No Errors | No Errors found | n/a | n/a | n/a
-| More Page | No Errors | No Errors found | n/a | n/a | n/a
 
-# JavaScript Validator Testing
+<a name="development-cycle"></a>
 
-| Javascript Validation | Expected Result | Result | Errors | Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| sendEmail.js | No Errors | n/a | One undefined variable 2 emailjs One unused variable 1 sendMail | n/a | n/a
-| index.js | No Errors | No Major issues 51 warnings | n/a | n/a | n/a
-| unused.js | n/a unused code | n/a| n/a | n/a | n/a
+# 5. Development Cycle
+#### [Go To Top](#table-of-contents "Go To Top")
 
+A Code Insititute template can be found <a href="https://github.com/Code-Institute-Org/gitpod-full-template" target="_blank">here</a>.
 
+### Setting up a new repository. 
+1. Go to the link above and click use this template
+2. Name it as required and select include all branches
+3. Click create new repository
+4. Click on the green gitpod button
+5. Navigate to <a href="https://gitpod.io/workspaces">gitpod workspaces</a> and pin the workspace
+6. Use this link to continue working in that environment
 
-# Round 2 Testing
-# Home Page
 
-| General Functionality | Expected Result | Result | Potential Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:
-| Memory Game page link | User should see no change in page | Expected result | n/a | n/a
-| Contact page link | Link should take user to contact page | Expected result | n/a | n/a
-| More from page link | Link should take user to more from BMW page | Expected result | n/a | n/a
-| Footer link - Facebook | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
-| Footer link - Twitter | Link should take user to expected BMW social media page |    Expected result | n/a | n/a
-| Footer link - YouTube | Link should take user to expected BMW social media page | n/a | n/a
-| Footer link - Official Page | Link should take user to expected BMW social media page |    Expected result | n/a | n/a|    Expected result | n/a | n/a
 
+<a name="deployment"></a>
 
-# Contact Page
-No changes so testing not needed
+# 6. Deployment
+#### [Go To Top](#table-of-contents "Go To Top")
 
-# More From BMW Page
-No changes so testing not needed
 
-# JavaScript Testing
+<a name="end-product"></a>
 
-| General Functionality (Round 2) | Expected Result | Result | Potential Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:
-| How to play button | The button should display the instuctions div with associated format | Expected result | n/a | n/a| Expected result | n/a | n/a
-| Numbers Button | When clicked the format of the tiles should change to a black circle with white numbered text. Repeated clicks should do nothing | Expected result | n/a | n/a| Expected result | n/a | n/a
-| Start Game button | When clicked the hero image should be hidden, close the instructions and the time logged in a variable | Expected result | n/a | n/a| Expected result | n/a | n/a
-| Start Game button | When clicked the game start time should update with current timezone info | Expected result | n/a | n/a| Expected result | n/a | n/a
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result | n/a | n/a
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result | n/a | n/a
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result | n/a | n/a
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result | n/a | n/a
-| Reset Game | The user should be able to reset the game. This will shuffle the id's, ignore message code if numbers not selected, popup message asking the user whether they want the numbers to be reset or not with yes resetting the numbers and no leaving the numbers showing | Expected Result | n/a | n/a
-| Tile click function | The user should be able to click on a tile and flip to show a picture. The user should be able to click a 2nd tile and flip over a 2nd picture | Expected result | n/a| n/a
-| Tile click function | The function should add 1 to incorrect score and flip tiles back to logo if 2 tiles are incorrectly matched | Expected Result | n/a| n/a
-| Tile click function | The function should add 1 to correct score and flip tiles back to logo if 2 tiles are correctly matched | Expected Result | n/a| n/a
-| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Tile flips to black instead | Testing Bug 5| n/a
-| Tile click function | If the same tile is clicked in succession the function should add 1 to inccorect score and reset the tiles | Expected Result | n/a| n/a
-| Tile click function | When all tiles are matched and score equals 12 a message should popup with score | Expected Result | n/a| n/a
-| Tile click function | When game complete message pops the link provided should take the user to the contact page | Expected Result | n/a| n/a
-| Rest Game | The reset game function should reset both start and end time results | Expected result | n/a | n/a
+# 7. End Product
+#### [Go To Top](#table-of-contents "Go To Top")
 
 
+# 8. Known Bugs
+#### [Go To Top](#table-of-contents "Go To Top")
 
-# HTML Validator Testing
 
-| HTML Validation | Expected Result | Result | Errors | Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| Index Page | No Errors | 0 Errors 8 warnings | Expected Result | n/a| n/a
 
 
-# CSS Validator Testing
+### Bugs to be fixed
 
-| CSS Validation | Expected Result | Result | Errors | Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| Index Page | No Errors | No Errors found | n/a | n/a | n/a| n/a
+<a name="credits"></a>
 
+# 9. Credits
 
-# JavaScript Validator Testing
+#### [Go To Top](#table-of-contents "Go To Top")
 
-| Javascript Validation | Expected Result | Result | Errors | Fix | Fix Comments
-| ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| index.js | No Errors | No Major issues 51 warnings | n/a | n/a | n/a
-| index.js | No Errors | 5 Major issues 51 warnings | Marcel showed me I had not configured JShint correctly. One undefined variable 4 missing semi colons | Fixed in jshint and changed in index | n/a
+## Code
 
-# Console Checks
-On the live page I get 4 error's. I had to look up the first error. I dont believe its an error with the code I have written. Added to future study points.
 
-https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780/2
 
-The next 3 are error's out of my control. I asked my mentor for advice and he said its not something I can fix.
+## Content
 
-![index web](documentation-assets/wireframe-images/console_log_errors.jpg)
+## Project Acknowledgements
 
-### 4.2.3 Device Testing
-The Website was tested on:
-Samsung Galaxy S10+ 
-Apple IPad – model unknown
-Apple IPhone
 
+* Code Institute - For all course material and on going support
 
-### 4.2.4 Spelling
+* Code Institute Tutor Support - For directing me to the correct solutions for any bugs and problems with my project.
 
-I have included a specific section for spelling. My dyslexia can make this part particularly troublesome. In order to ensure that my spelling is correct I have taken each page and put it into word to spell check. I then manually correct the page in GitPod.
-
-### 4.2.5 User testing and feedback
-Jo - A work colleague tested the game on an iPhone 8 and successfully completed the game. She mentioned that scrolling on a mobile is a bit clunky but not sure how she would fix it.
-
-Dani - My partner tested the game and it works. She also sent an email successfully via the form. She found 2 bugs. 7 and 8.
-
-## 4.3 Build in Progress Bugs
-
-Round 1 - Pre testing round 1
-
-* General IF structure issues with JS. To resolve I manually mapped the IF/ELSE statements with comments without coding
-* Issue with start and end time. Removed functionality due to issues comparing times of mobile vs desktop completion rates
-* When the numbers JS was added a bug when a certain combination of buttons pressed would result in black circles with no numbers
-* Issue with emails being sent on contact page being loaded
-* Issue with JS script and === or =. Resolved by adding removing = until it worked. See lessons for more information.
-* Issue with formatting not applying to "number" JS code changing html classes. Resolved by modifying CSS.
-* Issue with my JS code not being able to recognise html elements. Had to add a DIV into the home page and change the innerhtml to true/false when needed.
-* Issue with timeout JS code. See JS file for more details and credits for Sean Young's fix.
-* Issue with EmailJS sending me blank email templates. I had used "first_name" when I didn't need the ".
-* General CSS format issues such as, objects not displaying in line correctly, not being able to overide body format etc.
-
-Round 2 - Post testing round 1
-
-* Noticed that if you click on an already "locked" tab the image will turn to black circle. Need to fix
-    - } was in the wrong place so added an else to make sure that the JS did nothing.
-* Issue with time rounding incorrectly using .fixed(2)
-    - Removed the fixed(2)
-
-## 4.4 Testing Bugs
-* Bug 1 - Wrote code in the reset game to check if numbers were not selected and if not to skip. It now ALWAYS resets the number and doesnt popup the message.
-* Bug 2 - JS function was overrulling the user and removing the numbers on reset
-* Bug 3 - If user selects numbers then tries to reset game but times out the next reset will reset the numbers by default
- - Added to features left to implement. Will try to fix before submission
-* Bug 4 - On first click of reset game message to reset numbers would appear.  
-    - Added number_check variable with If Statement in reset game
-* Bug 5 - Tile flips to black instead
-* Bug 6 - Changed Name_div from ID to class and formatting fell off even after css changes
-    - Bug resolved. Web preview didn’t update straight away.
-* Bug 7 - When mid game the reset game function doesnt reset the score. Steps taken to produce bug:
-    - Started the game
-    - Got 2 incorrect
-    - Reset the game and selected yes
-    - Score stayed at 2
-* Bug 8 - Css may not be formatted correctly for time table. Looked strange on mobile.
-    - Double checked in browser version when game complete and looked ok see below.
-
-![index web](documentation-assets/wireframe-images/bug8.jpg)
-
-# 5. Deployment
-The website will be deployed using GitHubs built in pages' manager.
-
-Step 1 - Log in to GitHub page
-
-Step 2 - Navigate to project and click settings
-
-Step 3 - In the bar on the left click pages
-
-Step 4 - Under the source dropdown select main and click save
-
-A link should appear above the source dropdown and look something like this
-
-Your site is ready to be published at https://antony-thornton.github.io/MS2---Memory-Game/
-
-## 5.1 Local Deployment
-
-For information on how to clone your files on your desktop. You may need to download GitHub Desktop.
-https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository
-
-# 6. Credits
-## 6.1 Content
-Where needed source material is referenced below but also in the HTML page itself using comments. I have done it this way so that the referenced material can be easy to find within the code.
-
-## 6.2 Media
-BMW logo - https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogo-logos.com%2Fwp-content%2Fuploads%2F2016%2F10%2FBMW_logo.png&f=1&nofb=1
-
-Hero image link - https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fddc1.s3.us-east-1.amazonaws.com%2FNjS7CblGrGnT4miQBA%253D%253D%2FCDy2BvBgoiXPo024%2FVm3qUg%253D%253D%2FBSisF-Rg6GDJp0Sp%2Fheader.jpg&f=1&nofb=1
-
-BMW Stock Images - https://www.pexels.com/
-
-Pexel indivual credits can be seen in the description of the picture itself. i.e. pexels-maria-geller.
-
-For help with the popup message/Modal see credits below.
-
-https://github.com/redouand/Pop-Up-Window-modal-
-
-https://www.youtube.com/watch?v=APG7e7CE5O8
-
-## 6.3 Acknowledgements
-This project was inspired by Code Institute as part of my Second Milestone Project (MS2). 
-
-Thank you to Sean Young from Code institute for helping me with a couple of Javascript queries. See Javascript file for details.
-
-Gradience - https://www.w3schools.com/css/css3_gradients.asp - Helped me learn about css colour gradience.
-
-Hide_unhide elements - https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp - Referenced in code to show/hid objects.
-
-Thank you to:
-https://www.gitpod.io/blog/gitpodify/ 
-for references to using GitPod. Specifically opening a preview.
-
-Thank you especially to my mentor Marcel for the time and effort provided. Including during his weekend.
-
-Where possible acknowledgements will be noted in the code.
-
-
-# 7. Lessons learnt
-## 7.1 Lessons
-
-Popup window is a very useful tool. It makes the page much more immersive.
-
-How to send emails directly to my personal account. This will be useful for future projects.
-
-I must remember to save the documentation assets in the correct structure i.e. using _ and no spaces.
-
-I learned that you can export PNG files of your balsamiq wireframes. This avoids having to screenshot then snip them together.
-
-## 7.2 Future study points
-
-Learn the difference between ===, == and =. Had an issue where the JS code didnt work as expected due to not having the right amount of =.
-
-Learn to structure Javascript a little better. Code ended up being a bit messy. 
-
-In some places code was re used. Evaluate the final product post project to see what could be done better. Similar thing when I started learning VBA
-
-Look at how to sort out the short version of the time code.
-
-README written by Antony Thornton, 2021
-
+* My Mentor Marcel - For his constructive criticism and always pushing me to go further to develop my skills.
