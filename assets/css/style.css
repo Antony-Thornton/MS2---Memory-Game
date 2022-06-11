@@ -721,3 +721,126 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
+/* New branch (resit) CSS */
+
+.text-color {
+    color: #198754 !important;
+}
+
+.text-color-white {
+    color: white !important;
+}
+
+
+.border-color {
+    border: 1px solid #198754 !important;
+}
+
+.bg-color {
+    background: #198754 !important;
+    color: white !important;
+}
+
+.float-text-left {
+    text-align: left !important;
+}
+
+
+
+
+/* Home Page */
+
+.home_div {
+    display: block;
+    width: auto;
+    height: auto;
+    color: white !important;
+  }
+  
+  
+  .container_custom_home {
+    position: relative;
+    text-align: center;
+    color: white !important;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: #198754;
+    margin: 0%;
+    color: white !important;
+  }
+  
+  
+  .centered_p{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    background-color: #198754;
+    color: white !important;
+  }
+  
+  
+  @media (max-width: 904px) {
+    .centered {
+        position: absolute;
+        padding: 1%;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #198754;
+        width: auto;
+        font-size: xx-large;
+        color: white !important;
+      }
+    
+    
+      .centered_p{
+        position: absolute;
+        padding: 1%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #198754;
+        color: white !important;
+        font-size: xx-small;
+      }
+  
+  
+   }
+   
+   @media (max-width: 598px) {
+    .centered {
+        position: absolute;
+        padding: 1%;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #198754;
+        color: white !important;
+        width: 100%;
+        font-size: large;
+      }
+    
+    
+      .centered_p{
+        position: absolute;
+        padding: 1%;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #198754;
+        color: white !important;
+        font-size: xx-small;
+        width: 100%;
+      }
+  
+  
+   }
