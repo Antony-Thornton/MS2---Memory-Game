@@ -367,14 +367,11 @@ option::selection {
 .memory_section {
     height: auto;
 }
-/*
+
 .container {
-    width: 100%;
-    max-width: 1550px;
-    margin-left: auto;
-    margin-right: auto;
+margin-bottom: 15px;
 }
-*/
+
 
 .col {
     width: 150px;
@@ -749,6 +746,10 @@ section {
 
 .float-text-left {
     text-align: left !important;
+}
+
+.margin {
+    margin-bottom: 15px;
 }
 
 
