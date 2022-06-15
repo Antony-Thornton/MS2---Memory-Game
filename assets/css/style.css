@@ -791,6 +791,53 @@ section {
   }
   
   
+  @media (max-width: 3000px) {
+    .centered {
+        position: absolute;
+        padding: 1%;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #198754;
+        width: auto;
+        font-size: xx-large;
+        color: white !important;
+      }
+    
+    
+      .centered_p{
+        position: absolute;
+        padding: 1%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #198754;
+        color: white !important;
+        font-size: xx-small;
+      }
+  
+    .col {
+        height: 250px;
+        width: 250px;
+    }
+  
+    .front {
+        width: 100%;
+        height: 100%;
+        background: url(../images/front.jpg) no-repeat center center /contain;
+    }
+
+    .col div{
+        height: 250px;
+        width: 250px;
+    }
+  
+
+   }
+
+
+
+
   @media (max-width: 904px) {
     .centered {
         position: absolute;
