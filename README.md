@@ -1,6 +1,6 @@
 # The Veggie Guy Memory Game
 # Introduction
-Welcome to my second project. This project is designed to create a fun memory game that compliments the veggie guy brand. This will use languages such as HTML, CSS and JavaScript.
+Welcome to my second project. This project is designed to create a fun memory game that compliments "The Veggie Guy" brand. This site will use languages such as HTML, CSS and JavaScript.
 
 A live website can be found <a href="" target="_blank">here</a>.
 
@@ -16,6 +16,7 @@ A live website can be found <a href="" target="_blank">here</a>.
     -   [1.2. Structure](#structure)
     -   [1.3. Skeleton](#skeleton)
     -   [1.4. Surface](#surface)
+    -   [1.5. Resubmit](#resubmit)
 -   [2. Features](#features)
 -   [3. Technologies Used](#technologies-used)
 -   [4. Testing](#testing)
@@ -39,29 +40,28 @@ ADD CONTENT HERE
 #### [Go To Top](#table-of-contents "Go To Top")
 
 ## Project Goals
-The website should:
+As part of "The Veggie Guy" fitness brand I have been asked to create a fun memory game to compliment the other website offering and reach a wider audience. 
 
-ADD CONTENT HERE
+The overall story would be as follows:
+* The website should help promote the Veggie guy brand
+* The website should direct the user to additional veggie guy websites
+* The website should be well structured and easy to navigate
+* The new website should be free of previously glagged navigation and UX issues
+* The game should be easy to play on all devices including mobile
 
 ## User Goals:
 
 ### First Time Visitor Goals
 
-The user should be able to add items to:
-
-
-ADD CONTENT HERE
-
-Returning Visitor Goals
-The user should be able to add items to:
-ADD CONTENT HERE
-
+The user should:
+* Be able to find more information on "the veggie guy" brand
+* Have fun playing the mini game
 
 
 ### User Expectations:
 The system should have a simple user interface, with the navigation to each section clear and concise.
 
-* Each page is clear to read
+* Each page is well structured and has a purpose that is clear to the user
 * The user interface is easy to navigate
 * The website is responsive on all devices
 
@@ -91,6 +91,9 @@ The system should have a simple user interface, with the navigation to each sect
 #### [Go To Top](#table-of-contents "Go To Top")
 
 ### Font and colours:
+The font and colours have been changed in this updated website to reflect "The Veggie Guy" fitness brand. The branding has been created to match the other websites created later in this course to give this page more meaning. 
+
+
 
 <a name="features"></a>
 
@@ -101,6 +104,12 @@ The system should have a simple user interface, with the navigation to each sect
 
 
 ## Home Page
+
+
+## Memory Game Page
+
+
+## More Page
 
 
 ## Features left to implement
@@ -159,6 +168,19 @@ A Code Insititute template can be found <a href="https://github.com/Code-Institu
 # 6. Deployment
 #### [Go To Top](#table-of-contents "Go To Top")
 
+The website will be deployed using GitHubs built in pages' manager.
+
+Step 1 - Log in to GitHub page
+
+Step 2 - Navigate to project and click settings
+
+Step 3 - In the bar on the left click pages
+
+Step 4 - Under the source dropdown select main and click save
+
+A link should appear above the source dropdown and look something like this
+
+Your site is ready to be published at https://antony-thornton.github.io/MS2---Memory-Game/
 
 <a name="end-product"></a>
 
@@ -169,6 +191,27 @@ A Code Insititute template can be found <a href="https://github.com/Code-Institu
 # 8. Known Bugs
 #### [Go To Top](#table-of-contents "Go To Top")
 
+Previous website Bugs. Considered still relevant as a lot of the functionality remains unchanged
+
+Round 1 - Pre testing round 1
+
+* General IF structure issues with JS. To resolve I manually mapped the IF/ELSE statements with comments without coding
+* Issue with start and end time. Removed functionality due to issues comparing times of mobile vs desktop completion rates
+* When the numbers JS was added a bug when a certain combination of buttons pressed would result in black circles with no numbers
+* Issue with emails being sent on contact page being loaded
+* Issue with JS script and === or =. Resolved by adding removing = until it worked. See lessons for more information.
+* Issue with formatting not applying to "number" JS code changing html classes. Resolved by modifying CSS.
+* Issue with my JS code not being able to recognise html elements. Had to add a DIV into the home page and change the innerhtml to true/false when needed.
+* Issue with timeout JS code. See JS file for more details and credits for Sean Young's fix.
+* Issue with EmailJS sending me blank email templates. I had used "first_name" when I didn't need the ".
+* General CSS format issues such as, objects not displaying in line correctly, not being able to overide body format etc.
+
+Round 2 - Post testing round 1
+
+* Noticed that if you click on an already "locked" tab the image will turn to black circle. Need to fix
+    * } was in the wrong place so added an else to make sure that the JS did nothing.
+* Issue with time rounding incorrectly using .fixed(2)
+    * Removed the fixed(2)
 
 
 
@@ -182,12 +225,20 @@ A Code Insititute template can be found <a href="https://github.com/Code-Institu
 
 ## Code
 
-https://bbbootstrap.com/snippets/bootstrap-performance-score-card-33094825
+* Modals (Popup messages) - <a href="https://github.com/redouand/Pop-Up-Window-modal-">Github here</a> & <a href="https://www.youtube.com/watch?v=APG7e7CE5O8">Youtube here</a>
+
+* <a href="https://github.com/redouand/Pop-Up-Window-modal-">Bootstrap scoring element</a>
 
 ## Content
 
+* <a href="https://gitpod.io/workspaces">gPexels</a> - The pictures featured were taken from pexels.com. Individual credits can be found in the assets of this repository
+
+
+
+
 ## Project Acknowledgements
 
+* Thank you to Sean Young from Code institute for helping me with a couple of Javascript queries. See Javascript file for details.
 
 * Code Institute - For all course material and on going support
 
