@@ -295,13 +295,6 @@ function if_mapping(e) {
 
 /* ******* Start button for game ******* */
 function start() {
-    var hero = document.getElementById("header_format");
-    hero.style.display = "none";
-    var x = document.getElementById("hide_unhide");
-    x.style.display = "none";
-
-
-
     var currentdate = new Date();
     start_time = currentdate;
 
