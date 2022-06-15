@@ -304,9 +304,6 @@ function start() {
 
 /* ******* End button for game ******* */
 function end_game_time() {
-    var hero = document.getElementById("header_format");
-    hero.style.display = "block";
-
     var currentdate = new Date();
     end_time = currentdate;
 
