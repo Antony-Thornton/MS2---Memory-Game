@@ -12,7 +12,6 @@ let selection_one_numbers_check = "";
 let div_class_name = "";
 
 /* ****** Pop up message for time out function. ******* */
-
 var timeout_parent = document.querySelector(".timeout-parent"),
     timeout_section = document.querySelector("section");
 
@@ -33,7 +32,6 @@ var number_parent = document.querySelector(".number-parent"),
 
 
 /* ****** Pop up message to allow user to reset numbers or not ******* */
-
 function number_appear() {
     document.getElementById("popup").className = "open";
     number_parent.style.display = "block";
@@ -67,9 +65,124 @@ function number_yes() {
         timeout_appear();
 
     } else {
+
         number_close();
         check_open = document.getElementById("popup");
-        
+
+
+        if (check_open.className == "user_input_confirmed_yes") {
+
+            document.getElementById("numbers_true").innerHTML = "false";
+
+            var divs = document.getElementsByTagName("div");
+
+            for (var i = 0; i < divs.length; i++) {
+
+                let div_class_name = divs[i].className.substr(0, 13);
+                let div_class_name_hidden = divs[i].className.substr(0, 14);
+
+                if (div_class_name === "front_number") {
+                    divs[i].className = "front";
+                } else {
+                    if (div_class_name_hidden === "number_visible") {
+                        divs[i].className = "number_hidden";
+                    }
+                }
+            }
+
+            var divs = document.getElementsByTagName("div");
+            for (var i = 0; i < divs.length; i++) {
+                
+                let div_class_name = divs[i].className.substr(0, 4);
+                let div_class_name_locked = divs[i].className.substr(0, 6);
+                if (div_class_name === "back" || div_class_name_locked === "locked") {
+                    divs[i].className = "front";
+                    old_score = parseInt(document.getElementById("correct_score").innerText);
+                    document.getElementById("correct_score").innerText = 0;
+
+                    old_score = parseInt(document.getElementById("incorrect_score").innerText);
+                    document.getElementById("incorrect_score").innerText = 0;
+
+                }
+            }
+            shuffleArray(array);
+            var divs = document.getElementsByTagName("div");
+            for (var j = 0; j < array.length; j++) {
+                for (var i = 0; i < divs.length; i++) {
+
+
+                    let div_class_name = divs[i].className.substr(0, 5);
+                    if (div_class_name === "front") {
+
+                        divs[i].id = array[j];
+                        j++;
+                    }
+                }
+
+            }
+
+        } else {
+
+            numbers_only();
+
+            var divs = document.getElementsByTagName("div");
+
+            for (var i = 0; i < divs.length; i++) {
+                let div_class_name = divs[i].className.substr(0, 4);
+                let div_class_name_locked = divs[i].className.substr(0, 6);
+
+                if (div_class_name === "back" || div_class_name_locked === "locked") {
+
+                    divs[i].className = "front_number";
+                    old_score = parseInt(document.getElementById("correct_score").innerText);
+                    document.getElementById("correct_score").innerText = 0;
+
+                    old_score = parseInt(document.getElementById("incorrect_score").innerText);
+                    document.getElementById("incorrect_score").innerText = 0;
+
+                }
+            }
+            shuffleArray(array);
+            var divs = document.getElementsByTagName("div");
+            for (var j = 0; j < array.length; j++) {
+                for (var i = 0; i < divs.length; i++) {
+
+
+                    let div_class_name = divs[i].className.substr(0, 5);
+                    if (div_class_name === "front") {
+
+                        divs[i].id = array[j];
+                        j++;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+}
+
+function number_no() {
+
+    document.getElementById("popup").className = "user_input_confirmed_no";
+    document.getElementById("selection").innerText = "Number's will show.";
+    document.getElementById("number_yes").style = "visibility: hidden;";
+    document.getElementById("number_no").style = "visibility: hidden;";
+    number_close();
+    let check_open = document.getElementById("popup");
+
+    if (check_open.className == "open") {
+
+        number_close();
+        timeout_appear();
+
+    } else {
+
+        number_close();
+        check_open = document.getElementById("popup");
+
         if (check_open.className == "user_input_confirmed_yes") {
 
             document.getElementById("numbers_true").innerHTML = "false";
@@ -104,7 +217,6 @@ function number_yes() {
                     old_score = parseInt(document.getElementById("incorrect_score").innerText);
                     document.getElementById("incorrect_score").innerText = 0;
 
-
                 }
             }
             shuffleArray(array);
@@ -136,11 +248,8 @@ function number_yes() {
                 if (div_class_name === "back" || div_class_name_locked === "locked") {
 
                     divs[i].className = "front_number";
-
                     old_score = parseInt(document.getElementById("correct_score").innerText);
                     document.getElementById("correct_score").innerText = 0;
-
-
                     old_score = parseInt(document.getElementById("incorrect_score").innerText);
                     document.getElementById("incorrect_score").innerText = 0;
 
@@ -168,13 +277,6 @@ function number_yes() {
 
 }
 
-function number_no() {
-    document.getElementById("popup").className = "user_input_confirmed_no";
-    document.getElementById("selection").innerText = "Number's will show.";
-    document.getElementById("number_yes").style = "visibility: hidden;";
-    document.getElementById("number_no").style = "visibility: hidden;";
-}
-
 function number_close() {
     number_parent.style.display = "none";
     number_section.style.filter = "blur(0px)";
@@ -183,6 +285,7 @@ function number_close() {
     document.getElementById("number_no").style = "visibility: visible;";
 }
 
+/* ****** Timeout function. Appears if user does not make a selection ******* */
 
 function timeout_ok() {
     timeout_parent.style.display = "none";
@@ -193,7 +296,6 @@ function timeout_ok() {
 
 
 /* ****** Hides/unhides element not needed ******* */
-/* Hide/Unhide the instructions */
 function hide_unhide() {
     var x = document.getElementById("hide_unhide");
     if (x.style.display === "none") {
@@ -306,7 +408,6 @@ function if_mapping(e) {
                 } else {
                     if (selection_one === selection_two) {
 
-
                         old_score = parseInt(document.getElementById("incorrect_score").innerText);
                         document.getElementById("incorrect_score").innerText = ++old_score;
 
@@ -325,11 +426,8 @@ function if_mapping(e) {
                         second_id = e.id.slice(-2);
                         if (selection_one !== selection_two && first_id === second_id) {
 
-
-
                             old_score = parseInt(document.getElementById("correct_score").innerText);
                             document.getElementById("correct_score").innerText = ++old_score;
-
 
                             selectedElement.className = "locked" + first_id;
                             let first_selection = document.getElementById(selection_one);
@@ -362,10 +460,8 @@ function if_mapping(e) {
                         } else {
                             if (selection_one !== selection_two && first_id !== second_id)
                                 selectedElement.className = "back" + second_id;
-
                             old_score = parseInt(document.getElementById("incorrect_score").innerText);
                             document.getElementById("incorrect_score").innerText = ++old_score;
-
                             setTimeout(function () {
                                 if (numbers_only_check === "front") {
                                     selectedElement.className = "front";
@@ -395,9 +491,9 @@ function if_mapping(e) {
 
 /* ******* Start button for game ******* */
 function start() {
+    isStarted = true;
     var currentdate = new Date();
     start_time = currentdate;
-
     let start_element = document.getElementById("game_start_time");
     start_element.innerText = start_time;
 }
@@ -473,15 +569,14 @@ function numbers_only() {
     }
 
     document.getElementById("numbers_true").innerHTML = "true";
-    number_change = "changed";
 }
-
 
 /* ******* Reset Game function. Allows the user to reset the game and decide whether to keep numbers or not. General Logic as follows:
 If numbers check is not true then no need to ask about numbers else
 If numbers check is true ask the user if they want to keep the numbers
 If the popup message times out do nothing else check user selection and reset the format of the tiles to either keep the numbers or remove the numbers
 */
+
 function reset_game() {
 
     if (isStarted === true) {
@@ -517,12 +612,10 @@ function reset_game() {
 
             var divs = document.getElementsByTagName("div");
             for (var i = 0; i < divs.length; i++) {
-                
                 let div_class_name = divs[i].className.substr(0, 4);
                 let div_class_name_locked = divs[i].className.substr(0, 6);
                 if (div_class_name === "back" || div_class_name_locked === "locked") {
                     divs[i].className = "front";
-                    
                     old_score = parseInt(document.getElementById("correct_score").innerText);
                     document.getElementById("correct_score").innerText = 0;
 
