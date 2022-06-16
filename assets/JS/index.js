@@ -44,7 +44,7 @@ function number_appear() {
 
     /* http://stackoverflow.com/questions/31106189/ddg#31106229 - Timer. Also includes progress bar*/
     var timeleft = 10;
-    var downloadTimer = setInterval(function() {
+    var downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
             clearInterval(downloadTimer);
             document.getElementById("countdown").innerHTML = "10 seconds left";
