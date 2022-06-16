@@ -163,98 +163,119 @@ function reset_tiles() {
     If the score check is true then show game complete message else
     If selection one id and selection two id do not match then incorrect score plus 1 and reset tiles
 */
+let isStarted = false;
+let allowPlay = true;
+
 function if_mapping(e) {
-    let selectedElement = e;
-    let selection_two = selectedElement.id;
-    let score = document.getElementById("correct_score");
-    let score_check = score.innerHTML;
-    let score_int = parseInt(score_check);
-    let max_score = 12;
-    let locked_check = e.className.substr(0, 6);
-    let numbers_only_check = e.className;
+    if (isStarted && allowPlay) {
+        let selectedElement = e;
+        let selection_two = selectedElement.id;
+        let score = document.getElementById("correct_score");
+        let score_check = score.innerHTML;
+        let score_int = parseInt(score_check);
+        let max_score = 12;
+        let locked_check = e.className.substr(0, 6);
+        let numbers_only_check = e.className;
 
-    if (start_time == "") {
-        start();
-    }
-    if (locked_check == "locked") {} else {
+        if (start_time == "") {
+            start();
+        }
+        if (locked_check == "locked") { } else {
 
-        if (score_int === max_score) {
+            if (score_int === max_score) {
 
-            appear();
+                appear();
 
-        } else {
-            if (selection_one === "") {
-                selection_one = e.id;
-                first_id = e.id.slice(-2);
-                selectedElement.className = "back" + first_id;
-                selection_one_numbers_check = numbers_only_check;
             } else {
-                if (selection_one === selection_two) {
-                    old_score = parseInt(document.getElementById("incorrect_score").innerText);
-                    document.getElementById("incorrect_score").innerText = ++old_score;
-
-                    if (selection_one_numbers_check === "front") {
-                        selectedElement.className = "front";
-
-                    } else {
-                        selectedElement.className = "front_number";
-                    }
-
-                    selection_one = "";
-                    selection_two = "";
-                    first_id = "";
-                    second_id = "";
+                if (selection_one === "") {
+                    selection_one = e.id;
+                    first_id = e.id.slice(-2);
+                    console.log(selection_one + " " + first_id);
+                    selectedElement.className = "back" + first_id;
+                    selection_one_numbers_check = numbers_only_check;
                 } else {
-                    second_id = e.id.slice(-2);
-                    if (selection_one !== selection_two && first_id === second_id) {
+                    if (selection_one === selection_two) {
 
 
-                        old_score = parseInt(document.getElementById("correct_score").innerText);
-                        document.getElementById("correct_score").innerText = ++old_score;
+                        old_score = parseInt(document.getElementById("incorrect_score").innerText);
+                        document.getElementById("incorrect_score").innerText = ++old_score;
 
+                        if (selection_one_numbers_check === "front") {
+                            selectedElement.className = "front";
 
-                        selectedElement.className = "locked" + first_id;
-                        let first_selection = document.getElementById(selection_one);
-                        first_selection.className = "locked" + first_id;
+                        } else {
+                            selectedElement.className = "front_number";
+                        }
 
                         selection_one = "";
                         selection_two = "";
                         first_id = "";
                         second_id = "";
-
-                        score = document.getElementById("correct_score");
-                        score_check = score.innerHTML;
-                        score_int = parseInt(score_check);
-                        if (score_int === max_score) {
-
-                            end_game_time();
-                            let time_taken = Math.abs((end_time - start_time) / 1000);
-
-                            document.getElementById("time_taken").innerText = "You completed the game in " + time_taken + " seconds.";
-                            document.getElementById("time_completion").innerText = time_taken;
-                            appear();
-                        }
-
                     } else {
-                        if (selection_one !== selection_two && first_id !== second_id)
-                            selectedElement.className = "back" + second_id;
-                        
-                        old_score = parseInt(document.getElementById("incorrect_score").innerText);
-                        document.getElementById("incorrect_score").innerText = ++old_score;
-                        
-                        setTimeout(function() {
-                            if (numbers_only_check === "front") {
-                                selectedElement.className = "front";
+                        second_id = e.id.slice(-2);
+                        if (selection_one !== selection_two && first_id === second_id) {
 
-                            } else {
-                                selectedElement.className = "front_number";
-                            }
+
+
+                            old_score = parseInt(document.getElementById("correct_score").innerText);
+                            document.getElementById("correct_score").innerText = ++old_score;
+
+
+                            selectedElement.className = "locked" + first_id;
+                            let first_selection = document.getElementById(selection_one);
+                            first_selection.className = "locked" + first_id;
+
                             selection_one = "";
                             selection_two = "";
                             first_id = "";
                             second_id = "";
-                            reset_tiles();
-                        }, 1000);
+
+                            score = document.getElementById("correct_score");
+                            score_check = score.innerHTML;
+                            score_int = parseInt(score_check);
+                            if (score_int === max_score) {
+
+                                end_game_time();
+                                let time_taken = Math.abs((end_time - start_time) / 1000);
+
+                                document.getElementById("time_taken").innerText = "You completed the game in " + time_taken + " seconds.";
+                                document.getElementById("time_completion").innerText = time_taken;
+                                appear();
+                            }
+
+                            allowPlay = false;
+
+                            setTimeout(() => {
+                                allowPlay = true;
+                            }, 1000);
+
+                        } else {
+                            if (selection_one !== selection_two && first_id !== second_id)
+                                selectedElement.className = "back" + second_id;
+
+                            old_score = parseInt(document.getElementById("incorrect_score").innerText);
+                            document.getElementById("incorrect_score").innerText = ++old_score;
+
+                            setTimeout(function () {
+                                if (numbers_only_check === "front") {
+                                    selectedElement.className = "front";
+
+                                } else {
+                                    selectedElement.className = "front_number";
+                                }
+                                selection_one = "";
+                                selection_two = "";
+                                first_id = "";
+                                second_id = "";
+                                reset_tiles();
+                            }, 1000);
+
+                            allowPlay = false;
+
+                            setTimeout(() => {
+                                allowPlay = true;
+                            }, 1000);
+                        }
                     }
                 }
             }
