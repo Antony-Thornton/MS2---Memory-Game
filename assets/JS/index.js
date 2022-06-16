@@ -389,20 +389,21 @@ If the popup message times out do nothing else check user selection and reset th
 /* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_game() {
 
-    document.getElementById("game_start_time").innerText = "";
-    document.getElementById("game_end_time").innerText = "";
+    if (isStarted === true) {
 
-    let numbers_true_check = document.getElementById("numbers_true").innerHTML;
-    let user_check = document.getElementById("popup").className;
+        isStarted = false;
 
-    if (number_change === "") {
-        return;
-    } else {
+        document.getElementById("game_start_time").innerText = "";
+        document.getElementById("game_end_time").innerText = "";
+
+        let numbers_true_check = document.getElementById("numbers_true").innerHTML;
+        let user_check = document.getElementById("popup").className;
+
 
         document.getElementById("correct_score").innerText = 0;
         document.getElementById("incorrect_score").innerText = 0;
 
-        if (numbers_true_check === "false" && number_change === "No Change") {
+        if (numbers_true_check == "false") {
             var divs = document.getElementsByTagName("div");
 
             for (var i = 0; i < divs.length; i++) {
@@ -457,152 +458,8 @@ function reset_game() {
 
             number_appear();
 
-            const timer = setTimeout(function() {
-
-                let check_open = document.getElementById("popup");
-
-                if (check_open.className == "open") {
-
-                    number_close();
-                    timeout_appear();
-
-                    /*
-                    Removed the below to have a popup message.
-                    window.alert("Popup timed out. Please try again.")
-                    return
-                     */
-
-                } else {
-
-                    /*
-                    Keeping in case popup doesnt work. Change next if to if (answer).
-                    var answer = window.confirm("Reset tiles to display no numbers? Ok to remove, cancel to keep.")
-                    */
-
-                    number_close();
-                    check_open = document.getElementById("popup");
-
-                    /*
-                    if (answer) {
-                    */
-
-                    if (check_open.className == "user_input_confirmed_yes") {
-
-                        document.getElementById("numbers_true").innerHTML = "false";
-
-                        var divs = document.getElementsByTagName("div");
-
-                        for (var i = 0; i < divs.length; i++) {
-
-                            let div_class_name = divs[i].className.substr(0, 13);
-                            let div_class_name_hidden = divs[i].className.substr(0, 14);
-
-                            if (div_class_name === "front_number") {
-                                divs[i].className = "front";
-                            } else {
-                                if (div_class_name_hidden === "number_visible") {
-                                    divs[i].className = "number_hidden";
-                                }
-                            }
-                        }
-
-                        var divs = document.getElementsByTagName("div");
-                        for (var i = 0; i < divs.length; i++) {
-                            /* Added Divs[i] to make it work. Also need === in the if */
-                            let div_class_name = divs[i].className.substr(0, 4);
-                            let div_class_name_locked = divs[i].className.substr(0, 6);
-                            if (div_class_name === "back" || div_class_name_locked === "locked") {
-                                divs[i].className = "front";
-                                /* below scoring adapted from the code instutute course */
-                                old_score = parseInt(document.getElementById("correct_score").innerText);
-                                document.getElementById("correct_score").innerText = 0;
-
-                                old_score = parseInt(document.getElementById("incorrect_score").innerText);
-                                document.getElementById("incorrect_score").innerText = 0;
-                                /* End */
-
-                            }
-                        }
-                        shuffleArray(array);
-                        var divs = document.getElementsByTagName("div");
-                        for (var j = 0; j < array.length; j++) {
-                            for (var i = 0; i < divs.length; i++) {
-
-
-                                let div_class_name = divs[i].className.substr(0, 5);
-                                if (div_class_name === "front") {
-
-                                    divs[i].id = array[j];
-                                    j++;
-                                }
-                            }
-
-                        }
-
-                    } else {
-                        var divs = document.getElementsByTagName("div");
-                        document.getElementById("numbers_true").innerHTML = "false";
-                        for (var i = 0; i < divs.length; i++) {
-
-
-                            let div_class_name = divs[i].className.substr(0, 13);
-                            let div_class_name_hidden = divs[i].className.substr(0, 14);
-
-                            if (div_class_name === "front_number") {
-                                divs[i].className = "front";
-                            } else {
-                                if (div_class_name_hidden === "number_visible") {
-                                    divs[i].className = "number_visible_black";
-                                }
-                            }
-
-                        }
-
-                        var divs = document.getElementsByTagName("div");
-
-                        for (var i = 0; i < divs.length; i++) {
-                            /* Added Divs[i] to make it work. Also need === in the if */
-                            let div_class_name = divs[i].className.substr(0, 4);
-                            let div_class_name_locked = divs[i].className.substr(0, 6);
-
-                            if (div_class_name === "back" || div_class_name_locked === "locked") {
-
-                                divs[i].className = "front";
-                                /* below scoring adapted from the code instutute course */
-                                old_score = parseInt(document.getElementById("correct_score").innerText);
-                                document.getElementById("correct_score").innerText = 0;
-                                /* End */
-
-                                old_score = parseInt(document.getElementById("incorrect_score").innerText);
-                                document.getElementById("incorrect_score").innerText = 0;
-                                /* End */
-
-                            }
-                        }
-                        shuffleArray(array);
-                        var divs = document.getElementsByTagName("div");
-                        for (var j = 0; j < array.length; j++) {
-                            for (var i = 0; i < divs.length; i++) {
-
-
-                                let div_class_name = divs[i].className.substr(0, 5);
-                                if (div_class_name === "front") {
-
-                                    divs[i].id = array[j];
-                                    j++;
-                                }
-
-                            }
-
-                        }
-
-                    }
-                }
-
-            }, 11000);
         }
-
     }
-}
 
+}
 /* Code beautified 21/08/2021 */
