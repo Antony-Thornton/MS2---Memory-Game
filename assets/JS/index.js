@@ -8,12 +8,10 @@ let first_id = "";
 let second_id = "";
 let old_score = "";
 let array = ["front1.10", "front2.10", "front1.11", "front2.11", "front1.12", "front2.12", "front1.13", "front2.13", "front1.14", "front2.14", "front1.15", "front2.15", "front1.16", "front2.16", "front1.17", "front2.17", "front1.18", "front2.18", "front1.19", "front2.19", "front1.20", "front2.20", "front1.21", "front2.21"];
-let number_change = "";
 let selection_one_numbers_check = "";
 let div_class_name = "";
 
 /* ****** Pop up message for time out function. ******* */
-
 
 var timeout_parent = document.querySelector(".timeout-parent"),
     timeout_section = document.querySelector("section");
@@ -41,8 +39,6 @@ function number_appear() {
     number_parent.style.display = "block";
     number_section.style.filter = "blur(10px)";
 
-
-    /* http://stackoverflow.com/questions/31106189/ddg#31106229 - Timer. Also includes progress bar*/
     var timeleft = 10;
     var downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
@@ -56,10 +52,6 @@ function number_appear() {
 }
 
 function number_yes() {
-    /*
-        number_parent.style.display = "none";
-        number_section.style.filter = "blur(0px)";
-    */
     document.getElementById("popup").className = "user_input_confirmed_yes";
     document.getElementById("selection").innerText = "Number's will not show.";
     document.getElementById("number_yes").style = "visibility: hidden;";
@@ -67,10 +59,6 @@ function number_yes() {
 }
 
 function number_no() {
-    /*
-        number_parent.style.display = "none";
-        number_section.style.filter = "blur(0px)";
-    */
     document.getElementById("popup").className = "user_input_confirmed_no";
     document.getElementById("selection").innerText = "Number's will show.";
     document.getElementById("number_yes").style = "visibility: hidden;";
@@ -85,7 +73,6 @@ function number_close() {
     document.getElementById("number_no").style = "visibility: visible;";
 }
 
-/* ****** Timeout function. Appears if user does not make a selection ******* */
 
 function timeout_ok() {
     timeout_parent.style.display = "none";
@@ -96,9 +83,6 @@ function timeout_ok() {
 
 
 /* ****** Hides/unhides element not needed ******* */
-
-/* Helped with the hide_unide element function. Worked as is so no changes needed
-https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp */
 /* Hide/Unhide the instructions */
 function hide_unhide() {
     var x = document.getElementById("hide_unhide");
@@ -120,11 +104,6 @@ function show_hero() {
 
 
 /* ****** When pages loads this will randomly assign id's to each of the tiles to ensure the game is never the same ******* */
-
-/* 
-https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javascript/
-Helped with the divs[i].id array randomiser
-*/
 window.onload = function random_array() {
     shuffleArray(array);
     shuffleArray(array);
@@ -144,9 +123,6 @@ window.onload = function random_array() {
 };
 
 /* ****** Shuffle array function. Called by other functions. ******* */
-
-
-/* https://www.youtube.com/watch?v=5sNGqsMpW1E */
 const shuffleArray = array => {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -160,14 +136,10 @@ const shuffleArray = array => {
 };
 
 /* ****** Reset tiles function called by reset Game function. Function will check if the tiles are "back" and reset them to "front x" ******* */
-
-
-/* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
 function reset_tiles() {
     let numbers_true_check = document.getElementById("numbers_true").innerHTML;
     var divs = document.getElementsByTagName("div");
     for (var i = 0; i < divs.length; i++) {
-        /* Added Divs[i] to make it work. Also need === in the if */
         let div_class_name = divs[i].className.substr(0, 4);
         let div_class_name_locked = divs[i].className.substr(0, 6);
         if (div_class_name === "back") {
@@ -218,11 +190,9 @@ function if_mapping(e) {
                 selection_one_numbers_check = numbers_only_check;
             } else {
                 if (selection_one === selection_two) {
-
-                    /* below scoring adapted from the code instutute course */
                     old_score = parseInt(document.getElementById("incorrect_score").innerText);
                     document.getElementById("incorrect_score").innerText = ++old_score;
-                    /* End */
+
                     if (selection_one_numbers_check === "front") {
                         selectedElement.className = "front";
 
@@ -239,10 +209,9 @@ function if_mapping(e) {
                     if (selection_one !== selection_two && first_id === second_id) {
 
 
-                        /* below scoring adapted from the code instutute course */
                         old_score = parseInt(document.getElementById("correct_score").innerText);
                         document.getElementById("correct_score").innerText = ++old_score;
-                        /* End */
+
 
                         selectedElement.className = "locked" + first_id;
                         let first_selection = document.getElementById(selection_one);
@@ -269,10 +238,10 @@ function if_mapping(e) {
                     } else {
                         if (selection_one !== selection_two && first_id !== second_id)
                             selectedElement.className = "back" + second_id;
-                        /* below scoring adapted from the code instutute course */
+                        
                         old_score = parseInt(document.getElementById("incorrect_score").innerText);
                         document.getElementById("incorrect_score").innerText = ++old_score;
-                        /* End */
+                        
                         setTimeout(function() {
                             if (numbers_only_check === "front") {
                                 selectedElement.className = "front";
@@ -313,7 +282,6 @@ function end_game_time() {
 
 
 /* ******* Pop up message for game complete ******* */
-
 var parent = document.querySelector(".modal-parent"),
     btn = document.querySelector("button"),
     X = document.querySelector(".X"),
@@ -325,7 +293,6 @@ function appear() {
     section.style.filter = "blur(10px)";
     let final_correct_score = document.getElementById("correct_score").innerHTML;
     let final_incorrect_score = document.getElementById("incorrect_score").innerHTML;
-    /* Leaving it as get element id in case more or less tiles are added. This means only the max score needs changing */
     document.getElementById("congrats_correct").innerHTML = final_correct_score;
     document.getElementById("congrats_incorrect").innerHTML = final_incorrect_score;
 }
@@ -350,7 +317,6 @@ function disappearParent(e) {
 
 
 /* ******* Change tiles to black tiles with white numbers ******* */
-
 function numbers_only() {
 
     var divs = document.getElementsByTagName("div");
@@ -384,9 +350,7 @@ function numbers_only() {
 If numbers check is not true then no need to ask about numbers else
 If numbers check is true ask the user if they want to keep the numbers
 If the popup message times out do nothing else check user selection and reset the format of the tiles to either keep the numbers or remove the numbers
-
-
-/* thank you to Sean Young from Code Institute for helping solve the query mentioned in the Readme. */
+*/
 function reset_game() {
 
     if (isStarted === true) {
@@ -422,18 +386,17 @@ function reset_game() {
 
             var divs = document.getElementsByTagName("div");
             for (var i = 0; i < divs.length; i++) {
-                /* Added Divs[i] to make it work. Also need === in the if */
+                
                 let div_class_name = divs[i].className.substr(0, 4);
                 let div_class_name_locked = divs[i].className.substr(0, 6);
                 if (div_class_name === "back" || div_class_name_locked === "locked") {
                     divs[i].className = "front";
-                    /* below scoring adapted from the code instutute course */
+                    
                     old_score = parseInt(document.getElementById("correct_score").innerText);
                     document.getElementById("correct_score").innerText = 0;
 
                     old_score = parseInt(document.getElementById("incorrect_score").innerText);
                     document.getElementById("incorrect_score").innerText = 0;
-                    /* End */
 
                 }
             }
@@ -462,4 +425,3 @@ function reset_game() {
     }
 
 }
-/* Code beautified 21/08/2021 */
