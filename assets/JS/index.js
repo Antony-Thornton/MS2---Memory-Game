@@ -621,6 +621,8 @@ function reset_game() {
 
                     old_score = parseInt(document.getElementById("incorrect_score").innerText);
                     document.getElementById("incorrect_score").innerText = 0;
+                    document.getElementById("time_taken").innerText = "";
+                    document.getElementById("time_completion").innerText = "";
 
                 }
             }
@@ -646,6 +648,8 @@ function reset_game() {
             number_appear();
 
         }
+        document.getElementById("time_taken").innerText = "";
+        document.getElementById("time_completion").innerText = "";
     }
 
 }
