@@ -940,6 +940,11 @@ section {
         width: 83px;
         height: 83px;
     }
+
+    .col div {
+        width: 83px;
+        height: 83px;
+    }
     
     .front {
         width: 100%;
