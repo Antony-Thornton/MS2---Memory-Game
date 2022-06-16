@@ -52,10 +52,120 @@ function number_appear() {
 }
 
 function number_yes() {
+
     document.getElementById("popup").className = "user_input_confirmed_yes";
     document.getElementById("selection").innerText = "Number's will not show.";
     document.getElementById("number_yes").style = "visibility: hidden;";
     document.getElementById("number_no").style = "visibility: hidden;";
+    number_close();
+
+    let check_open = document.getElementById("popup");
+
+    if (check_open.className == "open") {
+
+        number_close();
+        timeout_appear();
+
+    } else {
+        number_close();
+        check_open = document.getElementById("popup");
+        
+        if (check_open.className == "user_input_confirmed_yes") {
+
+            document.getElementById("numbers_true").innerHTML = "false";
+
+            var divs = document.getElementsByTagName("div");
+
+            for (var i = 0; i < divs.length; i++) {
+
+                let div_class_name = divs[i].className.substr(0, 13);
+                let div_class_name_hidden = divs[i].className.substr(0, 14);
+
+                if (div_class_name === "front_number") {
+                    divs[i].className = "front";
+                } else {
+                    if (div_class_name_hidden === "number_visible") {
+                        divs[i].className = "number_hidden";
+                    }
+                }
+            }
+
+            var divs = document.getElementsByTagName("div");
+            for (var i = 0; i < divs.length; i++) {
+
+                let div_class_name = divs[i].className.substr(0, 4);
+                let div_class_name_locked = divs[i].className.substr(0, 6);
+                if (div_class_name === "back" || div_class_name_locked === "locked") {
+                    divs[i].className = "front";
+
+                    old_score = parseInt(document.getElementById("correct_score").innerText);
+                    document.getElementById("correct_score").innerText = 0;
+
+                    old_score = parseInt(document.getElementById("incorrect_score").innerText);
+                    document.getElementById("incorrect_score").innerText = 0;
+
+
+                }
+            }
+            shuffleArray(array);
+            var divs = document.getElementsByTagName("div");
+            for (var j = 0; j < array.length; j++) {
+                for (var i = 0; i < divs.length; i++) {
+
+
+                    let div_class_name = divs[i].className.substr(0, 5);
+                    if (div_class_name === "front") {
+
+                        divs[i].id = array[j];
+                        j++;
+                    }
+                }
+
+            }
+
+        } else {
+
+            numbers_only();
+
+            var divs = document.getElementsByTagName("div");
+
+            for (var i = 0; i < divs.length; i++) {
+                let div_class_name = divs[i].className.substr(0, 4);
+                let div_class_name_locked = divs[i].className.substr(0, 6);
+
+                if (div_class_name === "back" || div_class_name_locked === "locked") {
+
+                    divs[i].className = "front_number";
+
+                    old_score = parseInt(document.getElementById("correct_score").innerText);
+                    document.getElementById("correct_score").innerText = 0;
+
+
+                    old_score = parseInt(document.getElementById("incorrect_score").innerText);
+                    document.getElementById("incorrect_score").innerText = 0;
+
+                }
+            }
+            shuffleArray(array);
+            var divs = document.getElementsByTagName("div");
+            for (var j = 0; j < array.length; j++) {
+                for (var i = 0; i < divs.length; i++) {
+
+
+                    let div_class_name = divs[i].className.substr(0, 5);
+                    if (div_class_name === "front") {
+
+                        divs[i].id = array[j];
+                        j++;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
 }
 
 function number_no() {
