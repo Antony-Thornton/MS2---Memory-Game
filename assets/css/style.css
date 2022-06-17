@@ -654,11 +654,13 @@ footer div h1 {
     display: none;
 }
 
-.modal {
+.modall {
     background: white;
     width: 70%;
     padding: 30px;
     border-radius: 6px;
+    border-style: solid;
+    border-color: #198754;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -667,6 +669,7 @@ footer div h1 {
     font-family: arial;
     position: relative;
     animation: 0.5s drop;
+    text-align: center;
 }
 
 @keyframes drop {
