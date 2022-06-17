@@ -546,6 +546,31 @@ function disappearParent(e) {
 /* ******* Change tiles to black tiles with white numbers ******* */
 function numbers_only() {
 
+    let numbers_true_check = document.getElementById("numbers_true").innerHTML;
+    
+
+    if (numbers_true_check == "true") {
+
+        var divs = document.getElementsByTagName("div");
+
+
+        for (var i = 0; i < divs.length; i++) {
+            let div_class_name = divs[i].className.substr(0, 12);
+            let div_class_name_locked = divs[i].className.substr(0, 6);
+            let div_class_name_hidden = divs[i].className.substr(0, 14);
+
+            if (div_class_name === "front_number") {
+                divs[i].className = "front";
+            } else {
+                if (div_class_name_hidden === "number_visible") {
+                    divs[i].className = "number_hidden";
+                }
+            }
+        }
+
+        document.getElementById("numbers_true").innerHTML = "false";
+    } else {
+
     var divs = document.getElementsByTagName("div");
 
     for (var i = 0; i < divs.length; i++) {
@@ -569,6 +594,7 @@ function numbers_only() {
     }
 
     document.getElementById("numbers_true").innerHTML = "true";
+}
 }
 
 /* ******* Reset Game function. Allows the user to reset the game and decide whether to keep numbers or not. General Logic as follows:
