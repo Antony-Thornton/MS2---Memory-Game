@@ -234,7 +234,13 @@ Round 2 - Post testing round 1
 * <a href="https://gitpod.io/workspaces">gPexels</a> - The pictures featured were taken from pexels.com. Individual credits can be found in the assets of this repository
 
 
+https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
+https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown#31106229
+
+https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javascript/
+
+https://www.youtube.com/watch?v=5sNGqsMpW1E
 
 ## Project Acknowledgements
 
