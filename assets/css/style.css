@@ -389,7 +389,7 @@ text-align: center;
 .front {
     width: 150px;
     height: 150px;
-    background: url(../images/front.jpg) no-repeat center center /contain;
+    background: url(../images/front1.jpg) no-repeat center center /contain;
 }
 
 .back {
@@ -827,7 +827,7 @@ section {
     .front {
         width: 100%;
         height: 100%;
-        background: url(../images/front.jpg) no-repeat center center /contain;
+        background: url(../images/front1.jpg) no-repeat center center /contain;
     }
 
     .col div{
@@ -872,7 +872,7 @@ section {
     .front {
         width: 100%;
         height: 100%;
-        background: url(../images/front.jpg) no-repeat center center /contain;
+        background: url(../images/front1.jpg) no-repeat center center /contain;
     }
 
     .col div{
@@ -952,7 +952,7 @@ section {
     .front {
         width: 100%;
         height: 100%;
-        background: url(../images/front.jpg) no-repeat center center /contain;
+        background: url(../images/front1.jpg) no-repeat center center /contain;
     }
   
    }
