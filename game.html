@@ -1,367 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>
-        The Veggie Guy Games - Memory Game
-    </title>
-</head>
-
-<body>
+    <title> The Veggie Guy Games - Memory Game </title>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color">
-            <div class="container-fluid bg-color">
-              <a class="navbar-brand bg-color" href="index.html">The <strong class="bg-color">Veggie Guy</strong> Games</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-color-white">
-                    <li class="nav-item ">
-                        <a class="nav-link active bg-color text-color-white" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link active bg-color text-color-white" aria-current="page" href="game.html">Memory Game</a>
-                    </li>
-                    <li class="nav-item ">
-                    <a class="nav-link active bg-color text-color-white" aria-current="page" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active bg-color text-color-white" aria-current="page" href="more.html">More</a>
-                    </li>
-                </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color">
+        <div class="container-fluid bg-color">
+          <a class="navbar-brand bg-color" href="index.html">The <strong class="bg-color">Veggie Guy</strong> Games </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-color-white">
+              <li class="nav-item ">
+                <a class="nav-link active bg-color text-color-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active bg-color text-color-white" aria-current="page" href="game.html">Memory Game</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active bg-color text-color-white" aria-current="page" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active bg-color text-color-white" aria-current="page" href="more.html">More</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1 class="text-center bg-color">Memory Game</h1>
+      <div class="container">
+        <div>
+          <h2> A veggie friendly memory game. </h2>
+          <h4>Thank you for visiting this website. This memory game will test your ability to remember pictures and their locations. </h4>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item margin">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How to play </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4>You may find it easier to have numbers shown rather than the logo. This will be useful for mobile users. If so please click the numbers button. </h4>
+                <h4>When you are ready. </h4>
+                <h5>Step 1 - Press the start button. </h5>
+                <h5>Step 2 - Click on a tile and then another. </h5>
+                <h5>Step 3 - Remember the tile pictures (they reset after 1 second) and try to match all of them as quickly as you can. </h5>
+                <h5>If you want to start again please press the reset button. </h5>
               </div>
             </div>
-          </nav>
-    </header>        
-    <section>
-        <h1 class="text-center bg-color">Memory Game</h1>
+          </div>
+        </div>
+        
         <div class="container">
-            <div>
-                <h2>
-                    A veggie friendly memory game.
-                </h2>
-                <h4>Thank you for visiting this website.
-                    This memory game will test your ability to remember pictures and their locations.
-                </h4>
+          <div class="main_section"></div>
+          <div class="score">
+            <div style="text-align: center;">
+              <table class="score">
+                <tr>
+                  <th id="start_time">Game Start</th>
+                  <th id="end_time">Game End</th>
+                </tr>
+                <tr>
+                  <td id="game_start_time"></td>
+                  <td id="game_end_time"></td>
+                </tr>
+              </table>
+              <h5 id="time_taken"></h5>
             </div>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item margin">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
-                        How to play
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <h4>You may find it easier to have numbers shown rather than the logo. This will be useful for mobile users. If so please click the numbers button.
-                            </h4>
-                            <h4>When you are ready.
-                            </h4>
-                            <h5>Step 1 - Press the start button.
-                            </h5>
-                            <h5>Step 2 - Click on a tile and then another.
-                            </h5>
-                            <h5>Step 3 - Remember the tile pictures (they reset after 1 second) and try to match all of them as quickly as you can.
-                            </h5>
-                            <h5>If you want to start again please press the reset button.
-                            </h5>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container d-flex justify-content-center mt-4">
+          <div class="card p-3 mt-3">
+            <h1 class="mt-3 mb-3"> Game Score </h1>
+            <div class="border p-2 rounded d-flex flex-row align-items-center">
+              <div class="p-1 px-4 d-flex flex-column align-items-center score rounded">
+                <span class="d-block char text-success" id="correct_text"> Correct </span>
+                <span class="text-success" id="correct_score"> 0 </span>
+              </div>
+              <div class="ml-2 p-3">
+                <h6 class="heading1"> Successful matches </h6>
+              </div>
             </div>
-            <div class="game_controls">
-                <button type="button" id="start" onclick="start()">
-                    Start
-                </button>
-                <button type="button" id="reset" onclick="reset_game()">
-                    Reset
-                </button>
-                <button type="button" id="numbers" class="" onclick="numbers_only()">
-                    Numbers
-                </button>
+            <div class="border p-2 rounded d-flex flex-row align-items-center">
+              <div class="p-1 px-4 d-flex flex-column align-items-center score rounded">
+                <span class="d-block char text-danger" id="incorrect_text"> Incorrect </span>
+                <span class="text-danger" id="incorrect_score"> 0 </span>
+              </div>
+              <div class="ml-2 p-3">
+                <h6 class="heading1"> Unsuccessful matches </h6>
+              </div>
             </div>
-            <div class="container">
-                <div class="main_section"></div>
-                    <div class="score">
-                        <div style="text-align: center;">
-                            <table class="score">
-                                <tr>
-                                    <th id="start_time">Game Start</th>
-                                    <th id="end_time">Game End</th>
-                                </tr>
-                                <tr>
-                                    <td id="game_start_time"></td>
-                                    <td id="game_end_time"></td>
-                                </tr>
-                            </table>
-                            <h5 id="time_taken"></h5>
-                        </div>
-                    </div>
-                </div>    
-            </div>       
-            <div class="container">
-                <div class="container d-flex justify-content-center mt-4">
-                    <div class="card p-3 mt-3">
-                        <h1 class="mt-3 mb-3">
-                            Game Score
-                        </h1>
-                        <div class="border p-2 rounded d-flex flex-row align-items-center">
-                            <div class="p-1 px-4 d-flex flex-column align-items-center score rounded">
-                                <span class="d-block char text-success" id="correct_text">
-                                    Correct
-                                </span>
-                                <span class="text-success" id="correct_score">
-                                    0
-                                </span>
-                            </div>
-                                <div class="ml-2 p-3">
-                                    <h6 class="heading1">
-                                        Successful matches
-                                    </h6>
-                                </div>
-                        </div>
-                        <div class="border p-2 rounded d-flex flex-row align-items-center">
-                            <div class="p-1 px-4 d-flex flex-column align-items-center score rounded">
-                                <span class="d-block char text-danger" id="incorrect_text">
-                                    Incorrect
-                                </span>
-                                <span class="text-danger" id="incorrect_score">
-                                    0
-                                </span>
-                                </div>
-                                <div class="ml-2 p-3">
-                                    <h6 class="heading1">
-                                        Unsuccessful matches
-                                    </h6>
-                                </div>   
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game_controls" style="text-align: center;">
+        <button type="button" id="start" onclick="start()"> Start </button>
+        <button type="button" id="reset" onclick="reset_game()"> Reset </button>
+        <button type="button" id="numbers" class="" onclick="numbers_only()"> Numbers </button>
+      </div>
     </section>
     <section class="memory_section">
-        <div class="container">
-            <div class="col">
-                <div id="front1.10" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">1
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.10" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">2
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.11" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">3
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.11" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">4
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.12" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">5
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.12" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">6
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.13" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">7
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.13" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">8
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.14" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">9
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.14" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">10
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.15" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">11
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.15" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">12
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.16" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">13
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.16" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">14
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.17" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">15
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.17" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">16
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.18" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">17
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.18" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">18
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.19" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">19
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.19" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">20
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.20" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">21
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.20" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">22
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front1.21" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">23
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div id="front2.21" class="front" onclick="if_mapping(this)">
-                    <div class="number_hidden">24
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="col">
+          <div id="front1.10" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">1 </div>
+          </div>
         </div>
-        <!-- See readme for modal credit -->
-        <div class="modal-parent">
-            <div class="modall">
-                <h1>
-                    Congratulations!!!
-                </h1>
-                <p>
-                    You beat the memory game! You got
-                    <span id="congrats_correct" style="color: green;">
-                    </span>
-                    correct and
-                    <span id="congrats_incorrect" style="color: red;">
-                    </span>
-                    incorrect. It took a total of <span id="time_completion"></span> seconds.
-                    <br>
-                    Did you have fun? I hope so. If you didn't why not drop me a
-                    <a href="contact.html" title="Go to contact page">
-                        message and let me know what could be done better!
-                    </a>
-                </p>
-                <span class="X" draggable="true">&times;
-                </span>
-            </div>
+        <div class="col">
+          <div id="front2.10" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">2 </div>
+          </div>
         </div>
-        <div class="number-parent">
-            <div class="modall">
-                <h1>
-                    Would you like to reset the tile numbers also?
-                </h1>
-                <h4>You will no longer see the numbers on the tiles.
-                </h4>
-                <div id="countdown">10 seconds remaining
-                </div>
-                <div id="selection">
-                </div>
-                <button id="number_yes" onclick="number_yes()">Yes
-                </button>
-                <button id="number_no" onclick="number_no()">No
-                </button>
-            </div>
+        <div class="col">
+          <div id="front1.11" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">3 </div>
+          </div>
         </div>
-        <div class="timeout-parent">
-            <div class="modall">
-                <h1>
-                    Reset game timed out. Please try again.
-                </h1>
-                <button id="number_ok" onclick="timeout_ok()">Ok
-                </button>
-            </div>
+        <div class="col">
+          <div id="front2.11" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">4 </div>
+          </div>
         </div>
-        <div id="numbers_true" style="visibility: hidden;">false</div>
-        <div id="popup" class="closed" style="visibility: hidden;">
+        <div class="col">
+          <div id="front1.12" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">5 </div>
+          </div>
         </div>
+        <div class="col">
+          <div id="front2.12" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">6 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.13" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">7 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.13" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">8 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.14" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">9 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.14" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">10 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.15" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">11 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.15" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">12 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.16" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">13 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.16" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">14 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.17" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">15 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.17" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">16 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.18" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">17 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.18" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">18 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.19" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">19 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.19" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">20 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.20" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">21 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.20" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">22 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front1.21" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">23 </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="front2.21" class="front" onclick="if_mapping(this)">
+            <div class="number_hidden">24 </div>
+          </div>
+        </div>
+      </div>
+      <!-- See readme for modal credit -->
+      <div class="modal-parent">
+        <div class="modall">
+          <h1> Congratulations!!! </h1>
+          <p> You beat the memory game! You got <span id="congrats_correct" style="color: green;"></span> correct and <span id="congrats_incorrect" style="color: red;"></span> incorrect. It took a total of <span id="time_completion"></span> seconds. <br> Did you have fun? I hope so. If you didn't why not drop me a <a href="contact.html" title="Go to contact page"> message and let me know what could be done better! </a>
+          </p>
+          <span class="X" draggable="true">&times; </span>
+        </div>
+      </div>
+      <div class="number-parent">
+        <div class="modall">
+          <h1> Would you like to reset the tile numbers also? </h1>
+          <h4>You will no longer see the numbers on the tiles. </h4>
+          <div id="countdown">10 seconds remaining </div>
+          <div id="selection"></div>
+          <button id="number_yes" onclick="number_yes()">Yes </button>
+          <button id="number_no" onclick="number_no()">No </button>
+        </div>
+      </div>
+      <div class="timeout-parent">
+        <div class="modall">
+          <h1> Reset game timed out. Please try again. </h1>
+          <button id="number_ok" onclick="timeout_ok()">Ok </button>
+        </div>
+      </div>
+      <div id="numbers_true" style="visibility: hidden;">false</div>
+      <div id="popup" class="closed" style="visibility: hidden;"></div>
     </section>
-
     <footer>
-        <div class="card text-center">
-            <div class="card-body">
-                <h5 class="card-title">Links to sources</h5>
-                <a href="https://codeinstitute.net/" class="btn btn-success" style="margin: 1px; background-color: #198754;" target="_blank" title="Course Provider">Code Institute</a>
-                <a href="https://www.pexels.com/" class="btn btn-success" style="margin: 1px; background-color: #198754;" target="_blank" title="Pictures">Pexels.com</a>
-                <a href="https://getbootstrap.com/docs/5.0/examples/heroes/" class="btn btn-success" style="margin: 1px; background-color: #198754;" target="_blank" title="Pictures">Bootstrap5</a>
-                <a href="https://github.com/Antony-Thornton" class="btn btn-success" style="margin: 1px; background-color: #198754;" target="_blank" title="Pictures">More from the developer</a>
-            </div>
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Links to sources</h5>
+          <a href="https://codeinstitute.net/" class="btn btn-success" style="margin: 1px; background-color: #198754;" target="_blank" title="Course Provider">Code Institute</a>
+          <a href="https://www.pexels.com/" class="btn btn-success" style="margin: 1px; background-color: #198754;" target="_blank" title="Pictures">Pexels.com</a>
+          <a href="https://getbootstrap.com/docs/5.0/examples/heroes/" class="btn btn-success" style="margin: 1px; background-color: #198754;" target="_blank" title="Pictures">Bootstrap5</a>
+          <a href="https://github.com/Antony-Thornton" class="btn btn-success" style="margin: 1px; background-color: #198754;" target="_blank" title="Pictures">More from the developer</a>
         </div>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="assets/JS/index.js">
-    </script>
-</body>
-
+    <script src="assets/JS/index.js"></script>
+  </body>
 </html>
