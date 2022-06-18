@@ -774,6 +774,11 @@
     padding-left: 5px;
   }
   
+  .card-body {
+    text-align: left;
+  }
+  
+
   /* Home Page */
   
   .home_div {
