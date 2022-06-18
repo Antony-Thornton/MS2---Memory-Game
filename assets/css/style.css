@@ -765,6 +765,14 @@
   .margin {
     margin-bottom: 15px;
   }
+
+
+  .card-title-custom {
+    background-color: #198754;
+    color: white;
+    border-radius: 25px;
+    padding-left: 5px;
+  }
   
   /* Home Page */
   
