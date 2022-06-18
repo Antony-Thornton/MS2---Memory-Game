@@ -34,6 +34,8 @@ A live website can be found <a href="" target="_blank">here</a>.
 ### Introduction
 This version of the project is a redesign of the first. The first version of this site was focused mainly on BMW and promoting the brand. As my course has gone on I have decided to align this website with the brand of the later projects. Significant structural and format changes have happened but the driving javascript has been fixed based on feedback. 
 
+The new website should be clearer and more straight forward for the user. It will present more information on "the Veggie Guy" brand, JavaScript and have a fun game for the user to play.
+
 <a name="strategy"></a>
 
 ## 1.1 Strategy
@@ -71,6 +73,11 @@ The system should have a simple user interface, with the navigation to each sect
 ## 1.2 Structure
 #### [Go To Top](#table-of-contents "Go To Top")
 
+It is really important to include responsive design in this project as many users are using different devices (mobile, tablet, laptop/PC). This gives the user the best experience on their device.
+
+* Responsive on all device sizes
+* Easy navigation through labelled buttons
+* All elements will be consistent including font size, font family, colour scheme.
 
 
 <a name="skeleton"></a>
@@ -93,7 +100,9 @@ The system should have a simple user interface, with the navigation to each sect
 ### Font and colours:
 The font and colours have been changed in this updated website to reflect "The Veggie Guy" fitness brand. The branding has been created to match the other websites created later in this course to give this page more meaning. 
 
+Fonts used have been pulled through using Bootstrap 5.
 
+A green colour palette has been applied to match the veggie guy theme.
 
 <a name="features"></a>
 
@@ -101,18 +110,44 @@ The font and colours have been changed in this updated website to reflect "The V
 #### [Go To Top](#table-of-contents "Go To Top")
 
 ## Navigation
-
+* The navigation bar has 2 layouts
+    * One view for desktop and the other for mobiles/devices with smaller screens
+* The desktop view uses a standard bootstrap 5 navigation theme in line with the cookbook project
+* The brand logo/image is at the top left with the navigation elements at the top right
+* As with the desktop view the mobile uses existing CSS code but compresses the links into a collapsible element at the top right
+    * The user should be able to open the element and see all the available links
 
 ## Home Page
-
+* The home page is the main landing page for the site
+    * When the user visits the page, they should be able to understand what the website is about and what it can offer them
+* The page presents information as its primary feature
+* It will help direct them to the key pages of the site; memory game, contact and more to compliment the project goals
 
 ## Memory Game Page
-
+* This page presents the game itself
+* It will have:
+    * A series of tiles to turn over
+    * How to play instructions
+    * A start button
+    * A reset button
+    * A numbers button - Allows users to replace tile pictures with numbers
+    * A score board
+    * Time keeping boards
+    * A modal to appear when the game is complete
 
 ## More Page
+* The more page will contain information on the other veggie guy brand websites
+* What they are with a brief description of the sites features
+* Navigation links to those sites
 
+## JavaScript Page
+This page will demo some of the features of JavaScript using event listeners
+This page has been included as a way to improve my knowledge on javascript event listeners 
 
 ## Features left to implement
+* As well as a numbers tab I would like to add a way to turn off the gifs on the memory game
+    * Doing this will require updating the javascript to be inclusive but is not critical for submission
+* Build this site/game into "the Veggie Guy" fitness site
 
 
 <a name="technologies-used"></a>
@@ -214,8 +249,17 @@ Round 2 - Post testing round 1
     * Removed the fixed(2)
 
 
+Round 3 - Pre testing
+* Problems with the game controls:
+    * The reset button didnt reset everything
+    * The tiles could be clicked in quick succession
+* CSS styling issues
+
+
 
 ### Bugs to be fixed
+* None at time of writing
+
 
 <a name="credits"></a>
 
@@ -229,24 +273,22 @@ Round 2 - Post testing round 1
 
 * <a href="https://github.com/redouand/Pop-Up-Window-modal-">Bootstrap scoring element</a>
 
+* <a href="https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp">Toggle and hide with Javascript</a>
+
+* <a href="https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown#31106229">10 Second Countdowns</a>
+
+* <a href="https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javascript/">Selecting a random element from an array</a>
+
+* <a href="https://www.geeksforgeeks.org/create-countdown-timer-using-javascript/">Clock JavaScript</a>
+
+* <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_rr">Slide Show JavaScript</a>
+
+* <a href="https://stackoverflow.com/questions/16270761/how-to-insert-a-large-block-of-html-in-javascript">Inserting HTML elements with JavaScript</a>
+
+
 ## Content
 
-* <a href="https://gitpod.io/workspaces">gPexels</a> - The pictures featured were taken from pexels.com. Individual credits can be found in the assets of this repository
-
-
-https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
-
-https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown#31106229
-
-https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javascript/
-
-https://www.youtube.com/watch?v=5sNGqsMpW1E
-
-https://www.geeksforgeeks.org/create-countdown-timer-using-javascript/
-
-https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_rr
-https://stackoverflow.com/questions/16270761/how-to-insert-a-large-block-of-html-in-javascript
-
+* <a href="https://gitpod.io/workspaces">Pexels</a> - The pictures featured were taken from pexels.com. Individual credits can be found in the assets of this repository
 
 ## Project Acknowledgements
 
