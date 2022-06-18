@@ -31,8 +31,8 @@ A live website can be found <a href="" target="_blank">here</a>.
 # 1.UX
 #### [Go To Top](#table-of-contents "Go To Top")
 
-
-ADD CONTENT HERE
+### Introduction
+This version of the project is a redesign of the first. The first version of this site was focused mainly on BMW and promoting the brand. As my course has gone on I have decided to align this website with the brand of the later projects. Significant structural and format changes have happened but the driving javascript has been fixed based on feedback. 
 
 <a name="strategy"></a>
 
@@ -241,6 +241,12 @@ https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
 https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javascript/
 
 https://www.youtube.com/watch?v=5sNGqsMpW1E
+
+https://www.geeksforgeeks.org/create-countdown-timer-using-javascript/
+
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_rr
+https://stackoverflow.com/questions/16270761/how-to-insert-a-large-block-of-html-in-javascript
+
 
 ## Project Acknowledgements
 
