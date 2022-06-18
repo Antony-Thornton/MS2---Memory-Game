@@ -779,6 +779,34 @@
   }
   
 
+  .java-page {
+    width: 100%;
+  }
+
+
+  .color-change-box {
+    width: 100%;
+    height: 40%;
+  
+  }
+
+  .color-div {
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+.btn-custom {
+  background-color: white;
+  color: black;
+}
+.btn-custom:hover {
+  background-color: black;
+  color: white;
+}
+
   /* Home Page */
   
   .home_div {
@@ -984,6 +1012,14 @@
       background-color: #198754;
       border-radius: 50%;
     }
+
+    .slideshow-text {
+      position: absolute;
+      background-color: #198754;
+      color: white;
+      font-size: 2rem;
+      width: 100%;
+    }
   }
   
   .navbar-collapse {
@@ -991,3 +1027,67 @@
     align-items: center;
   }
   
+
+
+  /* Clock styling */
+   #clockdiv{
+      font-family: sans-serif;
+      color: #fff;
+      display: inline-block;
+      font-weight: 100;
+      text-align: center;
+      font-size: 30px;
+
+  }
+  #clockdiv > div{
+      padding: 10px;
+      border-radius: 3px;
+      background: #198754;
+      display: inline-block;
+
+  }
+  #clockdiv div > span{
+      padding: 15px;
+      border-radius: 3px;
+      background: white;
+      display: inline-block;
+
+  }
+  #smalltext{
+      padding-top: 5px;
+      font-size: 16px;
+
+  }
+
+  .clock_width {
+    min-width: 137px;
+  }
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+
+.slideshow {
+  border-radius: 25px;  
+}
+
+/* Top left text */
+.slideshow-text {
+  position: absolute;
+  background-color: #198754;
+  color: white;
+  font-size: 2rem;
+}
+
+.java-page-gif {
+    width: 150px;
+    height: 150px;
+    background: url(../images/cover.gif) no-repeat center center / contain;
+  }
