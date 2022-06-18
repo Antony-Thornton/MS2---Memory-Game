@@ -16,7 +16,6 @@ A live website can be found <a href="" target="_blank">here</a>.
     -   [1.2. Structure](#structure)
     -   [1.3. Skeleton](#skeleton)
     -   [1.4. Surface](#surface)
-    -   [1.5. Resubmit](#resubmit)
 -   [2. Features](#features)
 -   [3. Technologies Used](#technologies-used)
 -   [4. Testing](#testing)
