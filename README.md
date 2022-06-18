@@ -86,9 +86,25 @@ It is really important to include responsive design in this project as many user
 
 ## Sitemap
 
-
+![index web](documentation-assets/site-map.jpg)
 
 ## Wireframes
+
+![index web](documentation-assets/desk-home.jpg)
+
+![index web](documentation-assets/mob-home.jpg)
+
+![index web](documentation-assets/desk-game.jpg)
+
+![index web](documentation-assets/mob-game.jpg)
+
+![index web](documentation-assets/desk-contact.jpg)
+
+![index web](documentation-assets/mob-contact.jpg)
+
+![index web](documentation-assets/desk-more.jpg)
+
+![index web](documentation-assets/mob-more.jpg)
 
 
 <a name="surface"></a>
@@ -147,6 +163,7 @@ This page has been included as a way to improve my knowledge on javascript event
 * As well as a numbers tab I would like to add a way to turn off the gifs on the memory game
     * Doing this will require updating the javascript to be inclusive but is not critical for submission
 * Build this site/game into "the Veggie Guy" fitness site
+* Create/design proper wireframe for Javascript page and implement
 
 
 <a name="technologies-used"></a>
