@@ -494,13 +494,20 @@ function if_mapping(e) {
 
 /* ******* Start button for game ******* */
 function start() {
+    
+    if (isStarted) {
+        return;
+    } else {
     isStarted = true;
     var currentDate = new Date();
     start_time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();;
     let start_element = document.getElementById("game_start_time");
     start_seconds = new Date() / 1000;
     start_element.innerText = start_time;
-}
+    }
+    }
+
+    
 
 /* ******* End button for game ******* */
 function end_game_time() {
