@@ -3,6 +3,9 @@ let selection_one = "";
 let selection_two = "";
 let start_time = "";
 let end_time = "";
+let start_seconds;
+let end_seconds;
+let time_seconds;
 let score = "";
 let first_id = "";
 let second_id = "";
@@ -444,10 +447,9 @@ function if_mapping(e) {
                             if (score_int === max_score) {
 
                                 end_game_time();
-                                let time_taken = Math.abs(end_time - start_time);
-
-                                document.getElementById("time_taken").innerText = "You completed the game in " + time_taken + " seconds.";
-                                document.getElementById("time_completion").innerText = time_taken;
+                                time_seconds = (end_seconds - start_seconds).toFixed(2)
+                                document.getElementById("time_taken").innerText = "You completed the game in " + time_seconds + " seconds.";
+                                document.getElementById("time_completion").innerText = time_seconds;
                                 appear();
                             }
 
@@ -495,6 +497,7 @@ function start() {
     var currentDate = new Date();
     start_time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();;
     let start_element = document.getElementById("game_start_time");
+    start_seconds = new Date() / 1000;
     start_element.innerText = start_time;
 }
 
@@ -502,8 +505,8 @@ function start() {
 function end_game_time() {
     var currentDate = new Date();
     end_time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();;
-
     let end_element = document.getElementById("game_end_time");
+    end_seconds = new Date() / 1000;
     end_element.innerText = end_time;
 }
 
