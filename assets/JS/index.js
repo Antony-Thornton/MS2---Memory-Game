@@ -448,7 +448,8 @@ function if_mapping(e) {
 
                                 end_game_time();
                                 time_seconds = (end_seconds - start_seconds).toFixed(2)
-                                document.getElementById("time_taken").innerText = "You completed the game in " + time_seconds + " seconds.";
+                                document.getElementById("time_taken_header").innerText = "Time Taken"
+                                document.getElementById("time_taken").innerText = time_seconds + " seconds.";
                                 document.getElementById("time_completion").innerText = time_seconds;
                                 appear();
                             }
