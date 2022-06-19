@@ -405,7 +405,7 @@ function if_mapping(e) {
 				if (selection_one === "") {
 					selection_one = e.id;
 					first_id = e.id.slice(-2);
-					console.log(selection_one + " " + first_id);
+					/* console.log(selection_one + " " + first_id); */
 					selectedElement.className = "back" + first_id;
 					selection_one_numbers_check = numbers_only_check;
 				} else {
