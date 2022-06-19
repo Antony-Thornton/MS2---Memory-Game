@@ -272,6 +272,11 @@ Round 3 - Pre testing
     * The reset button didnt reset everything
     * The tiles could be clicked in quick succession
 * CSS styling issues
+* Score board styling issue
+    * Bug where elements overlapped.
+    * Ended up deleting and adding css from <a href="https://stackoverflow.com/questions/5686276/how-to-align-a-div-to-the-top-of-its-parent-but-keeping-its-inline-block-behavio">here</a> and the issue resolved on other devices
+
+    
 
 
 
