@@ -444,7 +444,7 @@ function if_mapping(e) {
                             if (score_int === max_score) {
 
                                 end_game_time();
-                                let time_taken = Math.abs((end_time - start_time) / 1000);
+                                let time_taken = Math.abs(end_time - start_time);
 
                                 document.getElementById("time_taken").innerText = "You completed the game in " + time_taken + " seconds.";
                                 document.getElementById("time_completion").innerText = time_taken;
@@ -492,16 +492,16 @@ function if_mapping(e) {
 /* ******* Start button for game ******* */
 function start() {
     isStarted = true;
-    var currentdate = new Date();
-    start_time = currentdate;
+    var currentDate = new Date();
+    start_time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();;
     let start_element = document.getElementById("game_start_time");
     start_element.innerText = start_time;
 }
 
 /* ******* End button for game ******* */
 function end_game_time() {
-    var currentdate = new Date();
-    end_time = currentdate;
+    var currentDate = new Date();
+    end_time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();;
 
     let end_element = document.getElementById("game_end_time");
     end_element.innerText = end_time;
