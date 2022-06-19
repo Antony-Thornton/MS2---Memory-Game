@@ -35,10 +35,6 @@
     <section>
       <h1 class="text-center bg-color">Memory Game</h1>
       <div class="container">
-        <div>
-          <h2> A veggie friendly memory game. </h2>
-          <h4>Thank you for visiting this website. This memory game will test your ability to remember pictures and their locations. </h4>
-        </div>
         <div class="accordion">
           <div class="accordion-item margin">
             <h2 class="accordion-header" id="headingOne">
@@ -46,7 +42,8 @@
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <h4>You may find it easier to have numbers shown rather than the logo. This will be useful for mobile users. If so please click the numbers button. </h4>
+                <h3>Test your memory with our food themed memory game.</h3>
+                <h4>You may find it easier to have numbers shown rather than the images. </h4>
                 <h4>When you are ready. </h4>
                 <h5>Step 1 - Press the start button. </h5>
                 <h5>Step 2 - Click on a tile and then another. </h5>
@@ -56,14 +53,14 @@
             </div>
           </div>
         </div>
-        <div class="accordion">
+        <div class="accordion" style="padding: 0;">
           <div class="accordion-item margin">
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"> Score Board </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="container">
+              <div class="accordion-body" style="padding: 0;">
+                <div class="container" style="padding: 0; margin: 0;">
                   <div style="height: 500px; background-color:#198754; border-radius:25px; width: 100%; text-align: center; background-image: url(assets/images/pexels-lukas-952478.jpg);">
                     <div style="position: relative; left: 10%; top: 10%; background-color: #198754; width: 80%; height:100px; border-radius: 25px;">
                       <h1 class="text-white position-absolute top-50 start-50 translate-middle">Score Board</h1>
@@ -111,9 +108,9 @@
           </div>
         </div>
         <div class="game_controls" style="text-align: center;">
-          <button type="button" id="start" onclick="start()"> Start </button>
-          <button type="button" id="reset" onclick="reset_game()"> Reset </button>
-          <button type="button" id="numbers" class="" onclick="numbers_only()"> Numbers </button>
+          <button type="button" id="start" class="btn btn-success" style="min-width: 91px;" onclick="start()"> Start </button>
+          <button type="button" id="reset" class="btn btn-danger" style="min-width: 91px;" onclick="reset_game()"> Reset </button>
+          <button type="button" id="numbers" class="btn btn-warning" style="min-width: 91px;" onclick="numbers_only()"> Numbers </button>
         </div>
       </div>
     </section>
