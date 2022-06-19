@@ -47,7 +47,6 @@
     height: auto;
     width: 100%;
     text-align: center;
-    /* https://www.w3schools.com/css/css3_gradients.asp - learned about gradience*/
     background-image: linear-gradient(rgb(170, 170, 170), white);
     padding-bottom: 10px;
   }
@@ -118,7 +117,9 @@
     margin: 10px;
   }
   
-  /* #start {
+  /* 
+  No Longer needed
+  #start {
     height: 50px;
     width: 110px;
     background-color: rgba(0, 128, 0, 0.8);
@@ -194,9 +195,9 @@
     color: red;
   }
   
-  /* /* #start_time {
+/* #start_time {
     color: black;
-    padding: 3px; */
+    padding: 3px;
   } */
   
   th,
@@ -204,9 +205,9 @@
     border: 1px solid black;
   }
   
-  /* ************ More From BMW Page ************ */
-  
-  .more_main_section {
+/* ************ More From BMW Page ************
+  No Longer needed
+  /* .more_main_section {
     padding: 0 10%;
     width: auto;
     height: auto;
@@ -237,10 +238,9 @@
     width: 100%;
     height: 560px;
     padding: 0;
-  }
+  } */
   
-  /* ************ Contact us page and form ************ */
-  
+/* ************ Contact us page and form ************ */
   .contact_form {
     height: auto;
     background-image: linear-gradient(rgb(170, 170, 170), white);
@@ -277,6 +277,7 @@
   }
   
   /*
+  No longer needed
   .form_button input {
       height: 50px;
       width: 110px;
@@ -328,7 +329,6 @@
   
   .button {
     background-color: black;
-    /* Green */
     color: white;
     text-align: center;
     text-decoration: none;
@@ -350,7 +350,7 @@
     font-size: x-large;
   }
   
-  /* ************ Main Section Format ************ */
+/* ************ Main Section Format ************ */
   
   .main_section {
     height: auto;
@@ -375,8 +375,7 @@
     border-radius: 25px;
   }
   
-  /* ****** Tile formatting. Front and back codes ******* */
-  
+/* ****** Tile formatting. Front and back codes ******* */ 
   .front {
     width: 150px;
     height: 150px;
@@ -587,7 +586,7 @@
     border-radius: 25px;
   }
   
-  /* ****** Numbers only formatting ******* */
+/* ****** Numbers only formatting ******* */
   
   .number_hidden {
     visibility: hidden;
@@ -616,7 +615,7 @@
     border-radius: 100px;
   }
   
-  /* ******* Footer Formatting ******* */
+/* ******* Footer Formatting ******* */
   .footer_div {
     padding-top: 20px;
     text-align: center;
@@ -641,8 +640,7 @@
     color: rgba(43, 136, 183, 255);
   }
   
-  /* ****** Popup/Modal - See Readme for source ****** */
-  
+/* ****** Popup/Modal - See Readme for source ****** */
   .modal-parent {
     position: fixed;
     top: 0;
@@ -710,7 +708,9 @@
     transition: 2s;
   }
   
-  /* Social networks code below borrowed from Code Institute Love running project */
+  /* Social networks code below borrowed from Code Institute Love running project
+
+  No Longer included in footer
   .social_networks {
     text-align: center;
   }
@@ -728,7 +728,8 @@
   .fa-facebook {
     color: pink;
   }
-  
+   */
+
   /* ******* 404 Page ******* */
   
   .page_not_found {
@@ -766,7 +767,6 @@
     margin-bottom: 15px;
   }
 
-
   .card-title-custom {
     background-color: #198754;
     color: white;
@@ -777,12 +777,10 @@
   .card-body-custom {
     text-align: left;
   }
-  
 
   .java-page {
     width: 100%;
   }
-
 
   .color-change-box {
     width: 100%;
@@ -798,16 +796,17 @@
     text-align: left;
   }
 
-.btn-custom {
-  background-color: white;
-  color: black;
-}
-.btn-custom:hover {
-  background-color: black;
-  color: white;
-}
+  .btn-custom {
+    background-color: white;
+    color: black;
+  }
 
-  /* Home Page */
+  .btn-custom:hover {
+    background-color: black;
+    color: white;
+  }
+
+/* Home Page */
   
   .home_div {
     display: block;
@@ -841,6 +840,81 @@
     color: white !important;
   }
   
+  
+  .navbar-collapse {
+    flex-grow: 0;
+    align-items: center;
+  }
+  
+
+
+/* Clock styling */
+   #clockdiv{
+      font-family: sans-serif;
+      color: #fff;
+      display: inline-block;
+      font-weight: 100;
+      text-align: center;
+      font-size: 30px;
+
+  }
+
+  #clockdiv > div{
+      padding: 10px;
+      border-radius: 3px;
+      background: #198754;
+      display: inline-block;
+
+  }
+
+  #clockdiv div > span{
+      padding: 15px;
+      border-radius: 3px;
+      background: white;
+      display: inline-block;
+
+  }
+
+  #smalltext{
+      padding-top: 5px;
+      font-size: 16px;
+
+  }
+
+  .clock_width {
+    min-width: 137px;
+  }
+
+/* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
+  }
+
+  .slideshow {
+    border-radius: 25px;  
+  }
+
+  /* Top left text */
+  .slideshow-text {
+    position: absolute;
+    background-color: #198754;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .java-page-gif {
+      width: 150px;
+      height: 150px;
+      background: url(../images/cover.gif) no-repeat center center / contain;
+  }
+
+
+
+
+/* ****** Media CSS****** */
   @media (min-width: 1000px) {
     .centered {
       position: absolute;
@@ -1020,74 +1094,4 @@
       font-size: 2rem;
       width: 100%;
     }
-  }
-  
-  .navbar-collapse {
-    flex-grow: 0;
-    align-items: center;
-  }
-  
-
-
-  /* Clock styling */
-   #clockdiv{
-      font-family: sans-serif;
-      color: #fff;
-      display: inline-block;
-      font-weight: 100;
-      text-align: center;
-      font-size: 30px;
-
-  }
-  #clockdiv > div{
-      padding: 10px;
-      border-radius: 3px;
-      background: #198754;
-      display: inline-block;
-
-  }
-  #clockdiv div > span{
-      padding: 15px;
-      border-radius: 3px;
-      background: white;
-      display: inline-block;
-
-  }
-  #smalltext{
-      padding-top: 5px;
-      font-size: 16px;
-
-  }
-
-  .clock_width {
-    min-width: 137px;
-  }
-
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-
-}
-
-
-.slideshow {
-  border-radius: 25px;  
-}
-
-/* Top left text */
-.slideshow-text {
-  position: absolute;
-  background-color: #198754;
-  color: white;
-  font-size: 2rem;
-}
-
-.java-page-gif {
-    width: 150px;
-    height: 150px;
-    background: url(../images/cover.gif) no-repeat center center / contain;
   }
