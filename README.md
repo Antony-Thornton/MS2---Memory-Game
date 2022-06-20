@@ -401,6 +401,7 @@ Round 3 - Pre testing
 
 * <a href="https://stackoverflow.com/questions/16270761/how-to-insert-a-large-block-of-html-in-javascript">Inserting HTML elements with JavaScript</a>
 
+* <a href="https://www.delftstack.com/howto/javascript/javascript-set-session-variable/">Session variables</a>
 
 ## Content
 
