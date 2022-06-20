@@ -298,11 +298,16 @@ A congratulations message should appear when the game is completed | Pass | Pass
 ## Contact Us Page
 | Expected Result | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
 |:-------------:| -----:| -----:| -----:|-----:|-----:|
-All elements displaying correctly
-All elements respond according to chrome resizing in dev tools
-Form should not submit with any blank fields
-Form should submit
-A div displaying the result 
+All elements displaying correctly | Pass | Pass | Pass | n/a | n/a
+All elements respond according to chrome resizing in dev tools | Pass | Pass | Pass | n/a | n/a
+Form should not submit with any blank fields | Pass | Pass | Pass | n/a | n/a
+Form should submit| Pass | Pass | Pass | n/a | n/a
+A div displaying a message sent should display | Pass | Pass | Pass | n/a | n/a
+An email should be recieved | Pass | Pass | Pass | n/a | n/a
+
+
+![index web](assets/images/testing/form-send-test.JPG)
+
 
 
 ## JavaScript Zone Page
