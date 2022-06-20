@@ -368,7 +368,8 @@ Round 3 - Pre testing
 * Score board styling issue
     * Bug where elements overlapped.
     * Ended up deleting and adding css from <a href="https://stackoverflow.com/questions/5686276/how-to-align-a-div-to-the-top-of-its-parent-but-keeping-its-inline-block-behavio">here</a> and the issue resolved on other devices
-
+* Invisible toast was blocking the nav bar/other elements when the page loaded
+    * Okay, so what you can try is to set the toast to be hidden by default with the .hide class. This would mean that the toast is only showing when needed and hidden (hopefully, behind the links) the rest of the time. To do that, you would just need to add hide beside the toast class on line 267
     
 
 
