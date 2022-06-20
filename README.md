@@ -264,11 +264,11 @@ All header and footer links on each page should navigate to the expected page.
 
 | HTML Page | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
 | ------------- |:-------------:| -----:| -----:|-----:|-----:|
-| Home |
-| Memory Game | 
-| Contact Us |
-| Javascript Zone |
-| More | 
+Home | Pass | Pass | Pass | n/a | n/a
+Memory Game | Pass | Pass | Pass  | n/a | n/a
+Contact Us | Pass | Pass | Pass  | n/a | n/a
+Javascript Zone | Pass | Pass | Pass  | n/a | n/a
+More | Pass | Pass | Pass  | n/a | n/a
 
 <br>
 
@@ -276,27 +276,49 @@ All header and footer links on each page should navigate to the expected page.
 ## Home Page
 | Expected Result | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
 |:-------------:| -----:| -----:| -----:|-----:|-----:|
+All elements displaying correctly | Pass | Pass | Pass | n/a | n/a
+All elements respond according to chrome resizing in dev tools | Pass | Pass | Pass | n/a | n/a
 
 
 ## Memory Game Page
 | Expected Result | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
 |:-------------:| -----:| -----:| -----:|-----:|-----:|
+All elements displaying correctly | Pass | Pass | Pass | n/a | n/a
+All elements respond according to chrome resizing in dev tools | Pass | Pass | Pass | n/a | n/a
+If the user has cleared cache or not played the game. No toast should appear | Pass | Pass | Pass | n/a | n/a
+If they have previously played any session stored variables should appear in a toast | Pass | Pass | Pass | n/a | n/a
+They should be able to turn on and off the numbers for the tiles | Pass | Pass | Pass | n/a | n/a
+The user should be able to open and close instructions and score board elements | Pass | Pass | Pass | n/a | n/a
+The user should be able to start the game with the start button | Pass | Pass | Pass | n/a | n/a
+The user should not be able to turn tiles over unless the start button is pressed | Pass | Pass | Pass | n/a | n/a
+Game results should display in the scoreboard | Pass | Pass | Pass | n/a | n/a
+A congratulations message should appear when the game is completed | Pass | Pass | Pass | n/a | n/a
 
 
 ## Contact Us Page
 | Expected Result | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
 |:-------------:| -----:| -----:| -----:|-----:|-----:|
+All elements displaying correctly
+All elements respond according to chrome resizing in dev tools
+Form should not submit with any blank fields
+Form should submit
+A div displaying the result 
 
 
 ## JavaScript Zone Page
 | Expected Result | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
 |:-------------:| -----:| -----:| -----:|-----:|-----:|
-
+All elements displaying correctly | Pass | Pass | Pass | n/a | n/a
+All elements respond according to chrome resizing in dev tools| Pass | Pass | Pass | n/a | n/a
+The slide show should display 3 images one after the other automatically | Pass | Pass | Pass |  n/a | n/a
+The button to change box color should cycle through random colors | Pass | Pass | Pass |  n/a | n/a
+You should be able to summon an army of minions | Pass | Pass | Pass |  n/a | n/a
 
 ## More Page
 | Expected Result | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
 |:-------------:| -----:| -----:| -----:|-----:|-----:|
-
+All elements displaying correctly | Pass | Pass | Pass |  n/a | n/a
+All elements respond according to chrome resizing in dev tools | Pass | Pass | Pass |  n/a | n/a
 
 <br>
 
