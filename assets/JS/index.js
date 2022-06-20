@@ -335,7 +335,22 @@ window.onload = function random_array() {
 			}
 		}
 	}
-	alert("On your last visit you scored " + sessionStorage.getItem('score') + " in " + sessionStorage.getItem('TimeTaken') + " seconds!");
+	// alert("On your last visit you scored " + sessionStorage.getItem('score') + " in " + sessionStorage.getItem('TimeTaken') + " seconds!");
+	let myAlert = document.querySelectorAll('.toast')[0];
+	if (myAlert) {
+	  let bsAlert = new bootstrap.Toast(myAlert);
+	  bsAlert.show();
+	}
+
+	var today = new Date();
+	var date = today.toJSON().slice(0, 10);
+	var nDate = date.slice(8, 10) + '/' 
+			+ date.slice(5, 7) + '/' 
+			+ date.slice(0, 4);
+	document.getElementById('spanScore').innerText = sessionStorage.getItem('score');
+	document.getElementById('spanTime').innerText = sessionStorage.getItem('TimeTaken');
+	document.getElementById('visitDate').innerText = nDate;
+	
 };
 
 /* ****** Shuffle array function. Called by other functions. ******* */
