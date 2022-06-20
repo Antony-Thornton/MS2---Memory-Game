@@ -341,16 +341,11 @@ window.onload = function random_array() {
 	  let bsAlert = new bootstrap.Toast(myAlert);
 	  bsAlert.show();
 	}
-
-	var today = new Date();
-	var date = today.toJSON().slice(0, 10);
-	var nDate = date.slice(8, 10) + '/' 
-			+ date.slice(5, 7) + '/' 
-			+ date.slice(0, 4);
-	document.getElementById('spanScore').innerText = sessionStorage.getItem('score');
-	document.getElementById('spanTime').innerText = sessionStorage.getItem('TimeTaken');
-	document.getElementById('visitDate').innerText = nDate;
 	
+	document.getElementById('spanScore').innerText = sessionStorage.getItem('score');
+	document.getElementById('spanTime').innerText = sessionStorage.getItem('TimeTaken');	
+	document.getElementById('visitDate').innerText = sessionStorage.getItem('dateComplete');
+	document.getElementById('visitTime').innerText = sessionStorage.getItem('timeComplete');;
 };
 
 /* ****** Shuffle array function. Called by other functions. ******* */
@@ -470,6 +465,15 @@ function if_mapping(e) {
 								appear();
 								sessionStorage.setItem('score',score_int);
 								sessionStorage.setItem('TimeTaken', time_seconds);
+								var today = new Date();
+								var date = today.toJSON().slice(0, 10);
+								var nDate = date.slice(8, 10) + '/' 
+										+ date.slice(5, 7) + '/' 
+										+ date.slice(0, 4);
+								let currentDate = new Date();
+								let time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+								sessionStorage.setItem('dateComplete', nDate);
+								sessionStorage.setItem('timeComplete', time);
 							}
 
 							allowPlay = false;
