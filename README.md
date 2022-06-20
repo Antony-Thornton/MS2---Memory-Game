@@ -50,7 +50,7 @@ The overall story would be as follows:
 * The website should help promote the Veggie guy brand
 * The website should direct the user to additional veggie guy websites
 * The website should be well structured and easy to navigate
-* The new website should be free of previously glagged navigation and UX issues
+* The new website should be free of previously flagged navigation and UX issues
 * The game should be easy to play on all devices including mobile
 
 ## User Goals:
@@ -367,6 +367,17 @@ Your site is ready to be published at https://antony-thornton.github.io/MS2---Me
 # 7. End Product
 #### [Go To Top](#table-of-contents "Go To Top")
 
+![index web](assets/images/final_product/home_fp.jpg)
+
+![index web](assets/images/final_product/memory-fp.jpg)
+
+![index web](assets/images/final_product/contact-fp.jpg)
+
+![index web](assets/images/final_product/mob-home-gp.jpg)
+
+![index web](assets/images/final_product/mob-memory-fp.jpg)
+
+![index web](assets/images/final_product/mob-contact-fp.jpg)
 
 <a name="known-bugs"></a>
 
@@ -446,10 +457,12 @@ Round 3 - Pre testing
 
 ## Project Acknowledgements
 
-* Thank you to Sean Young from Code institute for helping me with a couple of Javascript queries. See Javascript file for details.
+* Thank you to Sean Young from Code institute for helping me with a couple of Javascript queries. See Javascript file for details
 
 * Code Institute - For all course material and on going support
 
-* Code Institute Tutor Support - For directing me to the correct solutions for any bugs and problems with my project.
+* Code Institute Tutor Support - For directing me to the correct solutions for any bugs and problems with my project
 
-* My Mentor Marcel - For his constructive criticism and always pushing me to go further to develop my skills.
+* My Mentor Marcel - For his constructive criticism and always pushing me to go further to develop my skills
+
+* My partner Danielle for helping with testing my website
