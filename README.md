@@ -19,6 +19,9 @@ A live website can be found <a href="" target="_blank">here</a>.
 -   [2. Features](#features)
 -   [3. Technologies Used](#technologies-used)
 -   [4. Testing](#testing)
+    -   [4.1 Informal Testing](#testing1)
+    -   [4.2 Formal Testing](#testing2)
+    -   [4.2 Functionality Testing](#testing3)
 -   [5. Development Cycle](#development-cycle)
 -   [6. Deployment](#deployment)
 -   [7. End Product](#end-product)
@@ -194,8 +197,98 @@ This page has been included as a way to improve my knowledge on javascript event
 # 4. Testing
 #### [Go To Top](#table-of-contents "Go To Top")
 
-ADD CONTENT HERE
+<a name="testing1"></a>
 
+## 4.1 Infomal Testing
+Informal testing is and was conducted throughout the build. This does not always include testing 
+
+My method of testing is based on trial and error, something that I learnt through my time with VBA for MSOffice. I would write a line of code and check the outcome. Mostly working step by step.
+
+The informal process of testing is as follows:
+
+* Before code is written a new preview is opened
+* Line/lines of code written
+* Preview is opened and refreshed
+* Desired outcome is checked
+* Outcome is checked in a mobile phone layout using Chrome developer tools.
+* If outcome is successful then wider checks on other code are conducted. For example, what impact does it have on other elements
+* If outcome is unsuccessful then the line/lines of code written will be checked and informal testing repeated
+
+
+<a name="testing2"></a>
+
+## 4.2 Formal Testing
+
+## Code Validation
+<br>
+
+<a href="https://validator.w3.org/" target="_blank">HTML Validation</a>
+
+Html and css was validated earlier but I made additions so validatied twice. 
+
+| HTML Page | Result | Comments | Retest (if apllicable)|
+| ------------- |:-------------:| -----:| -----:|
+| Home | Pass| n/a | n/a |
+| Memory Game | Pass| n/a | n/a |
+| Contact Us | Pass| n/a | n/a |
+| Javascript Zone | Pass| n/a | n/a |
+| More | Pass| n/a | n/a |
+
+<br>
+
+<a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validation</a>
+
+![index web](assets/images/testing/css-validarion.jpg)
+
+<br>
+
+<a href="https://jshint.com/" target="_blank">JavaScript Validation</a>
+
+<a name="testing3"></a>
+
+## 4.3 Functionality Testing
+
+## Navigation Links
+
+All header and footer links on each page should navigate to the expected page.
+
+| HTML Page | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
+| ------------- |:-------------:| -----:| -----:|-----:|-----:|
+| Home | 
+| Memory Game |
+| Contact Us |
+| Javascript Zone |
+| More | 
+
+<br>
+
+## Page functionality
+## Home Page
+| Expected Result | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
+|:-------------:| -----:| -----:| -----:|-----:|-----:|
+
+
+## Memory Game Page
+| Expected Result | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
+|:-------------:| -----:| -----:| -----:|-----:|-----:|
+
+
+## Contact Us Page
+| Expected Result | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
+|:-------------:| -----:| -----:| -----:|-----:|-----:|
+
+
+## JavaScript Zone Page
+| Expected Result | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
+|:-------------:| -----:| -----:| -----:|-----:|-----:|
+
+
+## More Page
+| Expected Result | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
+|:-------------:| -----:| -----:| -----:|-----:|-----:|
+
+
+<br>
 
 <a name="development-cycle"></a>
 

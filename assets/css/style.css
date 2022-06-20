@@ -249,11 +249,13 @@
     padding: 0 5%;
   }
   
+  /* No longer needed
+  
   .contact_form_inner {
     border-style: solid;
     padding: 2% 2%;
     box-shadow: 5px 10px rgba(43, 136, 183, 255);
-  }
+  } */
   
   .form {
     color: #fff;
@@ -634,11 +636,12 @@
     padding-right: 20px;
   }
   
+  /* No longer needed
   footer div h1 {
     font-size: 1.25rem;
     text-transform: uppercase;
     color: rgba(43, 136, 183, 255);
-  }
+  } */
   
 /* ****** Popup/Modal - See Readme for source ****** */
   .modal-parent {
