@@ -2,7 +2,7 @@
 # Introduction
 Welcome to my second project. This project is designed to create a fun memory game that compliments "The Veggie Guy" brand. This site will use languages such as HTML, CSS and JavaScript.
 
-A live website can be found <a href="" target="_blank">here</a>.
+A live website can be found <a href="https://antony-thornton.github.io/MS2---Memory-Game/" target="_blank">here</a>.
 
 ![index web](static/assets/images/site_images/responsive.jpg)
 
