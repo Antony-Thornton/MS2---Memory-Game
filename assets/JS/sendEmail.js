@@ -1,5 +1,5 @@
 function sendMail(contactForm) {
-	emailjs.send("gmail_account", "memory_game", {
+	emailjs.send("gmail", "memory-game-resit", {
 
 			first_name: contactForm.firstname.value,
 			last_name: contactForm.surname.value,
