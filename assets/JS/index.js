@@ -348,7 +348,7 @@ window.onload = function random_array() {
 		document.getElementById('visitDate').innerText = sessionStorage.getItem('dateComplete');
 		document.getElementById('visitTime').innerText = sessionStorage.getItem('timeComplete');;
 	} else {
-		
+		return;
 	}
 };
 
