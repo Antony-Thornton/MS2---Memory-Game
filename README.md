@@ -302,12 +302,11 @@ All elements displaying correctly | Pass | Pass | Pass | n/a | n/a
 All elements respond according to chrome resizing in dev tools | Pass | Pass | Pass | n/a | n/a
 Form should not submit with any blank fields | Pass | Pass | Pass | n/a | n/a
 Form should submit| Pass | Pass | Pass | n/a | n/a
-A div displaying a message sent should display | Pass | Pass | Pass | n/a | n/a
-An email should be recieved | Pass | Pass | Pass | n/a | n/a
+A div displaying a message sent should display | Fail | Fail | Fail | Needed to reconnect to <a href="https://www.emailjs.com/" target="_blank">emailJS</a> | Pass
+An email should be recieved | Fail | Fail | Fail | Needed to reconnect to <a href="https://www.emailjs.com/" target="_blank">emailJS</a> | Pass
 
 
 ![index web](assets/images/testing/form-send-test.JPG)
-
 
 
 ## JavaScript Zone Page
