@@ -159,15 +159,14 @@ A green colour palette has been applied to match the veggie guy theme.
 * Navigation links to those sites
 
 ## JavaScript Page
-This page will demo some of the features of JavaScript using event listeners
-This page has been included as a way to improve my knowledge on javascript event listeners 
+This page will demo some of the features of JavaScript using event listeners. This page has been included as a way to improve my knowledge on javascript event listeners and is not critical for the site.
 
 ## Features left to implement
 * As well as a numbers tab I would like to add a way to turn off the gifs on the memory game
     * Doing this will require updating the javascript to be inclusive but is not critical for submission
 * Build this site/game into "the Veggie Guy" fitness site
 * Create/design proper wireframe for Javascript page and implement
-
+* Fix the duplicate div's issue
 
 <a name="technologies-used"></a>
 
@@ -240,9 +239,20 @@ Html and css was validated earlier but I made additions so validatied twice.
 
 ![index web](assets/images/testing/css-validarion.jpg)
 
+
+
+### <a href="https://jshint.com/" target="_blank">JShint Validation</a>
+
+When I ran my code through Jshint I noticed that there was a lot of redefinitions of variables. I have created a seperate branch where I will experiment on a fix. I believe this was a result of copy and pasting chunks of code in my original submission and I never thought to check with my mentor when validating. For the sake of this project I have left the code as it is because testing was conducted with this original code in mind for the resubmission. I believe there are a couple of solutions but I would need to revisit course material or discuss with a Mentor/community in slack. <strong>This should be considered a learning point for my next javascript project.</strong>
+* The first would be to define divs and i's as global variables at the top then reference them below as normal
+* The other less efficient method would be to rename each of them
+    * Either with a number or a different name appropriate to the function they are within
+        * <a href="https://github.com/Antony-Thornton/MS2---Memory-Game/tree/div-fixing/assets/JS" target="_blank">I have experimented and will continue to experiment with both in a seperate branch</a>
+
+
 <br>
 
-<a href="https://jshint.com/" target="_blank">JavaScript Validation</a>
+
 
 <a name="testing3"></a>
 
@@ -254,8 +264,8 @@ All header and footer links on each page should navigate to the expected page.
 
 | HTML Page | Desktop Result | S9+ Result | iPad result | Comments | Retest (if apllicable)|
 | ------------- |:-------------:| -----:| -----:|-----:|-----:|
-| Home | 
-| Memory Game |
+| Home |
+| Memory Game | 
 | Contact Us |
 | Javascript Zone |
 | More | 
