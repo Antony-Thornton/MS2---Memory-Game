@@ -336,16 +336,20 @@ window.onload = function random_array() {
 		}
 	}
 	// alert("On your last visit you scored " + sessionStorage.getItem('score') + " in " + sessionStorage.getItem('TimeTaken') + " seconds!");
-	let myAlert = document.querySelectorAll('.toast')[0];
-	if (myAlert) {
-	  let bsAlert = new bootstrap.Toast(myAlert);
-	  bsAlert.show();
+	if (sessionStorage.getItem('score') > 0) {
+		let myAlert = document.querySelectorAll('.toast')[0];
+		if (myAlert) {
+		  let bsAlert = new bootstrap.Toast(myAlert);
+		  bsAlert.show();
+		}
+		
+		document.getElementById('spanScore').innerText = sessionStorage.getItem('score');
+		document.getElementById('spanTime').innerText = sessionStorage.getItem('TimeTaken');	
+		document.getElementById('visitDate').innerText = sessionStorage.getItem('dateComplete');
+		document.getElementById('visitTime').innerText = sessionStorage.getItem('timeComplete');;
+	} else {
+		alert("No score in session.")
 	}
-	
-	document.getElementById('spanScore').innerText = sessionStorage.getItem('score');
-	document.getElementById('spanTime').innerText = sessionStorage.getItem('TimeTaken');	
-	document.getElementById('visitDate').innerText = sessionStorage.getItem('dateComplete');
-	document.getElementById('visitTime').innerText = sessionStorage.getItem('timeComplete');;
 };
 
 /* ****** Shuffle array function. Called by other functions. ******* */
