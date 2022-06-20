@@ -93,13 +93,13 @@ function number_yes() {
 				}
 			}
 
-			var divs = document.getElementsByTagName("div");
-			for (var i = 0; i < divs.length; i++) {
+			var divs1 = document.getElementsByTagName("div");
+			for (var i1= 0; i1 < divs1.length; i1++) {
 
-				let div_class_name = divs[i].className.substr(0, 4);
-				let div_class_name_locked = divs[i].className.substr(0, 6);
+				let div_class_name = divs1[i1].className.substr(0, 4);
+				let div_class_name_locked = divs1[i1].className.substr(0, 6);
 				if (div_class_name === "back" || div_class_name_locked === "locked") {
-					divs[i].className = "front";
+					divs1[i1].className = "front";
 					old_score = parseInt(document.getElementById("correct_score").innerText);
 					document.getElementById("correct_score").innerText = 0;
 
@@ -109,16 +109,16 @@ function number_yes() {
 				}
 			}
 			shuffleArray(array);
-			var divs = document.getElementsByTagName("div");
-			for (var j = 0; j < array.length; j++) {
-				for (var i = 0; i < divs.length; i++) {
+			var divs2 = document.getElementsByTagName("div");
+			for (var j2 = 0; j2 < array.length; j2++) {
+				for (var i2 = 0; i2 < divs2.length; i2++) {
 
 
-					let div_class_name = divs[i].className.substr(0, 5);
+					let div_class_name = divs2[i2].className.substr(0, 5);
 					if (div_class_name === "front") {
 
-						divs[i].id = array[j];
-						j++;
+						divs2[i2].id = array[j2];
+						j2++;
 					}
 				}
 
@@ -128,15 +128,15 @@ function number_yes() {
 
 			numbers_only();
 
-			var divs = document.getElementsByTagName("div");
+			var divs3 = document.getElementsByTagName("div");
 
-			for (var i = 0; i < divs.length; i++) {
-				let div_class_name = divs[i].className.substr(0, 4);
-				let div_class_name_locked = divs[i].className.substr(0, 6);
+			for (var i3 = 0; i3 < divs3.length; i3++) {
+				let div_class_name = divs3[i3].className.substr(0, 4);
+				let div_class_name_locked = divs3[i3].className.substr(0, 6);
 
 				if (div_class_name === "back" || div_class_name_locked === "locked") {
 
-					divs[i].className = "front_number";
+					divs3[i3].className = "front_number";
 					old_score = parseInt(document.getElementById("correct_score").innerText);
 					document.getElementById("correct_score").innerText = 0;
 
@@ -146,16 +146,16 @@ function number_yes() {
 				}
 			}
 			shuffleArray(array);
-			var divs = document.getElementsByTagName("div");
-			for (var j = 0; j < array.length; j++) {
-				for (var i = 0; i < divs.length; i++) {
+			var divs4 = document.getElementsByTagName("div");
+			for (var j4 = 0; j4 < array.length; j4++) {
+				for (var i4 = 0; i4 < divs4.length; i4++) {
 
 
-					let div_class_name = divs[i].className.substr(0, 5);
+					let div_class_name = divs4[i4].className.substr(0, 5);
 					if (div_class_name === "front") {
 
-						divs[i].id = array[j];
-						j++;
+						divs4[i4].id = array[j4];
+						j4++;
 					}
 
 				}
@@ -190,29 +190,29 @@ function number_no() {
 
 			document.getElementById("numbers_true").innerHTML = "false";
 
-			var divs = document.getElementsByTagName("div");
+			var divs5 = document.getElementsByTagName("div");
 
-			for (var i = 0; i < divs.length; i++) {
+			for (var i5 = 0; i5 < divs5.length; i5++) {
 
-				let div_class_name = divs[i].className.substr(0, 13);
-				let div_class_name_hidden = divs[i].className.substr(0, 14);
+				let div_class_name = divs5[i5].className.substr(0, 13);
+				let div_class_name_hidden = divs5[i5].className.substr(0, 14);
 
 				if (div_class_name === "front_number") {
-					divs[i].className = "front";
+					divs5[i5].className = "front";
 				} else {
 					if (div_class_name_hidden === "number_visible") {
-						divs[i].className = "number_hidden";
+						divs5[i5].className = "number_hidden";
 					}
 				}
 			}
 
-			var divs = document.getElementsByTagName("div");
-			for (var i = 0; i < divs.length; i++) {
+			var divs6 = document.getElementsByTagName("div");
+			for (var i6 = 0; i6 < divs6.length; i6++) {
 
-				let div_class_name = divs[i].className.substr(0, 4);
-				let div_class_name_locked = divs[i].className.substr(0, 6);
+				let div_class_name = divs6[i6].className.substr(0, 4);
+				let div_class_name_locked = divs6[i6].className.substr(0, 6);
 				if (div_class_name === "back" || div_class_name_locked === "locked") {
-					divs[i].className = "front";
+					divs6[i6].className = "front";
 
 					old_score = parseInt(document.getElementById("correct_score").innerText);
 					document.getElementById("correct_score").innerText = 0;
@@ -223,16 +223,16 @@ function number_no() {
 				}
 			}
 			shuffleArray(array);
-			var divs = document.getElementsByTagName("div");
-			for (var j = 0; j < array.length; j++) {
-				for (var i = 0; i < divs.length; i++) {
+			var divs7 = document.getElementsByTagName("div");
+			for (var j7 = 0; j7 < array.length; j7++) {
+				for (var i7 = 0; i7 < divs7.length; i7++) {
 
 
-					let div_class_name = divs[i].className.substr(0, 5);
+					let div_class_name = divs7[i7].className.substr(0, 5);
 					if (div_class_name === "front") {
 
-						divs[i].id = array[j];
-						j++;
+						divs7[i7].id = array[j7];
+						j7++;
 					}
 				}
 
@@ -242,15 +242,15 @@ function number_no() {
 
 			numbers_only();
 
-			var divs = document.getElementsByTagName("div");
+			var divs8 = document.getElementsByTagName("div");
 
-			for (var i = 0; i < divs.length; i++) {
-				let div_class_name = divs[i].className.substr(0, 4);
-				let div_class_name_locked = divs[i].className.substr(0, 6);
+			for (var i8 = 0; i8 < divs8.length; i8++) {
+				let div_class_name = divs8[i8].className.substr(0, 4);
+				let div_class_name_locked = divs8[i8].className.substr(0, 6);
 
 				if (div_class_name === "back" || div_class_name_locked === "locked") {
 
-					divs[i].className = "front_number";
+					divs8[i8].className = "front_number";
 					old_score = parseInt(document.getElementById("correct_score").innerText);
 					document.getElementById("correct_score").innerText = 0;
 					old_score = parseInt(document.getElementById("incorrect_score").innerText);
@@ -259,16 +259,16 @@ function number_no() {
 				}
 			}
 			shuffleArray(array);
-			var divs = document.getElementsByTagName("div");
-			for (var j = 0; j < array.length; j++) {
-				for (var i = 0; i < divs.length; i++) {
+			var divs9 = document.getElementsByTagName("div");
+			for (var j9 = 0; j9 < array.length; j9++) {
+				for (var i9 = 0; i9 < divs9.length; i9++) {
 
 
-					let div_class_name = divs[i].className.substr(0, 5);
+					let div_class_name = divs9[i9].className.substr(0, 5);
 					if (div_class_name === "front") {
 
-						divs[i].id = array[j];
-						j++;
+						divs9[i9].id = array[j9];
+						j9++;
 					}
 
 				}
@@ -606,23 +606,23 @@ function numbers_only() {
 		document.getElementById("numbers_true").innerHTML = "false";
 	} else {
 
-		var divs = document.getElementsByTagName("div");
+		var divs10 = document.getElementsByTagName("div");
 
-		for (var i = 0; i < divs.length; i++) {
+		for (var i10 = 0; i10 < divs10.length; i10++) {
 
-			let div_class_name = divs[i].className.substr(0, 6);
-			let div_class_name_hidden = divs[i].className.substr(0, 13);
-			let div_class_name_black = divs[i].className;
+			let div_class_name = divs10[i10].className.substr(0, 6);
+			let div_class_name_hidden = divs10[i10].className.substr(0, 13);
+			let div_class_name_black = divs10[i10].className;
 
 			if (div_class_name === "front") {
-				divs[i].className = "front_number";
+				divs10[i10].className = "front_number";
 			} else {
 
 				if (div_class_name_hidden === "number_hidden") {
-					divs[i].className = "number_visible";
+					divs10[i10].className = "number_visible";
 				} else {
 					if (div_class_name_black === "number_visible_black") {
-						divs[i].className = "number_visible";
+						divs10[i10].className = "number_visible";
 					}
 				}
 			}
@@ -671,12 +671,12 @@ function reset_game() {
 				}
 			}
 
-			var divs = document.getElementsByTagName("div");
-			for (var i = 0; i < divs.length; i++) {
-				let div_class_name = divs[i].className.substr(0, 4);
-				let div_class_name_locked = divs[i].className.substr(0, 6);
+			var divs11 = document.getElementsByTagName("div");
+			for (var i11 = 0; i11 < divs11.length; i11++) {
+				let div_class_name = divs11[i11].className.substr(0, 4);
+				let div_class_name_locked = divs11[i11].className.substr(0, 6);
 				if (div_class_name === "back" || div_class_name_locked === "locked") {
-					divs[i].className = "front";
+					divs11[i11].className = "front";
 					old_score = parseInt(document.getElementById("correct_score").innerText);
 					document.getElementById("correct_score").innerText = 0;
 
@@ -688,16 +688,16 @@ function reset_game() {
 				}
 			}
 			shuffleArray(array);
-			var divs = document.getElementsByTagName("div");
-			for (var j = 0; j < array.length; j++) {
-				for (var i = 0; i < divs.length; i++) {
+			var divs12 = document.getElementsByTagName("div");
+			for (var j12 = 0; j12 < array.length; j12++) {
+				for (var i12 = 0; i12 < divs12.length; i12++) {
 
 
-					let div_class_name = divs[i].className.substr(0, 5);
+					let div_class_name = divs12[i12].className.substr(0, 5);
 					if (div_class_name === "front") {
 
-						divs[i].id = array[j];
-						j++;
+						divs12[i12].id = array[j12];
+						j12++;
 					}
 				}
 
