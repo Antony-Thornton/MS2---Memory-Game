@@ -94,13 +94,13 @@ function number_yes() {
 				}
 			}
 
-			var divs = document.getElementsByTagName("div");
-			for (var i1= 0; i1 < divs.length; i1++) {
+			
+			for (var i= 0; i < divs.length; i++) {
 
-				let div_class_name = divs[i1].className.substr(0, 4);
-				let div_class_name_locked = divs[i1].className.substr(0, 6);
+				let div_class_name = divs[i].className.substr(0, 4);
+				let div_class_name_locked = divs[i].className.substr(0, 6);
 				if (div_class_name === "back" || div_class_name_locked === "locked") {
-					divs[i1].className = "front";
+					divs[i].className = "front";
 					old_score = parseInt(document.getElementById("correct_score").innerText);
 					document.getElementById("correct_score").innerText = 0;
 
@@ -110,16 +110,16 @@ function number_yes() {
 				}
 			}
 			shuffleArray(array);
-			var divs = document.getElementsByTagName("div");
-			for (var j2 = 0; j2 < array.length; j2++) {
-				for (var i2 = 0; i2 < divs.length; i2++) {
+			
+			for (var j = 0; j < array.length; j++) {
+				for (var i = 0; i < divs.length; i++) {
 
 
-					let div_class_name = divs[i2].className.substr(0, 5);
+					let div_class_name = divs[i].className.substr(0, 5);
 					if (div_class_name === "front") {
 
-						divs[i2].id = array[j2];
-						j2++;
+						divs[i].id = array[j];
+						j++;
 					}
 				}
 
@@ -129,15 +129,15 @@ function number_yes() {
 
 			numbers_only();
 
-			var divs = document.getElementsByTagName("div");
+			
 
-			for (var i3 = 0; i3 < divs.length; i3++) {
-				let div_class_name = divs[i3].className.substr(0, 4);
-				let div_class_name_locked = divs[i3].className.substr(0, 6);
+			for (var i = 0; i < divs.length; i++) {
+				let div_class_name = divs[i].className.substr(0, 4);
+				let div_class_name_locked = divs[i].className.substr(0, 6);
 
 				if (div_class_name === "back" || div_class_name_locked === "locked") {
 
-					divs[i3].className = "front_number";
+					divs[i].className = "front_number";
 					old_score = parseInt(document.getElementById("correct_score").innerText);
 					document.getElementById("correct_score").innerText = 0;
 
@@ -147,16 +147,16 @@ function number_yes() {
 				}
 			}
 			shuffleArray(array);
-			var divs = document.getElementsByTagName("div");
-			for (var j4 = 0; j4 < array.length; j4++) {
-				for (var i4 = 0; i4 < divs.length; i4++) {
+			
+			for (var j = 0; j < array.length; j++) {
+				for (var i = 0; i < divs.length; i++) {
 
 
-					let div_class_name = divs[i4].className.substr(0, 5);
+					let div_class_name = divs[i].className.substr(0, 5);
 					if (div_class_name === "front") {
 
-						divs[i4].id = array[j4];
-						j4++;
+						divs[i].id = array[j];
+						j++;
 					}
 
 				}
@@ -191,29 +191,29 @@ function number_no() {
 
 			document.getElementById("numbers_true").innerHTML = "false";
 
-			var divs = document.getElementsByTagName("div");
+			
 
-			for (var i5 = 0; i5 < divs.length; i5++) {
+			for (var i = 0; i < divs.length; i++) {
 
-				let div_class_name = divs[i5].className.substr(0, 13);
-				let div_class_name_hidden = divs[i5].className.substr(0, 14);
+				let div_class_name = divs[i].className.substr(0, 13);
+				let div_class_name_hidden = divs[i].className.substr(0, 14);
 
 				if (div_class_name === "front_number") {
-					divs[i5].className = "front";
+					divs[i].className = "front";
 				} else {
 					if (div_class_name_hidden === "number_visible") {
-						divs[i5].className = "number_hidden";
+						divs[i].className = "number_hidden";
 					}
 				}
 			}
 
-			var divs = document.getElementsByTagName("div");
-			for (var i6 = 0; i6 < divs.length; i6++) {
+			
+			for (var i = 0; i < divs.length; i++) {
 
-				let div_class_name = divs[i6].className.substr(0, 4);
-				let div_class_name_locked = divs[i6].className.substr(0, 6);
+				let div_class_name = divs[i].className.substr(0, 4);
+				let div_class_name_locked = divs[i].className.substr(0, 6);
 				if (div_class_name === "back" || div_class_name_locked === "locked") {
-					divs[i6].className = "front";
+					divs[i].className = "front";
 
 					old_score = parseInt(document.getElementById("correct_score").innerText);
 					document.getElementById("correct_score").innerText = 0;
@@ -224,16 +224,16 @@ function number_no() {
 				}
 			}
 			shuffleArray(array);
-			var divs = document.getElementsByTagName("div");
-			for (var j7 = 0; j7 < array.length; j7++) {
-				for (var i7 = 0; i7 < divs.length; i7++) {
+			
+			for (var j = 0; j < array.length; j++) {
+				for (var i = 0; i < divs.length; i++) {
 
 
-					let div_class_name = divs[i7].className.substr(0, 5);
+					let div_class_name = divs[i].className.substr(0, 5);
 					if (div_class_name === "front") {
 
-						divs[i7].id = array[j7];
-						j7++;
+						divs[i].id = array[j];
+						j++;
 					}
 				}
 
@@ -243,15 +243,15 @@ function number_no() {
 
 			numbers_only();
 
-			var divs = document.getElementsByTagName("div");
+			
 
-			for (var i8 = 0; i8 < divs.length; i8++) {
-				let div_class_name = divs[i8].className.substr(0, 4);
-				let div_class_name_locked = divs[i8].className.substr(0, 6);
+			for (var i = 0; i < divs.length; i++) {
+				let div_class_name = divs[i].className.substr(0, 4);
+				let div_class_name_locked = divs[i].className.substr(0, 6);
 
 				if (div_class_name === "back" || div_class_name_locked === "locked") {
 
-					divs[i8].className = "front_number";
+					divs[i].className = "front_number";
 					old_score = parseInt(document.getElementById("correct_score").innerText);
 					document.getElementById("correct_score").innerText = 0;
 					old_score = parseInt(document.getElementById("incorrect_score").innerText);
@@ -260,16 +260,16 @@ function number_no() {
 				}
 			}
 			shuffleArray(array);
-			var divs = document.getElementsByTagName("div");
-			for (var j9 = 0; j9 < array.length; j9++) {
-				for (var i9 = 0; i9 < divs.length; i9++) {
+			
+			for (var j = 0; j < array.length; j++) {
+				for (var i = 0; i < divs.length; i++) {
 
 
-					let div_class_name = divs[i9].className.substr(0, 5);
+					let div_class_name = divs[i].className.substr(0, 5);
 					if (div_class_name === "front") {
 
-						divs[i9].id = array[j9];
-						j9++;
+						divs[i].id = array[j];
+						j++;
 					}
 
 				}
@@ -602,23 +602,23 @@ function numbers_only() {
 		document.getElementById("numbers_true").innerHTML = "false";
 	} else {
 
-		var divs = document.getElementsByTagName("div");
+		
 
-		for (var i10 = 0; i10 < divs.length; i10++) {
+		for (var i = 0; i < divs.length; i++) {
 
-			let div_class_name = divs[i10].className.substr(0, 6);
-			let div_class_name_hidden = divs[i10].className.substr(0, 13);
-			let div_class_name_black = divs[i10].className;
+			let div_class_name = divs[i].className.substr(0, 6);
+			let div_class_name_hidden = divs[i].className.substr(0, 13);
+			let div_class_name_black = divs[i].className;
 
 			if (div_class_name === "front") {
-				divs[i10].className = "front_number";
+				divs[i].className = "front_number";
 			} else {
 
 				if (div_class_name_hidden === "number_hidden") {
-					divs[i10].className = "number_visible";
+					divs[i].className = "number_visible";
 				} else {
 					if (div_class_name_black === "number_visible_black") {
-						divs[i10].className = "number_visible";
+						divs[i].className = "number_visible";
 					}
 				}
 			}
@@ -668,11 +668,11 @@ function reset_game() {
 			}
 
 			var divs1 = document.getElementsByTagName("div");
-			for (var i11 = 0; i11 < divs1.length; i11++) {
-				let div_class_name = divs1[i11].className.substr(0, 4);
-				let div_class_name_locked = divs1[i11].className.substr(0, 6);
+			for (var i = 0; i < divs1.length; i++) {
+				let div_class_name = divs1[i].className.substr(0, 4);
+				let div_class_name_locked = divs1[i].className.substr(0, 6);
 				if (div_class_name === "back" || div_class_name_locked === "locked") {
-					divs1[i11].className = "front";
+					divs1[i].className = "front";
 					old_score = parseInt(document.getElementById("correct_score").innerText);
 					document.getElementById("correct_score").innerText = 0;
 
@@ -684,16 +684,16 @@ function reset_game() {
 				}
 			}
 			shuffleArray(array);
-			var divs = document.getElementsByTagName("div");
-			for (var j12 = 0; j12 < array.length; j12++) {
-				for (var i12 = 0; i12 < divs.length; i12++) {
+			
+			for (var j = 0; j < array.length; j++) {
+				for (var i = 0; i < divs.length; i++) {
 
 
-					let div_class_name = divs[i12].className.substr(0, 5);
+					let div_class_name = divs[i].className.substr(0, 5);
 					if (div_class_name === "front") {
 
-						divs[i12].id = array[j12];
-						j12++;
+						divs[i].id = array[j];
+						j++;
 					}
 				}
 
