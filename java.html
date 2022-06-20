@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title> The Veggie Guy Games - Home </title>
+    <title> The Veggie Guy Games - JavaScript </title>
   </head>
   <body>
     <header>
@@ -27,62 +27,66 @@
               <li class="nav-item ">
                 <a class="nav-link active bg-color text-color-white" aria-current="page" href="contact.html">Contact</a>
               </li>
-              <li class="nav-item"></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <section>
-      <h1 class="text-center bg-color" style="margin: 0;"> Home </h1>
+    <section style="text-align: center;">
+      <h1 class="text-center bg-color">JavaScript</h1>
       <div class="container">
-        <img src="assets/images/pexels-mikhail-nilov-7889328.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+        <div class="java-page">
+          <h2>Some fun things you can do with JavaScript</h2>
+        </div>
       </div>
-      <div class="container">
-        <div class="container my-5">
-          <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-              <h1 class="display-4 logo-font text-color float-text-left"> Check out our memory game </h1>
-              <p class="lead float-text-left"> Got 5 minutes to spare? Check out our food themed memory game! We created a custom game for our community to enjoy with vegetarian friendly meals.</p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                <div>
-                  <h4 style="padding-bottom: 15px;">
-                    <a href="game.html" class="btn btn-primary">Play Now</a>
-                  </h4>
-                </div>
-              </div>
-            </div>
+      <div class="container p-5 my-5 text-white">
+        <div class="w3-content w3-section slideshow-container">
+          <div class="slideshow">
+            <h6 class="slideshow-text">Image Slideshows</h6>
+            <img class="mySlides slideshow" src="assets/images/game_pictures/pexels-susanne-jutzeler-sujufoto-1132558.jpg" style="width:100%" alt="Slideshow example 1">
+            <img class="mySlides slideshow" src="assets/images/game_pictures/pexels-dzenina-lukac-1583884.jpg" style="width:100%" alt="Slideshow example 2">
+            <img class="mySlides slideshow" src="assets/images/game_pictures/pexels-cats-coming-920220.jpg" style="width:100%" alt="Slideshow example 3">
           </div>
         </div>
-        <div class="container my-5">
-          <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg float-text-left">
-            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-              <h1 class="display-4 logo-font text-color float-text-left"> Contact us now </h1>
-              <p class="lead float-text-left">Need to contact us? Complete our contact us form and we will get back to you.</p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                <div>
-                  <h4 style="padding-bottom: 15px;">
-                    <a href="contact.html" class="btn btn-success">Contact Us</a>
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div class="container p-5 my-5 text-white" id="random_color_box" style="background-color:red;">
+        <div>
+          <h4>
+            <a id="random_color" class="btn btn-custom">Change Element Colors</a>
+          </h4>
         </div>
-        <div class="container my-5">
-          <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg float-text-left">
-            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-              <h1 class="display-4 logo-font text-color float-text-left"> See more from us </h1>
-              <p class="lead float-text-left">We have a series of websites that you may find interesting. Why not check them out now.</p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                <div>
-                  <h4 style="padding-bottom: 15px;">
-                    <a href="more.html" class="btn btn-warning">More content</a>
-                  </h4>
-                </div>
-              </div>
+      </div>
+      <div class="container p-5 my-5 text-white">
+        <div>
+          <h1>Countdown Clocks</h1>
+          <div id="clockdiv">
+            <div class="clock_width">
+              <span class="days" id="day"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div class="clock_width">
+              <span class="hours" id="hour"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div class="clock_width">
+              <span class="minutes" id="minute"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div class="clock_width">
+              <span class="seconds" id="second"></span>
+              <div class="smalltext">Seconds</div>
             </div>
           </div>
+          <p id="demo"></p>
+        </div>
+      </div>
+      <div class="container p-5 my-5 text-white">
+        <h4>
+          <a id="add_to_page" class="btn btn-primary">Summon Minion</a>
+        </h4>
+        <div>
+          <h1>Add HTML to web pages</h1>
+          <div id="add_here"></div>
         </div>
       </div>
     </section>
@@ -103,5 +107,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/JS/javapage.js"></script>
   </body>
 </html>

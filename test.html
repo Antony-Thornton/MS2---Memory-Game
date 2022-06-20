@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> The Veggie Guy Games - Memory Game </title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color">
+        <div class="container-fluid bg-color">
+          <a class="navbar-brand bg-color" href="index.html">The <strong class="bg-color">Veggie Guy</strong> Games </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-color-white">
+              <li class="nav-item ">
+                <a class="nav-link active bg-color text-color-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active bg-color text-color-white" aria-current="page" href="game.html">Memory Game</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active bg-color text-color-white" aria-current="page" href="java.html">JavaScript</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active bg-color text-color-white" aria-current="page" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active bg-color text-color-white" aria-current="page" href="more.html">More</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1 class="text-center bg-color">Memory Game</h1>
+      <div class="container">
+        <div>
+          <h2> A veggie friendly memory game. </h2>
+          <h4>Thank you for visiting this website. This memory game will test your ability to remember pictures and their locations. </h4>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item margin">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How to play </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4>You may find it easier to have numbers shown rather than the logo. This will be useful for mobile users. If so please click the numbers button. </h4>
+                <h4>When you are ready. </h4>
+                <h5>Step 1 - Press the start button. </h5>
+                <h5>Step 2 - Click on a tile and then another. </h5>
+                <h5>Step 3 - Remember the tile pictures (they reset after 1 second) and try to match all of them as quickly as you can. </h5>
+                <h5>If you want to start again please press the reset button. </h5>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        
+      <div class="container">
+        <div style="height: 500px; background-color:#198754; border-radius:25px; width: 100%; text-align: center; background-image: url(assets/images/pexels-lukas-952478.jpg);">
+          <div style="position: relative; left: 10%; top: 10%; background-color: #198754; width: 80%; height:100px; border-radius: 25px;">
+            <h1 class="text-white position-absolute top-50 start-50 translate-middle">Score Board</h1>
+          </div>
+          <div class="col text-white" style="position: relative; top: 20%; background-color: #198754; height: auto; text-align: center; width: 50%;  margin: 0;">
+            <table class="table table-borderless"  style="margin: 0;">
+              <thead class="table-borderless">
+                <tr>
+                  <th class="text-white" scope="col" id="start_time">Game Start</th>
+                  <th class="text-white" scope="col" id="end_time">Game End  </th>
+                </tr>
+              </thead>
+              <tbody class="table-borderless">
+                <tr>
+                  <th scope="row" id="game_start_time">
+
+                  </th>
+                  <td id="game_end_time">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td id="time_taken_header"></td>
+                  <td id="time_taken"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col text-white" style="position: relative; top: 30%; background-color: #198754; height: auto; text-align: center; width: 50%;  margin: 0;">
+            <table class="table table-borderless"  style="margin: 0;">
+              <thead class="table-borderless">
+                <tr>
+                  <th class="text-white" scope="col" id="correct_text">Correct Matches  </th>
+                  <th class="text-white" scope="col" id="incorrect_text">Incorrect Matches</th>
+                </tr>
+              </thead>
+              <tbody class="table-borderless" style="border-radius: 25px;">
+                <tr>
+                  <th class="fw-bold fs-4" scope="row" id="correct_score" style="background-color: green; font-size: 1rem;">
+                    0
+                  </th>
+                  <td class="fw-bold fs-4" id="incorrect_score" style="background-color: red; font-size: 1rem">
+                    0
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <footer>
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Links to sources</h5>
+          <a href="https://codeinstitute.net/" class="btn btn-success" style="margin: 1px; background-color: #198754;" target="_blank" title="Course Provider">Code Institute</a>
+          <a href="https://www.pexels.com/" class="btn btn-success" style="margin: 1px; background-color: #198754;" target="_blank" title="Pictures">Pexels.com</a>
+          <a href="https://getbootstrap.com/docs/5.0/examples/heroes/" class="btn btn-success" style="margin: 1px; background-color: #198754;" target="_blank" title="Pictures">Bootstrap5</a>
+          <a href="https://github.com/Antony-Thornton" class="btn btn-success" style="margin: 1px; background-color: #198754;" target="_blank" title="Pictures">More from the developer</a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
