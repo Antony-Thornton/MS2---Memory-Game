@@ -335,6 +335,7 @@ window.onload = function random_array() {
 			}
 		}
 	}
+	alert("On your last visit you scored " + sessionStorage.getItem('score') + " in " + sessionStorage.getItem('TimeTaken') + " seconds!");
 };
 
 /* ****** Shuffle array function. Called by other functions. ******* */
@@ -452,6 +453,8 @@ function if_mapping(e) {
 								document.getElementById("time_taken").innerText = time_seconds + " seconds.";
 								document.getElementById("time_completion").innerText = time_seconds;
 								appear();
+								sessionStorage.setItem('score',score_int);
+								sessionStorage.setItem('TimeTaken', time_seconds);
 							}
 
 							allowPlay = false;
@@ -690,3 +693,4 @@ function reset_game() {
 	}
 
 }
+
