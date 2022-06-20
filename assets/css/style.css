@@ -347,9 +347,13 @@
     box-shadow: 1px 1px black;
   }
   
-  .confirmed_sent {
-    padding: 20px 0px;
+  #confirmed_sent {
     font-size: x-large;
+    height: auto;
+    background-color: gold;
+    color: black;
+    border-radius: 25px;
+    width: 50%;
   }
   
 /* ************ Main Section Format ************ */
