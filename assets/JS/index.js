@@ -684,6 +684,7 @@ function reset_game() {
 					document.getElementById("incorrect_score").innerText = 0;
 					document.getElementById("time_taken").innerText = "";
 					document.getElementById("time_completion").innerText = "";
+					document.getElementById("time_taken_header").innerText = "";
 
 				}
 			}
