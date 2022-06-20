@@ -4,7 +4,7 @@ Welcome to my second project. This project is designed to create a fun memory ga
 
 A live website can be found <a href="https://antony-thornton.github.io/MS2---Memory-Game/" target="_blank">here</a>.
 
-![index web](static/assets/images/site_images/responsive.jpg)
+![index web](assets/images/testing/am-i-responsive.jpg)
 
 # Table of Contents
 
